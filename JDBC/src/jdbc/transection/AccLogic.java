@@ -14,28 +14,68 @@ public class AccLogic
 		/////////////////////////////////////////////////////////
 		// 1. 드라이버를 드라이버 매니저에 등록
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		url = "jdbc:oracle:thin:@127.0.0.1:1521:orcl";
-		user = "scott";
-		pass = "tiger";
+		url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		user = "kosmo_04";
+		pass = "kosmo";
 	}
 
 
 	//====================================================
 	// 보내는 계좌번호와 받는 계좌번호와 계좌금액을 넘겨받아 
 	//	보내는계좌에서 계좌금액을 빼고 받는계좌에서 계좌금액을 더한다
-	public int moveAccount(String sendAcc, String recvAcc, int amount)
+	public int moveAccount(String sendAcc, String receiveAcc, int amount)
 	{
 		Connection con = null;
+		PreparedStatement ps1 = null;
+		PreparedStatement ps2 = null;
+		try{
+			//	 1. Connection 객체 생성
+			con = DriverManager.getConnection(url,user,pass);
 
-		///////////////////////////////////////////////////////////
-		//	 1. Connection 객체 생성
-		//@@ 2. Auto-commit을 해제
-		//	 3. 출금계좌에서 이체금액을 뺀다
-		//	 4. 입금계좌에 이체금액을 더한다
-		//@@ 5. commit을 전송한다
-		//	 6. 객체 닫기
-		//	 - 만일 정상적인 경우는 0을 리턴하고 도중에 잘못되었으면 트랜잭션을 롤백시키고 -1을 리턴
+			//@@ 2. Auto-commit을 해제
+			con.setAutoCommit(false);
 
+			//	 3. 출금계좌에서 이체금액을 뺀다
+			String sql1 = "UPDATE account SET amount = amount-? where account_num = ? ";
+			ps1 = con.prepareStatement(sql1);
+			ps1.setInt(1,amount);
+			ps1.setString(2,sendAcc);
+			int result1 = ps1.executeUpdate();
+			if (result1 == 0) {
+				System.out.println("없는 계좌 : " + sendAcc);
+				con.rollback();
+				return -1;
+			}
+			//	 4. 입금계좌에 이체금액을 더한다
+			String sql2 = "UPDATE account SET amount = amount+? where account_num = ? ";
+			ps2 = con.prepareStatement(sql2);
+			ps2.setInt(1,amount);
+			ps2.setString(2,receiveAcc);
+			int result2 = ps2.executeUpdate();
+			if (result2 == 0) {
+				System.out.println("없는 계좌 : " + receiveAcc);
+				con.rollback();
+				return -1;
+			}
+			//@@ 5. commit을 전송한다
+			con.commit();
+		}catch (Exception e){
+			try{
+				con.rollback();
+			}catch (Exception ex){
+				ex.printStackTrace();
+			}
+			return -1;
+		}finally {
+			try{
+				//	 6. 객체 닫기
+				ps1.close();
+				ps2.close();
+				con.close();
+			}catch (Exception e){
+				System.out.println("AccLogic : " +e.toString());
+			}
+		}
 		return 0;
 	}
 
