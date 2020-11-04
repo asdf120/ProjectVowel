@@ -2,10 +2,10 @@ package src.model.vo;
 
 public class MovieVO {
     private String title;
-    private int run_time;
+    private int run_time;   // 러닝타임
     private String director;
     private String actor;
-    private int audi_num;
+    private int audi_num;   // 관객 수
 
     public MovieVO() {
     }

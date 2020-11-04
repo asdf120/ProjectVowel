@@ -4,8 +4,6 @@ import src.view.MemberView;
 import src.view.MovieTime_View;
 import src.view.ReserveView;
 
-
-
 import javax.swing.*;
 
 public class Theater extends JFrame {

@@ -1,7 +1,7 @@
 package src.model.vo;
 
 public class MemberVO {
-    private String member;
+    private String member_id;  // 회원아이디
     private String password;
     private String tel;
     private String name;
@@ -12,7 +12,7 @@ public class MemberVO {
     }
 
     public MemberVO(String member, String password, String tel, String name, String birth, String email) {
-        this.member = member;
+        this.member_id = member;
         this.password = password;
         this.tel = tel;
         this.name = name;
@@ -20,12 +20,12 @@ public class MemberVO {
         this.email = email;
     }
 
-    public String getMember() {
-        return member;
+    public String getMember_id() {
+        return member_id;
     }
 
-    public void setMember(String member) {
-        this.member = member;
+    public void setMember_id(String member_id) {
+        this.member_id = member_id;
     }
 
     public String getPassword() {

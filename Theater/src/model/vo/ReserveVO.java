@@ -3,14 +3,14 @@ package src.model.vo;
 import java.util.Date;
 
 public class ReserveVO {
-    private int reserve_no;
+    private int reserve_no; //예매번호
     private String member_id;
     private String title;
     private String theater;
-    private Date see_date;
-    private int person_num;
-    private String pay_sys;
-    private int pay_money;
+    private Date see_date;  // 관람시각
+    private int person_num; // 인원
+    private String pay_sys; // 결제방법
+    private int pay_money;  // 결제금액
 
     public ReserveVO() {
     }
