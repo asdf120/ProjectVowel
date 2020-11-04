@@ -25,9 +25,9 @@ public class CustomerView extends JPanel implements ActionListener {
     public CustomerView() {
         try {
             customerDAO = new CustomerDAO();
-            System.out.println("DB 연결성공");
+            System.out.println("DB 연결성공 - 고객관리");
         } catch (Exception e) {
-            System.out.println("public CustomerView() : " + e.toString());
+            System.out.println("DB 연결실패 - 고객관리 : " + e.toString());
         }
         addLayout();
         eventProc();

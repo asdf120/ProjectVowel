@@ -26,8 +26,9 @@ create table reserve(reserve_no number,
         constraint fk_reserve_movie foreign key(title) references movie(title),
         constraint check_reserve_pay_sys check(pay_sys in('카드','현금')));
         
-        
-create sequence seq_reserve_no
-minvalue 0
-start with 1
-increment by 1;
+-- 고객 예매번호 시퀀스
+create sequence seq_reserve_no3
+start with 10000
+increment by 1000;
+
+select seq_reserve_no3.nextval from dual;

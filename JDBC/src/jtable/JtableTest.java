@@ -5,6 +5,8 @@ import javax.swing.table.AbstractTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 
@@ -37,6 +39,17 @@ public class JtableTest extends JFrame { // JFrame의 defualt 레이아웃은 bo
                 change();
             }
         });
+
+        // jTable에 마우스 이벤트
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int row = table.getSelectedRow();
+                int col = table.getSelectedColumn();
+                System.out.println(row + " : " + col);
+            }
+        });
+
     } // end of JtableTest();
 
     void change(){
@@ -80,7 +93,6 @@ public class JtableTest extends JFrame { // JFrame의 defualt 레이아웃은 bo
         public String getColumnName(int column) {   // 사용자가 지정한 컬럼이름 지정하는 함수
             return columnNames[column];
         }
-
 
     }
 

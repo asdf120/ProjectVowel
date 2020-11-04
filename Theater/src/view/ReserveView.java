@@ -1,7 +1,10 @@
 package src.view;
-
+import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
+public class ReserveView extends JFrame{
 
-//TODO 예매 뷰 포스터 보이게하고 시간 클릭하면 ReserveView2로 넘어감
-public class ReserveView extends JPanel {
+    public ReserveView(){
+        super("영화 예매");
+    }
 }

@@ -1,0 +1,40 @@
+CREATE TABLE member ( member_id varchar2(20),
+                password varchar2(20) not null,
+                tel char(13) not null, -- '-'하이픈 포함
+                name varchar2(10) ,
+                birth date not null,
+                email varchar2(50),
+            constraint pk_member_member_id primary key(member_id));
+            
+CREATE TABLE MOVIE (title VARCHAR2(30), 
+    RUN_TIME NUMBER(3,0) NOT NULL ENABLE, 
+	DIRECTOR VARCHAR2(30) NOT NULL ENABLE, 
+	ACTOR VARCHAR2(50) NOT NULL ENABLE, 
+	AUDI_NUM NUMBER NOT NULL ENABLE, 
+   constraint pk_movie_title primary key(title)); 
+   
+create table reserve(
+	reserve_no number, --예매번호
+            member_id varchar2(20), -- 아이디
+	theater_no char(1), --상영관 번호
+	theater_time date, -- 상영시각
+            person_num number not null, -- 인원
+            pay_sys varchar2(4) default '카드', -- 결제방식
+            pay_money number not null, -- 결제금액
+        constraint pk_reserve_reserve_no primary key(reserve_no),
+        constraint fk_reserve_member_id foreign key(member_id) references member(member_id),
+        constraint fk_reserve_theater foreign key(theater_no,theater_time) references theater(theater_no,theater_time),
+        constraint check_reserve_pay_sys check(pay_sys in('카드','현금')));
+
+create table theater(
+	theater_no char(1),
+	theater_time date,
+	title varchar2(30)
+	constraint pk_theater_theater_no primary key(theater_no,theater_time),
+	constraint fk_theater_title foreign key(title) references movie(title));
+
+create sequence seq_reserve_no
+start with 1
+increment by 1;
+
+
