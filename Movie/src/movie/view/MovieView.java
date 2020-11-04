@@ -21,13 +21,13 @@ public class MovieView extends JFrame{
         super("영화 목록");
         movie_panel = new JPanel();
         movie_button = new JButton[6];
-        before_button = new JButton(new ImageIcon("src/img/before.png"));
-        mypage_button = new JButton(new ImageIcon("src/img/MemberShipView/마이페이지.png"));
+        before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
+        mypage_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/마이페이지.png"));
         title_label = new JLabel("현재 상영작");
 
         //영화 버튼 초기화
         for(int i=0; i<movie_button.length; i++){
-            movie_button[i] = new JButton(new ImageIcon("src/img/MovieView/"+i+".png"));
+            movie_button[i] = new JButton(new ImageIcon("Movie/src/img/MovieView/"+i+".png"));
         }
 
 

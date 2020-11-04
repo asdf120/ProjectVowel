@@ -42,8 +42,8 @@ public class NonMemberShipView extends JFrame {
         }
         //나머지 초기화
         non_membership_panel = new JPanel();
-        join_button = new JButton(new ImageIcon("src/img/MemberShipView/Join.png"));
-        before_button = new JButton(new ImageIcon("src/img/before.png"));
+        join_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/Join.png"));
+        before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
         title_label = new JLabel("비회원가입");
 
         //멤버쉽 좌표

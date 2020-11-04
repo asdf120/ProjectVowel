@@ -40,6 +40,7 @@ public class LoginView extends JFrame {
 
 
     public void output() {
+
         //panel, button 위치 크기 지정
         login_panel.setLayout(null);
         title_label.setBounds(150, 50, 100, 40);
@@ -89,6 +90,8 @@ public class LoginView extends JFrame {
 
     }
 
+
+
     //이벤트 처리
    class EventListner extends Component implements ActionListener {
 
@@ -97,7 +100,6 @@ public class LoginView extends JFrame {
             JButton input = (JButton) e.getSource();
 
             if (input.equals(logins_button[0])) {
-
                 System.out.println("로그인 버튼");
                 JOptionPane.showMessageDialog(this, "로그인 성공!!", "로그인", JOptionPane.INFORMATION_MESSAGE);
                 MovieView mv = new MovieView(); //영화창 띄움
@@ -116,11 +118,11 @@ public class LoginView extends JFrame {
             }
             if(input.equals(select_id)){
                 System.out.println("아이디찾기 버튼");
-
+                SearchIDView si = new SearchIDView();
             }
             if(input.equals(select_pw)){
                 System.out.println("비밀번호찾기 버튼");
-
+                SearchPWView sp = new SearchPWView();
             }
         }
     }

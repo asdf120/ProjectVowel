@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class ReserveVO {
     private int reserve_no; //예매번호
-    private String member_id;   // 회원ID
+    private String tel;   // 회원전화번호
     private String theater_no;  // 상영관번호
     private Date theater_time;  // 상영시각
     private String seat_no; //좌석번호
@@ -15,8 +15,8 @@ public class ReserveVO {
     public ReserveVO() {
     }
 
-    public ReserveVO(String member_id, String theater_no, Date theater_time, String seat_no, int person_num, String pay_sys, int pay_money) {
-        this.member_id = member_id;
+    public ReserveVO(String tel, String theater_no, Date theater_time, String seat_no, int person_num, String pay_sys, int pay_money) {
+        this.tel = tel;
         this.theater_no = theater_no;
         this.theater_time = theater_time;
         this.seat_no = seat_no;
@@ -29,12 +29,12 @@ public class ReserveVO {
         return reserve_no;
     }
 
-    public String getMember_id() {
-        return member_id;
+    public String getTel() {
+        return tel;
     }
 
-    public void setMember_id(String member_id) {
-        this.member_id = member_id;
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public String getTheater_no() {

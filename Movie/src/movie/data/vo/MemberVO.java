@@ -1,17 +1,19 @@
 package movie.data.vo;
 
+import java.util.Date;
+
 public class MemberVO {
     private String member_id;  // 회원아이디
     private String password;    // 비번
-    private String tel;         // 전번
     private String name;        // 이름
-    private String birth;       // 생년월일
+    private String tel;         // 전번
+    private Date birth;       // 생년월일
     private String email;       // 이메일
 
     public MemberVO() {
     }
 
-    public MemberVO(String member, String password, String tel, String name, String birth, String email) {
+    public MemberVO(String member, String password, String name, String tel, Date birth, String email) {
         this.member_id = member;
         this.password = password;
         this.tel = tel;
@@ -52,11 +54,11 @@ public class MemberVO {
         this.name = name;
     }
 
-    public String getBirth() {
+    public Date getBirth() {
         return birth;
     }
 
-    public void setBirth(String birth) {
+    public void setBirth(Date birth) {
         this.birth = birth;
     }
 

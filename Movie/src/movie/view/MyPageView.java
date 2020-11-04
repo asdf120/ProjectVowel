@@ -41,9 +41,9 @@ public class MyPageView extends JFrame{
         }
         //나머지 초기화
         mypageview_panel = new JPanel();
-        change_button = new JButton(new ImageIcon("src/img/MemberShipView/수정.png"));
-        identify_button = new JButton(new ImageIcon("src/img/MemberShipView/확인.png"));
-        before_button = new JButton(new ImageIcon("src/img/before.png"));
+        change_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/수정.png"));
+        identify_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/확인.png"));
+        before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
         title_label = new JLabel("마이페이지");
 
         //멤버쉽 좌표
