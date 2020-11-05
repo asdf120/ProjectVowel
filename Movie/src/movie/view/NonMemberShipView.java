@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+// 비회원예매 뷰
 public class NonMemberShipView extends JFrame {
 
     JTextField non_member_field[];

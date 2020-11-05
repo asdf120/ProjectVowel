@@ -1,5 +1,6 @@
 package movie;
 
+import movie.data.vo.ReserveVO;
 import movie.view.LoginView;
 
 import javax.swing.*;
@@ -7,6 +8,7 @@ import javax.swing.*;
 public class Start extends JFrame {
 
     LoginView pnl;
+    ReserveVO reserveVO = new ReserveVO();
 
     public Start() {
         LoginView pnl = new LoginView();
@@ -16,6 +18,7 @@ public class Start extends JFrame {
 
     public static void main(String[] args) {
         Start mv = new Start();
+
     }
 }
 

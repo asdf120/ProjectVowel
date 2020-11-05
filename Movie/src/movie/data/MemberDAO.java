@@ -21,13 +21,30 @@ public class MemberDAO {
     }
 
     /**
+     * RegisterView에서 호출
      * 회원가입 메소드
      */
-    public void regist() throws Exception {
+    public void regist(MemberVO memberVo) throws Exception {
+        String sql = " INSERT INTO member (tel,member_id,password,name,birth,email) values (?,?,?,?,?,?) ";
 
+        PreparedStatement st = con.prepareStatement(sql);
+        System.out.println("31행");
+        st.setString(1, memberVo.getTel());
+        st.setString(2, memberVo.getMember_id());
+        st.setString(3, memberVo.getPassword());
+        st.setString(4, memberVo.getName());
+        st.setDate(5,memberVo.getBirth());
+        st.setString(6, memberVo.getTel());
+        System.out.println("38행" + memberVo.getBirth());
+        st.executeUpdate();
+        System.out.println("40행");
+
+        st.close();
+        System.out.println("MemberDao 회원가입 성공");
     }
 
     /**
+     * LoginView에서 호출
      * 로그인 메소드
      */
     public int login(String id) throws Exception {
@@ -61,6 +78,7 @@ public class MemberDAO {
     }
 
     /**
+     * SearchPWView에서 호출
      * 비번 찾기 메소드
      */
     public String searchPw(String name, String tel) throws Exception {

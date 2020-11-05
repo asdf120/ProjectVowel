@@ -1,6 +1,6 @@
 package movie.data.vo;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class MemberVO {
     private String member_id;  // 회원아이디

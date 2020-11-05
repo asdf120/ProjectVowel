@@ -8,6 +8,7 @@ public class MovieVO {
     private int audi_num;    // 누적관객 수
 
     public MovieVO() {
+
     }
 
     public MovieVO(String title, int run_time, String director, String actor, int audi_num) {

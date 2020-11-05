@@ -1,10 +1,12 @@
 package movie.view;
 
+import movie.data.MemberDAO;
 import movie.data.vo.MemberVO;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Date;
+import java.text.SimpleDateFormat;
 import javax.swing.*;
 
 public class RegistView extends JFrame {
@@ -20,18 +22,27 @@ public class RegistView extends JFrame {
     int x = 50;
     int y = 55;
     int z = 250;
+
+    MemberDAO memberDao;
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMdd");
+
     public RegistView(){
         super("회원가입");
 
-        String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "전화번호     ", "이메일         ", "생년월일     "};
+        try{
+            memberDao = new MemberDAO();
+            System.out.println("RegistView 디비연결 성공");
+        }catch (Exception e){
+            System.out.println("RegistView 디비연결 실패 " + e.toString());
+        }
 
+        String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "전화번호     ", "이메일         ", "생년월일     "};
 
         //텍스트필드 이메일까지 초기화 생년월일은 따로 초기화
         member_field = new JTextField[6];
         for(int i = 0; i<member_field.length; i++){
             member_field[i] = new JTextField();
         }
-
 
         //라벨 String s로 초기화
         member_label = new JLabel[6];
@@ -89,6 +100,7 @@ public class RegistView extends JFrame {
         //이벤트 받음
         join_button.addActionListener(new EventListner());
         before_button.addActionListener(new EventListner());
+        member_field[5].addActionListener(new EventListner());
 
         membership_panel.add(join_button);
         membership_panel.add(before_button);
@@ -106,16 +118,14 @@ public class RegistView extends JFrame {
 
             Object input = (Object) e.getSource();
 
-            if (input.equals(join_button)) {
+            if (input.equals(join_button) || input.equals(member_field[5])) {   // 가입 버튼 클릭 또는 생년월일까지 입력후 엔터
                 doRegist();
                 System.out.println("가입");
-                int ans = JOptionPane.showConfirmDialog(this, "회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
-                JOptionPane.showMessageDialog(this, "회원 가입 성공!!", "회원가입", JOptionPane.INFORMATION_MESSAGE);
-                dispose();  //프레임 종료
+//                int ans = JOptionPane.showConfirmDialog(this, "회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+//                JOptionPane.showMessageDialog(this, "회원 가입 성공!!", "회원가입", JOptionPane.INFORMATION_MESSAGE);
+//                dispose();  //프레임 종료
 
-            }
-
-            if(input.equals(before_button)){
+            }else if(input.equals(before_button)){
                 System.out.println("이전");
                 dispose();  //프레임 종료
 
@@ -123,15 +133,24 @@ public class RegistView extends JFrame {
         }
     }
 
+    /**
+     * 레지스트 버튼 클릭 뷰
+     */
     public void doRegist(){
-        String id = member_field[0].getText();
-        String password = member_field[1].getText();
-        String name = member_field[2].getText();
-        String tel =member_field[3].getText();
-        String email = member_field[4].getText();
-        Date birth = member_field[5].getText();
+        try{
+            String id = member_field[0].getText();
+            String password = member_field[1].getText();
+            String name = member_field[2].getText();
+            String tel =member_field[3].getText();
+            String email = member_field[4].getText();
+            Date birth = dateFormat.parse(member_field[5].getText()); // Util.date 포맷으로 생년월일 변경해서 birth에 저장
+            System.out.println("143행" + birth);
+            java.sql.Date sqlBirth = new java.sql.Date(birth.getTime());        // sql.date 포맷으로 변경
 
-        MemberVO memberVo = new MemberVO(id,password,name,tel,birth,email);
+            MemberVO memberVo = new MemberVO(id,password,name,tel,sqlBirth,email);
+            memberDao.regist(memberVo);
+        }catch (Exception e){
+            System.out.println("회원가입 실패 : " + e.toString());
+        }
     }
-
 }

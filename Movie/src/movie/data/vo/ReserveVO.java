@@ -14,7 +14,6 @@ public class ReserveVO {
 
     public ReserveVO() {
     }
-
     public ReserveVO(String tel, String theater_no, Date theater_time, String seat_no, int person_num, String pay_sys, int pay_money) {
         this.tel = tel;
         this.theater_no = theater_no;

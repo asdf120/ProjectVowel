@@ -111,6 +111,7 @@ public class LoginView extends JFrame {
                 System.out.println("로그인 버튼");
                 doLogin();
                 JOptionPane.showMessageDialog(this, "로그인 성공!!", "로그인", JOptionPane.INFORMATION_MESSAGE);
+
                 MovieView mv = new MovieView(); //영화창 띄움
                 dispose();  //프레임 종료
             }
