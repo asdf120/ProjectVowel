@@ -1,10 +1,13 @@
 package movie.view;
 
+import movie.data.vo.MemberVO;
+
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Date;
 import javax.swing.*;
 
-public class MemberShipView extends JFrame {
+public class RegistView extends JFrame {
 
     JTextField member_field[];
     JLabel member_label[];
@@ -17,7 +20,7 @@ public class MemberShipView extends JFrame {
     int x = 50;
     int y = 55;
     int z = 250;
-    public MemberShipView(){
+    public RegistView(){
         super("회원가입");
 
         String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "전화번호     ", "이메일         ", "생년월일     "};
@@ -25,10 +28,10 @@ public class MemberShipView extends JFrame {
 
         //텍스트필드 이메일까지 초기화 생년월일은 따로 초기화
         member_field = new JTextField[6];
-        for(int i = 0; i<member_field.length-1; i++){
-            member_field[i] = new JTextField("내용을 입력해주세요");
+        for(int i = 0; i<member_field.length; i++){
+            member_field[i] = new JTextField();
         }
-        member_field[5] = new JTextField("YY/MM/DD 는 생략");
+
 
         //라벨 String s로 초기화
         member_label = new JLabel[6];
@@ -43,7 +46,7 @@ public class MemberShipView extends JFrame {
         }
         //나머지 초기화
         membership_panel = new JPanel();
-        join_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/Join.png"));
+        join_button = new JButton(new ImageIcon("Movie/src/img/RegistView/Join.png"));
         before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
         title_label = new JLabel("회원가입");
 
@@ -101,10 +104,10 @@ public class MemberShipView extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
 
-            JButton input = (JButton) e.getSource();
+            Object input = (Object) e.getSource();
 
             if (input.equals(join_button)) {
-
+                doRegist();
                 System.out.println("가입");
                 int ans = JOptionPane.showConfirmDialog(this, "회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
                 JOptionPane.showMessageDialog(this, "회원 가입 성공!!", "회원가입", JOptionPane.INFORMATION_MESSAGE);
@@ -117,7 +120,18 @@ public class MemberShipView extends JFrame {
                 dispose();  //프레임 종료
 
             }
-
         }
     }
+
+    public void doRegist(){
+        String id = member_field[0].getText();
+        String password = member_field[1].getText();
+        String name = member_field[2].getText();
+        String tel =member_field[3].getText();
+        String email = member_field[4].getText();
+        Date birth = member_field[5].getText();
+
+        MemberVO memberVo = new MemberVO(id,password,name,tel,birth,email);
+    }
+
 }

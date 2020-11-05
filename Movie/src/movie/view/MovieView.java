@@ -22,7 +22,7 @@ public class MovieView extends JFrame{
         movie_panel = new JPanel();
         movie_button = new JButton[6];
         before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
-        mypage_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/마이페이지.png"));
+        mypage_button = new JButton(new ImageIcon("Movie/src/img/RegistView/마이페이지.png"));
         title_label = new JLabel("현재 상영작");
 
         //영화 버튼 초기화

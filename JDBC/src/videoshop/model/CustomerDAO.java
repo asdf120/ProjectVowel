@@ -21,10 +21,7 @@ public class CustomerDAO {
     //###########################################################
     //	DB  control method
     void connectDB() throws Exception {
-//						1. 드라이버를 드라이버메니저에 등록
-//						2. 연결 객체 얻어오기
-        Class.forName("oracle.jdbc.driver.OracleDriver");
-        con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.57:1521:orcl", "team10", "team10");
+        con = DBCon.getInstance();
     }
 
 

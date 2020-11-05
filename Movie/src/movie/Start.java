@@ -10,15 +10,13 @@ public class Start extends JFrame {
 
     public Start() {
         LoginView pnl = new LoginView();
-      //  MemberShipView mv = new MemberShipView();
+        //  RegistView mv = new RegistView();
         pnl.output();
     }
-
 
     public static void main(String[] args) {
         Start mv = new Start();
     }
-
 }
 
 

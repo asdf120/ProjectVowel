@@ -2,6 +2,8 @@
   <library name="ojdbc6">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../app/kosmo_04/product/11.2.0/dbhome_1/jdbc/lib/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JDBC/src/jfreechart/libs/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JDBC/src/jfreechart/libs/jfreechart-1.0.19.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

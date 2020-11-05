@@ -10,13 +10,7 @@ public class VideoDAO {
 	Connection con;
 	
 	public VideoDAO() throws Exception{
-		
-
-		// 1. 드라이버로딩
-		// 2. Connection 연결객체 얻어오기
-        Class.forName("oracle.jdbc.driver.OracleDriver");
-//        con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "kosmo_04", "kosmo");
-		con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.57:1521:orcl", "team10", "team10");
+		con = DBCon.getInstance();
 	}
 	
 	
