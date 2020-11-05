@@ -45,10 +45,8 @@ public class SearchIDView extends JFrame {
         search_button = new JButton(new ImageIcon("Movie/src/img/LoginView/찾기.png"));
         before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
 
-
         //멤버 패널 좌표, 크기 설정
         for(int i=0; i<member_panel.length; i++){
-
             member_panel[i].setBounds(x, y, z, x);
             y+=60;
             System.out.println(y);
@@ -93,10 +91,8 @@ public class SearchIDView extends JFrame {
             JButton input = (JButton) e.getSource();
 
             if (input.equals(search_button)) {
-
                 System.out.println("검색");
                 JOptionPane.showMessageDialog(this, "검색 성공!!", "검색완료", JOptionPane.INFORMATION_MESSAGE);
-
             }
 
             if(input.equals(before_button)){

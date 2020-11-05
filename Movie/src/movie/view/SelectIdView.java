@@ -33,7 +33,6 @@ public class SelectIdView extends JFrame {
         for(int i=0; i<member_panel.length; i++){
             member_panel[i] = new JPanel(new BorderLayout());
         }
-
         id_area = new JTextArea("test");
         title_label = new JLabel("아이디 찾기");
         selectid_panel = new JPanel();

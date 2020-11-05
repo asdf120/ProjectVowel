@@ -13,11 +13,19 @@ public class MemberVO {
     public MemberVO() {
     }
 
-    public MemberVO(String member, String password, String name, String tel, Date birth, String email) {
-        this.member_id = member;
+    public MemberVO(String member_id, String password, String name, String tel, Date birth, String email) {
+        this.member_id = member_id;
         this.password = password;
         this.tel = tel;
         this.name = name;
+        this.birth = birth;
+        this.email = email;
+    }
+
+    public MemberVO(String password, String name, String tel, Date birth, String email) {
+        this.password = password;
+        this.name = name;
+        this.tel = tel;
         this.birth = birth;
         this.email = email;
     }

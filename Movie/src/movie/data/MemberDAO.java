@@ -24,17 +24,32 @@ public class MemberDAO {
      * RegisterView에서 호출
      * 회원가입 메소드
      */
-    public void regist(MemberVO memberVo) throws Exception {
-        String sql = " INSERT INTO member (tel,member_id,password,name,birth,email) values (?,?,?,?,?,?) ";
+    public void regist(MemberVO memberVo,int type) throws Exception {
+        PreparedStatement st;
+        System.out.println("type : " +type);
+        // 회원가입
+        if (type == 1) {
+            String sql = " INSERT INTO member (tel,member_id,password,name,birth,email) values (?,?,?,?,?,?) ";
+            st = con.prepareStatement(sql);
+            System.out.println("31행");
+            st.setString(1, memberVo.getTel());
+            st.setString(2, memberVo.getMember_id());
+            st.setString(3, memberVo.getPassword());
+            st.setString(4, memberVo.getName());
+            st.setDate(5,memberVo.getBirth());
+            st.setString(6, memberVo.getTel());
+        }else{  // 비회원가입
+            String sql = " INSERT INTO member (tel,password,name,birth,email) values (?,?,?,?,?) ";
 
-        PreparedStatement st = con.prepareStatement(sql);
-        System.out.println("31행");
-        st.setString(1, memberVo.getTel());
-        st.setString(2, memberVo.getMember_id());
-        st.setString(3, memberVo.getPassword());
-        st.setString(4, memberVo.getName());
-        st.setDate(5,memberVo.getBirth());
-        st.setString(6, memberVo.getTel());
+            st = con.prepareStatement(sql);
+            System.out.println("31행");
+            st.setString(1, memberVo.getTel());
+            st.setString(2, memberVo.getPassword());
+            st.setString(3, memberVo.getName());
+            st.setDate(4,memberVo.getBirth());
+            st.setString(5, memberVo.getTel());
+        }
+
         System.out.println("38행" + memberVo.getBirth());
         st.executeUpdate();
         System.out.println("40행");

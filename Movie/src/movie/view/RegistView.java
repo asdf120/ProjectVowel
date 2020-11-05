@@ -1,5 +1,6 @@
 package movie.view;
 
+import movie.HintTextField;
 import movie.data.MemberDAO;
 import movie.data.vo.MemberVO;
 
@@ -39,10 +40,12 @@ public class RegistView extends JFrame {
         String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "전화번호     ", "이메일         ", "생년월일     "};
 
         //텍스트필드 이메일까지 초기화 생년월일은 따로 초기화
-        member_field = new JTextField[6];
+        member_field = new HintTextField[6];
         for(int i = 0; i<member_field.length; i++){
-            member_field[i] = new JTextField();
+            member_field[i] = new HintTextField("");
         }
+        member_field[3] = new HintTextField("000-0000-0000 방식으로 표기");
+        member_field[5] = new HintTextField("6자리 숫자로 표기");
 
         //라벨 String s로 초기화
         member_label = new JLabel[6];
@@ -148,7 +151,7 @@ public class RegistView extends JFrame {
             java.sql.Date sqlBirth = new java.sql.Date(birth.getTime());        // sql.date 포맷으로 변경
 
             MemberVO memberVo = new MemberVO(id,password,name,tel,sqlBirth,email);
-            memberDao.regist(memberVo);
+            memberDao.regist(memberVo,1);
         }catch (Exception e){
             System.out.println("회원가입 실패 : " + e.toString());
         }

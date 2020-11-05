@@ -6,8 +6,8 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class HintTextField extends JTextField {
-    Font gainFont = new Font("Tahoma", Font.PLAIN, 11);
-    Font lostFont = new Font("Tahoma", Font.ITALIC, 11);
+    Font gainFont = new Font("굴림", Font.PLAIN, 11);
+    Font lostFont = new Font("굴림", Font.ITALIC, 11);
 
     public HintTextField(final String hint) {
 
