@@ -20,7 +20,6 @@ public class MyPageView extends JFrame{
 
         String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "전화번호     ", "이메일         ", "생년월일     "};
 
-
         //이메일까지 초기화 생년월일은 따로 초기화
         member_field = new JTextField[6];
         for(int i = 0; i<member_field.length-1; i++){
@@ -60,14 +59,6 @@ public class MyPageView extends JFrame{
             y+=60;
             System.out.println(y);
         }
-       /* 위에랑 같은거임
-        member_panel[0].setBounds(50,50, 250, 50);
-        member_panel[1].setBounds(50,110, 250, 50);
-        member_panel[2].setBounds(50,170, 250, 50);
-        member_panel[3].setBounds(50,230, 250, 50);
-        member_panel[4].setBounds(50,290, 250, 50);
-        member_panel[5].setBounds(50,350, 250, 50);
-        */
 
         //멤버쉽 패널에 멤버 패널 추가
         for(int i=0; i<member_panel.length; i++) {

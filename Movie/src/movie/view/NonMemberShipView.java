@@ -116,8 +116,8 @@ public class NonMemberShipView extends JFrame {
             if (input.equals(join_button) || input.equals(non_member_field[4])) {
                 doRegist();
                 System.out.println("가입");
-                int ans = JOptionPane.showConfirmDialog(this, "비회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
-                JOptionPane.showMessageDialog(this, "비회원 가입 성공!!", "비회원가입", JOptionPane.INFORMATION_MESSAGE);
+//                int ans = JOptionPane.showConfirmDialog(this, "비회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+//                JOptionPane.showMessageDialog(this, "비회원 가입 성공!!", "비회원가입", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
                 MovieView mv = new MovieView();
             }
@@ -136,16 +136,13 @@ public class NonMemberShipView extends JFrame {
      */
     public void doRegist(){
         try{
-            String name = non_member_field[0].getText();
-            String password = non_member_field[1].getText();
             String tel = non_member_field[2].getText();
-            String email =non_member_field[3].getText();
             Date birth = dateFormat.parse(non_member_field[4].getText()); // Util.date 포맷으로 생년월일 변경해서 birth에 저장
             System.out.println("129행" + birth);
             java.sql.Date sqlBirth = new java.sql.Date(birth.getTime());        // sql.date 포맷으로 변경
+            MemberVO memberVo = new MemberVO(tel,sqlBirth);
 
-            MemberVO memberVo = new MemberVO(password,name,tel,sqlBirth,email);
-            memberDao.regist(memberVo,2);
+            memberDao.regist(memberVo,2); // 2를 넘겨줌으로써 regist메소드에서 비회워예매로 인식
         }catch (Exception e){
             System.out.println("회원가입 실패 : " + e.toString());
         }

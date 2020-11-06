@@ -22,12 +22,9 @@ public class MemberVO {
         this.email = email;
     }
 
-    public MemberVO(String password, String name, String tel, Date birth, String email) {
-        this.password = password;
-        this.name = name;
+    public MemberVO(String tel, Date birth) {
         this.tel = tel;
         this.birth = birth;
-        this.email = email;
     }
 
     public String getMember_id() {

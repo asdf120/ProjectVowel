@@ -16,17 +16,17 @@ public class MemberDAO {
     }
 
     public void connectDB() throws Exception {
-        con = DbSingleton.getInstance();
+        this.con = DbSingleton.getInstance();
     }
-
 
     /**
      * RegisterView에서 호출
      * 회원가입 메소드
      */
-    public void regist(MemberVO memberVo,int type) throws Exception {
+    public void regist(MemberVO memberVo, int type) throws Exception {
+        int memberType = 0;
         PreparedStatement st;
-        System.out.println("type : " +type);
+        System.out.println("type : " + type);
         // 회원가입
         if (type == 1) {
             String sql = " INSERT INTO member (tel,member_id,password,name,birth,email) values (?,?,?,?,?,?) ";
@@ -36,18 +36,17 @@ public class MemberDAO {
             st.setString(2, memberVo.getMember_id());
             st.setString(3, memberVo.getPassword());
             st.setString(4, memberVo.getName());
-            st.setDate(5,memberVo.getBirth());
+            st.setDate(5, memberVo.getBirth());
             st.setString(6, memberVo.getTel());
-        }else{  // 비회원가입
-            String sql = " INSERT INTO member (tel,password,name,birth,email) values (?,?,?,?,?) ";
+            memberType = 1;
+        } else {  // 비회원가입
+            String sql = " INSERT INTO non_member (tel,birth) values (?,?) ";
 
             st = con.prepareStatement(sql);
             System.out.println("31행");
             st.setString(1, memberVo.getTel());
-            st.setString(2, memberVo.getPassword());
-            st.setString(3, memberVo.getName());
-            st.setDate(4,memberVo.getBirth());
-            st.setString(5, memberVo.getTel());
+            st.setDate(2, memberVo.getBirth());
+            memberType = 2;
         }
 
         System.out.println("38행" + memberVo.getBirth());
@@ -56,6 +55,7 @@ public class MemberDAO {
 
         st.close();
         System.out.println("MemberDao 회원가입 성공");
+//        return memberType;
     }
 
     /**
@@ -63,7 +63,7 @@ public class MemberDAO {
      * 로그인 메소드
      */
     public int login(String id) throws Exception {
-        int result =0;
+        int result = 0;
 
         String sql = "SELECT * FROM member WHERE member_id=?";
 
@@ -74,7 +74,7 @@ public class MemberDAO {
 
         if (rs.next()) {
             result = 0;
-        }else{
+        } else {
             result = -1;
         }
         System.out.println("48행");
@@ -88,8 +88,21 @@ public class MemberDAO {
     /**
      * 아이디 찾기 메소드
      */
-    public void searchId() throws Exception {
+    public String searchId(String tel) throws Exception {
+        String findID = null;
+        String sql ="SELECT member_id FROM member WHERE tel=?";
 
+        PreparedStatement st = con.prepareStatement(sql);
+        st.setString(1, tel);
+        ResultSet rs = st.executeQuery();
+        if (rs.next()) {
+            findID = rs.getString("member_id"); // 찾아온 아이디 담기
+        }
+
+        rs.close();
+        st.close();
+
+        return findID;
     }
 
     /**
@@ -101,12 +114,12 @@ public class MemberDAO {
 
         // sql 작성
         String sql = "SELECT * FROM member WHERE name = ? and tel = ?";
-        System.out.println(sql + ","+ name +"," + tel);
+        System.out.println(sql + "," + name + "," + tel);
         PreparedStatement st = con.prepareStatement(sql);
         st.setString(1, name);
         st.setString(2, tel);
         ResultSet rs = st.executeQuery();
-        if (rs.next()){
+        if (rs.next()) {
             email = rs.getString("EMAIL");
         }
         rs.close();
@@ -117,15 +130,15 @@ public class MemberDAO {
     /**
      * 비번변경 메소드
      */
-    public void changePw(String email,String password) throws Exception {
-         String sql = "UPDATE member SET password = ? WHERE email = ? ";
+    public void changePw(String email, String password) throws Exception {
+        String sql = "UPDATE member SET password = ? WHERE email = ? ";
 
-         PreparedStatement st = con.prepareStatement(sql);
-         st.setString(1,password);
-         st.setString(2,email);
+        PreparedStatement st = con.prepareStatement(sql);
+        st.setString(1, password);
+        st.setString(2, email);
 
-         st.executeUpdate();
+        st.executeUpdate();
 
-         st.close();
+        st.close();
     }
 }

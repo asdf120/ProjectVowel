@@ -10,32 +10,32 @@ CREATE TABLE  member (
 
 CREATE TABLE  movie (
 	title 		VARCHAR2(30),
-            run_time 		NUMBER(3,0) NOT NULL, --200ºÐ ÀÌ»ó ¿µÈ­ Á¸Àçx
+            run_time 		NUMBER(3,0) NOT NULL, --200ï¿½ï¿½ ï¿½Ì»ï¿½ ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½x
 	director 		VARCHAR2(30) NOT NULL,
 	actor 		VARCHAR2(50) NOT NULL,
 	audi_num 	NUMBER NOT NULL ,
    	CONSTRAINT pk_movie_title PRIMARY KEY(title));
 
 CREATE TABLE reserve (
-            reserve_no 	NUMBER, --¿¹¸Å¹øÈ£ PK
-            tel 		CHAR(13), -- ÀüÈ­¹øÈ£ FK(from member)
-            theater_no 	varCHAR2(1), --»ó¿µ°ü ¹øÈ£ FK(from theater)
-            theater_time 	DATE, -- »ó¿µ½Ã°¢ FK(from theater)
-            seat_no  		VARCHAR2(40) NOT NULL, --ÁÂ¼®¹øÈ£ (ÃÖ´ë 8¸í)
-            person_num 	NUMBER NOT NULL, -- ÀÎ¿ø
-            pay_sys 		VARCHAR2(4) DEFAULT 'Ä«µå', -- °áÁ¦¹æ½Ä
-            pay_money 	NUMBER NOT NULL, -- °áÁ¦±Ý¾×
+            reserve_no 	NUMBER, --ï¿½ï¿½ï¿½Å¹ï¿½È£ PK
+            tel 		CHAR(13), -- ï¿½ï¿½È­ï¿½ï¿½È£ FK(from member)
+            theater_no 	varCHAR2(1), --ï¿½ó¿µ°ï¿½ ï¿½ï¿½È£ FK(from theater)
+            start_time 	DATE, -- ï¿½ó¿µ½Ã°ï¿½ FK(from theater)
+            seat_no  		VARCHAR2(40) NOT NULL, --ï¿½Â¼ï¿½ï¿½ï¿½È£ (ï¿½Ö´ï¿½ 8ï¿½ï¿½)
+            person_num 	NUMBER NOT NULL, -- ï¿½Î¿ï¿½
+            pay_sys 		VARCHAR2(4) DEFAULT 'Ä«ï¿½ï¿½', -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            pay_money 	NUMBER NOT NULL, -- ï¿½ï¿½ï¿½ï¿½ï¿½Ý¾ï¿½
      	CONSTRAINT pk_reserve_reserve_no PRIMARY KEY(reserve_no),
        	CONSTRAINT fk_reserve_tel FOREIGN KEY(tel) REFERENCES member(tel),
-       	CONSTRAINT fk_reserve_theater FOREIGN KEY (theater_no,theater_time) REFERENCES theater(theater_no,theater_time),
-       	CONSTRAINT check_reserve_pay_sys CHECK (pay_sys IN ('Ä«µå','Çö±Ý')));
+       	CONSTRAINT fk_reserve_theater FOREIGN KEY (theater_no,start_time) REFERENCES theater(theater_no,start_time),
+       	CONSTRAINT check_reserve_pay_sys CHECK (pay_sys IN ('Ä«ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½')));
 
 CREATE TABLE theater(
-	theater_no 	varchar2(1), --»ó¿µ°ü ¹øÈ£ PK
-	theater_time 	date,  -- »ó¿µ½Ã°¢
-	title 		varchar2(30), -- Á¦¸ñ FK(from movie)
-	seat_num	 	number NOT NULL, -- ÁÂ¼® °¹¼ö
-	CONSTRAINT pk_theater_theater_no PRIMARY KEY(theater_no,theater_time),
+	theater_no 	varchar2(1), --ï¿½ó¿µ°ï¿½ ï¿½ï¿½È£ PK
+	start_time 	date,  -- ï¿½ó¿µ½Ã°ï¿½
+	title 		varchar2(30), -- ï¿½ï¿½ï¿½ï¿½ FK(from movie)
+	seat_num	 	number NOT NULL, -- ï¿½Â¼ï¿½ ï¿½ï¿½ï¿½ï¿½
+	CONSTRAINT pk_theater_theater_no PRIMARY KEY(theater_no,start_time),
 	CONSTRAINT fk_theater_title FOREIGN KEY (title) REFERENCES movie(title));
 
 CREATE sequence seq_reserve_no

@@ -21,7 +21,7 @@ CREATE TABLE reserve (
 	reserve_no 	NUMBER, --예매번호 PK
             tel 		CHAR(13), -- 전화번호 FK(from member)
 	theater_no 	CHAR(1), --상영관 번호 FK(from theater)
-	theater_time 	DATE, -- 상영시각 FK(from theater)
+	start_time 	DATE, -- 상영시각 FK(from theater)
 	seat_no  		VARCHAR2(40) NOT NULL, --좌석번호 (최대 8명)
             person_num 	NUMBER NOT NULL, -- 인원
             pay_sys 		VARCHAR2(4) DEFAULT '카드', -- 결제방식
@@ -29,16 +29,16 @@ CREATE TABLE reserve (
 
      	CONSTRAINT pk_reserve_reserve_no PRIMARY KEY(reserve_no),
        	CONSTRAINT fk_reserve_tel FOREIGN KEY(tel) REFERENCES member(tel),
-       	CONSTRAINT fk_reserve_theater FOREIGN KEY (theater_no,theater_time) REFERENCES theater(theater_no,theater_time),
+       	CONSTRAINT fk_reserve_theater FOREIGN KEY (theater_no,start_time) REFERENCES theater(theater_no,start_time),
        	CONSTRAINT check_reserve_pay_sys CHECK (pay_sys IN ('카드','현금')));
 
 CREATE TABLE theater(
 	theater_no 	char(1), --상영관 번호 PK
-	theater_time 	date,  -- 상영시각
+	start_time 	date,  -- 상영시각
 	title 		varchar2(30), -- 제목 FK(from movie)
 	seat_num	 	number NOT NULL, -- 좌석 갯수
 
-	CONSTRAINT pk_theater_theater_no PRIMARY KEY(theater_no,theater_time),
+	CONSTRAINT pk_theater_theater_no PRIMARY KEY(theater_no,start_time),
 	CONSTRAINT fk_theater_title FOREIGN KEY (title) REFERENCES movie(title));
 
 CREATE sequence seq_reserve_no

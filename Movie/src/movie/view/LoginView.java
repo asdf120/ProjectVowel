@@ -1,4 +1,5 @@
 package movie.view;
+import movie.HintTextField;
 import movie.data.MemberDAO;
 
 import java.awt.*;
@@ -42,8 +43,8 @@ public class LoginView extends JFrame {
         title_label = new JLabel("영화 예매");
         id_label = new JLabel(new ImageIcon("Movie/src/img/member/id.png"));
         pw_label = new JLabel(new ImageIcon("Movie/src/img/member/pw.png"));
-        id_field = new JTextField("Username");
-        pw_field = new JTextField("＊＊＊＊");
+        id_field = new HintTextField("ID");
+        pw_field = new HintTextField("PASSWORD");
         select_id = new JButton(new ImageIcon("Movie/src/img/LoginView/아이디찾기.png"));
         select_pw = new JButton(new ImageIcon("Movie/src/img/LoginView/비밀번호찾기.png"));
     }
@@ -70,6 +71,7 @@ public class LoginView extends JFrame {
         }
         select_id.addActionListener(new EventListner());
         select_pw.addActionListener(new EventListner());
+        pw_field.addActionListener(new EventListner());
 
         //패널에 버튼 추가
         for (JButton data : logins_button) {
@@ -105,15 +107,11 @@ public class LoginView extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
 
-            JButton input = (JButton) e.getSource();
+            Object input = (Object) e.getSource();
 
-            if (input.equals(logins_button[0])) {
+            if (input.equals(logins_button[0]) || input.equals(pw_field)) {
                 System.out.println("로그인 버튼");
                 doLogin();
-                JOptionPane.showMessageDialog(this, "로그인 성공!!", "로그인", JOptionPane.INFORMATION_MESSAGE);
-
-                MovieView mv = new MovieView(); //영화창 띄움
-                dispose();  //프레임 종료
             }
             if (input.equals(logins_button[1])) {
                 System.out.println("비회원 버튼");
@@ -144,8 +142,8 @@ public class LoginView extends JFrame {
             System.out.println(result);
             if(result == 0) {
                 JOptionPane.showMessageDialog(this, "로그인 성공!!", "로그인", JOptionPane.INFORMATION_MESSAGE);
-                MovieView mv = new MovieView(); //영화창 띄움
                 dispose();  //프레임 종료
+                new MovieView(); //영화창 띄움
             }else if(result == -1) {
                 JOptionPane.showMessageDialog(this, "로그인 실패", "로그인", JOptionPane.INFORMATION_MESSAGE);
             }

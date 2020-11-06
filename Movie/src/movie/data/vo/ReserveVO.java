@@ -1,12 +1,11 @@
 package movie.data.vo;
 
-import java.util.Date;
-
 public class ReserveVO {
     private int reserve_no; //예매번호
-    private String tel;   // 회원전화번호
+    private String member_tel;   // 회원전화번호
+    private String non_member_tel; // 비회원 전화번호
     private String theater_no;  // 상영관번호
-    private Date theater_time;  // 상영시각
+    private String theater_time;  // 상영시각
     private String seat_no; //좌석번호
     private int person_num; // 인원
     private String pay_sys; // 결제방법
@@ -14,26 +13,25 @@ public class ReserveVO {
 
     public ReserveVO() {
     }
-    public ReserveVO(String tel, String theater_no, Date theater_time, String seat_no, int person_num, String pay_sys, int pay_money) {
-        this.tel = tel;
-        this.theater_no = theater_no;
-        this.theater_time = theater_time;
-        this.seat_no = seat_no;
-        this.person_num = person_num;
-        this.pay_sys = pay_sys;
-        this.pay_money = pay_money;
+
+    public String getMember_tel() {
+        return member_tel;
+    }
+
+    public void setMember_tel(String member_tel) {
+        this.member_tel = member_tel;
+    }
+
+    public String getNon_member_tel() {
+        return non_member_tel;
+    }
+
+    public void setNon_member_tel(String non_member_tel) {
+        this.non_member_tel = non_member_tel;
     }
 
     public int getReserve_no() {
         return reserve_no;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
     }
 
     public String getTheater_no() {
@@ -44,11 +42,11 @@ public class ReserveVO {
         this.theater_no = theater_no;
     }
 
-    public Date getTheater_time() {
+    public String getTheater_time() {
         return theater_time;
     }
 
-    public void setTheater_time(Date theater_time) {
+    public void setTheater_time(String theater_time) {
         this.theater_time = theater_time;
     }
 

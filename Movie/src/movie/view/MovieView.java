@@ -1,8 +1,14 @@
 package movie.view;
 
-import java.awt.*;
-import java.awt.event.*;
+import movie.data.TheaterDAO;
+import movie.data.vo.TheaterVO;
+
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MovieView extends JFrame{
 
@@ -10,6 +16,7 @@ public class MovieView extends JFrame{
     JLabel title_label;
     JButton before_button, mypage_button;
     JButton movie_button[];
+    String[] movie_title;
 
     //영화 좌표값들 임의설정
     int x = 50;
@@ -17,12 +24,35 @@ public class MovieView extends JFrame{
     int z = 150;
     int zz = 200;
 
+    TheaterDAO theaterDao;
+    List<TheaterVO> movieList = new ArrayList<>();
+
     public MovieView() {
         super("영화 목록");
+        try{
+            theaterDao = new TheaterDAO();
+
+            /**
+             * 로그인 성공시 MovieTheater를 통해 Thaeter 테이블의 영화목록을 가져옴
+             */
+            movieList = theaterDao.showMovie();
+            for(TheaterVO movieTitle : movieList){
+                System.out.println("상영 중 영화 목록 : " + movieTitle.getTitle());
+                System.out.println("상영관 : " + movieTitle.getTheater_no());
+                System.out.println("상영 시각 : " +movieTitle.getStart_time());
+            }
+        }catch (Exception e){
+            System.out.println("TheaterView() 디비 연결 실패 " + e.toString());
+        }
+
+        movie_title = new String[]{"위플래쉬", "다만 악에서 구하소서", "담보", "도굴", "바스켓볼 다이어리", "삼진그룹 영어토익반"};
         movie_panel = new JPanel();
         movie_button = new JButton[6];
         before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
+
+        //TODO 비회원이면 setVisible(false) 처리할것
         mypage_button = new JButton(new ImageIcon("Movie/src/img/MemberShipView/마이페이지.png"));
+
         title_label = new JLabel("현재 상영작");
 
         //영화 버튼 초기화
@@ -81,19 +111,18 @@ public class MovieView extends JFrame{
 
             JButton input = (JButton) e.getSource();
 
-
             for(int i = 0; i< movie_button.length; i++){
-                if(input.equals(movie_button[i])){   // 메뉴선택
-                    System.out.println("영화" + i + "번 버튼 클릭");
+                if(input.equals(movie_button[i])){   // 영화 선택
+                    System.out.println("영화" + movie_title[i] + "번 버튼 클릭");
+                    //TODO movieList(title,stat_time,theater_no) 같이 넘겨주기
+                    new ReserveView(movie_title[i]);   //영화 선택시 예약 뷰를 띄움
                 }
             }
-
             if(input.equals(before_button)){
                 dispose();  //프레임 종료
             }
-
             if(input.equals(mypage_button)){
-                MyPageView mv = new MyPageView();   // 마이페이지 창 띄움
+                new MyPageView();   // 마이페이지 창 띄움
             }
         }
     }
