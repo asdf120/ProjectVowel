@@ -1,0 +1,34 @@
+create or replace procedure insert_theater_info -- 프로시저 생성
+is
+    begin
+    -- 00:00, 02:15, 04:30, 12:00, 15:45, 20:00
+        insert into theater (theater_no,start_time,title,seat_num)
+                values (1,sysdate,'도굴',40); 
+        insert into theater (theater_no,start_time,title,seat_num)
+                values (1,(sysdate + 2/24 + 15/(24*60)),'도굴',40);
+        insert into theater (theater_no,start_time,title,seat_num)
+                values (1,(sysdate + 4/24 + 30/(24*60)),'도굴',40);
+        insert into theater (theater_no,start_time,title,seat_num)
+                values (1,(sysdate + 1/24),'도굴',40);   
+        insert into theater (theater_no,start_time,title,seat_num)
+                values (1,(sysdate + 15/24 + 45/(24*60)),'도굴',40);
+        insert into theater (theater_no,start_time,title,seat_num)
+                values (1,(sysdate + 20/24),'도굴',40);
+end;
+
+exec insert_theater_info; 프로시저 실행
+
+BEGIN DBMS_SCHEDULER.CREATE_JOB(
+  JOB_NAME => 'theater_scheduler'   -- DBMS_SCHEDULE 내에서 사용 될 JOB 이름 지정
+  , JOB_TYPE => 'STORED_PROCEDURE'
+  , JOB_ACTION => 'INSERT_theater_info'    -- 실제 실행될 프로그램을 적는 부분
+  , START_DATE => (SYSDATE+3/(24*60))                         -- 처음 시작될 시간 지정
+  , REPEAT_INTERVAL => 'FREQ=minutely; INTERVAL=1'      -- 반복 주기 지정
+  );
+END;
+
+BEGIN dbms_scheduler.enable('theater_scheduler'); 
+END; 
+
+BEGIN dbms_scheduler.disable('theater_scheduler'); 
+END; 
