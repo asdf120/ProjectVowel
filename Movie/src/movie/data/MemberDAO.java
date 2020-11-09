@@ -1,6 +1,7 @@
 package movie.data;
 
 import movie.data.vo.MemberVO;
+import movie.data.vo.ReserveVO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -37,7 +38,7 @@ public class MemberDAO {
             st.setString(3, memberVo.getPassword());
             st.setString(4, memberVo.getName());
             st.setDate(5, memberVo.getBirth());
-            st.setString(6, memberVo.getTel());
+            st.setString(6, memberVo.getEmail());
             memberType = 1;
         } else {  // 비회원가입
             String sql = " INSERT INTO non_member (tel,birth) values (?,?) ";
@@ -62,8 +63,8 @@ public class MemberDAO {
      * LoginView에서 호출
      * 로그인 메소드
      */
-    public int login(String id) throws Exception {
-        int result = 0;
+    public ReserveVO login(String id) throws Exception {
+        ReserveVO reserveVo = new ReserveVO();
 
         String sql = "SELECT * FROM member WHERE member_id=?";
 
@@ -73,15 +74,15 @@ public class MemberDAO {
         ResultSet rs = st.executeQuery();
 
         if (rs.next()) {
-            result = 0;
+            reserveVo.setMember_tel(rs.getString("tel"));
         } else {
-            result = -1;
+            reserveVo.setMember_tel(null);
         }
         System.out.println("48행");
         rs.close();
         st.close();
 
-        return result;
+        return reserveVo;
 
     }
 

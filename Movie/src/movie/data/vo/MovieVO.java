@@ -6,6 +6,8 @@ public class MovieVO {
     private String director; // 감독
     private String actor;    // 배우
     private int audi_num;    // 누적관객 수
+    private String end_day; // 상영종료날짜
+    private String img_loc; // 이미지 경로
 
     public MovieVO() {
 
@@ -57,5 +59,21 @@ public class MovieVO {
 
     public void setAudi_num(int audi_num) {
         this.audi_num = audi_num;
+    }
+
+    public String getEnd_day() {
+        return end_day;
+    }
+
+    public void setEnd_day(String end_day) {
+        this.end_day = end_day;
+    }
+
+    public String getImg_loc() {
+        return img_loc;
+    }
+
+    public void setImg_loc(String img_loc) {
+        this.img_loc = img_loc;
     }
 }

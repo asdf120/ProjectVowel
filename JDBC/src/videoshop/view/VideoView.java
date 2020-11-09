@@ -82,7 +82,6 @@ public class VideoView extends JPanel {
                 System.out.println(video_no);
                 try{
                     videoVO = videoDAO.searchByPk(video_no);
-
                     comVideoJanre.setSelectedItem(videoVO.getGenre());
                     tfVideoTitle.setText(videoVO.getTitle());
                     tfVideoDirector.setText(videoVO.getDirector());

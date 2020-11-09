@@ -1,6 +1,8 @@
 package movie.view;
 import movie.HintTextField;
+import movie.data.DbSingleton;
 import movie.data.MemberDAO;
+import movie.data.vo.ReserveVO;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -17,12 +19,14 @@ public class LoginView extends JFrame {
     JTextField id_field, pw_field;
 
     MemberDAO memberDao;
+    ReserveVO reserveVo;
 
     public LoginView() {
         super("CGV 영화 예매");
 
         try{
             memberDao = new MemberDAO();
+            reserveVo = new ReserveVO();
             System.out.println("LoginView 디비연결 성공");
         }catch (Exception e){
             System.out.println("LoginView 디비연결 실패" + e.toString());
@@ -138,14 +142,13 @@ public class LoginView extends JFrame {
         String id =  id_field.getText();
         System.out.println(id);
         try {
-            int result = memberDao.login(id); // 있으면 0, 없으면 -1 리턴됌
-            System.out.println(result);
-            if(result == 0) {
-                JOptionPane.showMessageDialog(this, "로그인 성공!!", "로그인", JOptionPane.INFORMATION_MESSAGE);
-                dispose();  //프레임 종료
-                new MovieView(); //영화창 띄움
-            }else if(result == -1) {
+            reserveVo = memberDao.login(id); // 있으면 회원번호가 리턴
+            if(reserveVo.getMember_tel() == null) {    // 회원번호가 없으므로 로그인실패
                 JOptionPane.showMessageDialog(this, "로그인 실패", "로그인", JOptionPane.INFORMATION_MESSAGE);
+            }else {
+                dispose();  //프레임 종료
+                //TODO 회원번호 넘겨줄것
+                new MovieView(reserveVo); //영화창 띄움
             }
         } catch (Exception e) {
             System.out.println("로그인 에러"+e.toString());

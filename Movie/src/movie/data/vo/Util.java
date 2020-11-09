@@ -53,8 +53,8 @@ public class Util {
         weeks[0] = "오늘"; //오늘의 요일을 오늘로 바꿈
         weeks[1] = "내일"; //내일의 요일을 내일로 바꿈
 
-        System.out.println(today);
-        System.out.println(day);
+        System.out.println("Util 56행 " + today);
+        System.out.println("Util 57행 " + day);
 
 
     }

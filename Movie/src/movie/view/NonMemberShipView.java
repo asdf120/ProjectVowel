@@ -3,6 +3,7 @@ package movie.view;
 import movie.HintTextField;
 import movie.data.MemberDAO;
 import movie.data.vo.MemberVO;
+import movie.data.vo.ReserveVO;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -26,6 +27,7 @@ public class NonMemberShipView extends JFrame {
     int z = 250;
 
     MemberDAO memberDao;
+    ReserveVO reserveVo;
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMdd");
 
     public NonMemberShipView(){
@@ -33,6 +35,7 @@ public class NonMemberShipView extends JFrame {
 
         try{
             memberDao = new MemberDAO();
+            reserveVo = new ReserveVO();
             System.out.println("NonMemberShipView 디비연결 성공");
         }catch (Exception e){
             System.out.println("NonMemberShipView 디비연결 실패 " + e.toString());
@@ -119,7 +122,7 @@ public class NonMemberShipView extends JFrame {
 //                int ans = JOptionPane.showConfirmDialog(this, "비회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
 //                JOptionPane.showMessageDialog(this, "비회원 가입 성공!!", "비회원가입", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
-                MovieView mv = new MovieView();
+
             }
 
             if(input.equals(before_button)){
@@ -139,10 +142,13 @@ public class NonMemberShipView extends JFrame {
             String tel = non_member_field[2].getText();
             Date birth = dateFormat.parse(non_member_field[4].getText()); // Util.date 포맷으로 생년월일 변경해서 birth에 저장
             System.out.println("129행" + birth);
+
             java.sql.Date sqlBirth = new java.sql.Date(birth.getTime());        // sql.date 포맷으로 변경
             MemberVO memberVo = new MemberVO(tel,sqlBirth);
-
             memberDao.regist(memberVo,2); // 2를 넘겨줌으로써 regist메소드에서 비회워예매로 인식
+
+            reserveVo.setNon_member_tel(tel);
+            new MovieView(reserveVo);
         }catch (Exception e){
             System.out.println("회원가입 실패 : " + e.toString());
         }

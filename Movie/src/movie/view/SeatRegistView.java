@@ -1,11 +1,13 @@
 package movie.view;
 
+import movie.data.SeatDAO;
 import movie.data.vo.ReserveVO;
+import movie.data.vo.SeatVO;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.util.ArrayList;
 
 public class SeatRegistView extends JFrame {
 
@@ -16,13 +18,14 @@ public class SeatRegistView extends JFrame {
 
     JLabel l_Screen, l_Theater_no, l_Title, l_TypeCount, l_Price;
     JPanel p_Seat, p_Center, p_info;
-
+    SeatDAO seatDAO;
+    SeatVO[][] sv;
     //영화표 가격들
     int benefit = 7000;
     int teenager = 9000;
     int normal = 11000;
 
-    ReserveVO vo;
+    ReserveVO reserveVo;
     String[] type;      //인자로 받은 사람 타입으르 저장
     StringBuffer str;   //화면에 사람 타입 + 수량을 찍기 위한 StringBuffer 선언 ex) 일반 3
 
@@ -36,19 +39,31 @@ public class SeatRegistView extends JFrame {
 
 
     //좌석 저장
-    String[] list;
+    ArrayList<String> seatList;
 
-
-    public SeatRegistView(ReserveVO vo, String[] type, int[] count) {
+    public SeatRegistView(ReserveVO reserveVo, String[] type, int[] count) {
 
         super("좌석");
 
-        this.vo = vo;
+        this.reserveVo = reserveVo;
         this.type = type;
         this.count = count;
 
+
+
+        sv = new SeatVO[5][9];
+        try {
+            seatDAO = new SeatDAO();
+
+            sv = seatDAO.regist();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
         //8*3 인원선택시 24까지만 추가할 수 있음
-        list = new String[24];
+        seatList = new ArrayList();
 
         str = new StringBuffer();
         //타입과 카운트를 붙임
@@ -61,24 +76,27 @@ public class SeatRegistView extends JFrame {
 
         //총가격 계산
         price = count[0] * normal + count[1] * teenager + count[2] * benefit;
-        vo.setPay_money(price);
+        reserveVo.setPay_money(price);
 
-        String theather_no = "    " + vo.getTheater_no() + "(KOSMO) 6층";
-
+        String theather_no = "    " + reserveVo.getTheater_no() + "(KOSMO) 6층";
 
         b_Seat = new JButton[5][9];
-        str_Seat = new String[][]{{"A01", "A02", "A03", "A04", "A05", "A06", "A07", "A08", "A09"}, {"B01", "B02", "B03", "B04", "B05", "B06", "B07", "B08", "B09"},
-                {"C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09"}, {"D01", "D02", "D03", "D04", "D05", "D06", "D07", "D08", "D09"}, {"F01", "F02", "F08", "F09"}};
-
+        String status = "N";
         //좌석 버튼 초기화
         loop:
-        for (int i = 0; i < b_Seat.length; i++) {
-            for (int j = 0; j < str_Seat[i].length; j++) {
+        for (int i = 0; i < sv.length; i++) {
+            for (int j = 0; j < sv[i].length; j++) {
                 if (i == 4 && j == 4) {
-
                     break loop;
                 }
-                b_Seat[i][j] = new JButton(str_Seat[i][j]);
+                b_Seat[i][j] = new JButton(sv[i][j].addColRow(sv[i][j].getRow(), sv[i][j].getCol()));
+//                System.out.println("SeatRegistView 95행 : " +sv[i][j].getStatus());
+                if(sv[i][j].getStatus().equals(status)){
+                    System.out.println("status if들어옴");
+                    b_Seat[i][j].setEnabled(false);
+                }
+
+
             }
         }
 
@@ -91,11 +109,12 @@ public class SeatRegistView extends JFrame {
         b_PayCancel = new JButton(new ImageIcon("Movie/src/img/결제취소.png"));
 
         l_Theater_no = new JLabel(theather_no);
-        l_Title = new JLabel("SeatRegistView 영화제목 ");
+        //TODO ReserveVO 확인
+        l_Title = new JLabel("    " + "SeatRegistView 115행");
         l_TypeCount = new JLabel("    " + String.valueOf(str));
         l_Price = new JLabel(String.valueOf(price) + "원");
 
-        l_Screen = new JLabel(new ImageIcon("src/img/screen.png"));
+        l_Screen = new JLabel(new ImageIcon("Movie/src/img/screen.png"));
         p_Seat.setLayout(null);
 
         p_info.setBackground(Color.white);
@@ -144,7 +163,7 @@ public class SeatRegistView extends JFrame {
 
                     break loop3;
                 }
-                b_Seat[i][j].addActionListener(new EventListner());
+                b_Seat[i][j].addMouseListener(new ClickListenr());
                 p_Center.add(b_Seat[i][j]);
             }
         }
@@ -168,6 +187,26 @@ public class SeatRegistView extends JFrame {
         setVisible(true);
 
     }
+    class ClickListenr extends MouseAdapter implements MouseListener{
+        //TODO 다시 클릭하면 취소되기
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            JButton jButton = (JButton) e.getSource();
+            for (int i = 0; i < b_Seat.length; i++) {
+                for (int j = 0; j < b_Seat[i].length; j++) {
+                    if (jButton.equals(b_Seat[i][j])) {
+                        seatList.add(sv[i][j].addColRow(sv[i][j].getRow(), sv[i][j].getCol()));
+                        b_Seat[i][j].setEnabled(false);
+                        System.out.println("SeatRegistView 205행 seatList 크기 : " +seatList.size());
+                        if (reserveVo.getPerson_num() == seatList.size()) {
+                            JOptionPane.showMessageDialog(null,"인원수만큼 클릭 완료");
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 
     class EventListner extends Component implements ActionListener {
 
@@ -176,25 +215,27 @@ public class SeatRegistView extends JFrame {
             JButton input = (JButton) e.getSource();
 
             if (input.equals(b_Pay)) {
-                PayView pv = new PayView(list, str, vo);
-
+                System.out.println(seatList.size());
+                if (reserveVo.getPerson_num() != seatList.size()) {
+                    JOptionPane.showMessageDialog(null, "좌석을 선택해주세요");
+                }else{
+                    //TODO 바꿀것
+                    new PayView(seatList, str, reserveVo);
+                }
+                for(String result : seatList){
+                    System.out.println("결과 :"+result);
+                }
             }
 
             if (input.equals(b_PayCancel)) {
                 System.out.println("결제취소");
                 dispose();
             }
-            loop4:
-            for (int i = 0; i < b_Seat.length; i++) {
-                for (int j = 0; j < b_Seat[i].length; j++) {
-                    if (input.equals(b_Seat[i][j])) {
-                        list[i] = str_Seat[i][j];
-                        System.out.println(list[i]);
 
-                    }
-                }
-            }
+
+
         }
+
 
     }
 }

@@ -27,8 +27,12 @@ BEGIN DBMS_SCHEDULER.CREATE_JOB(
   );
 END;
 
-BEGIN dbms_scheduler.enable('theater_scheduler'); 
-END; 
+BEGIN dbms_scheduler.enable('theater_scheduler');
+END;
+
+BEGIN DBMS_SCHEDULER.RUN_JOB('SCHEDULER_JOB_TEST02');
+END;
+
 
 BEGIN dbms_scheduler.disable('theater_scheduler'); 
 END; 

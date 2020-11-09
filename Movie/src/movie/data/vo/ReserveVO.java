@@ -5,7 +5,7 @@ public class ReserveVO {
     private String member_tel;   // 회원전화번호
     private String non_member_tel; // 비회원 전화번호
     private String theater_no;  // 상영관번호
-    private String theater_time;  // 상영시각
+    private String start_time;  // 상영시각
     private String seat_no; //좌석번호
     private int person_num; // 인원
     private String pay_sys; // 결제방법
@@ -42,12 +42,12 @@ public class ReserveVO {
         this.theater_no = theater_no;
     }
 
-    public String getTheater_time() {
-        return theater_time;
+    public String getStart_time() {
+        return start_time;
     }
 
-    public void setTheater_time(String theater_time) {
-        this.theater_time = theater_time;
+    public void setStart_time(String start_time) {
+        this.start_time = start_time;
     }
 
     public String getSeat_no() {

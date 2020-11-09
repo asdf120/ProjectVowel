@@ -9,9 +9,6 @@ import javax.swing.*;
 
 public class SeatCountView extends JFrame {
 
-    String info;            //생성자 인자로 받은 info를 저장하기 위함
-    String movie_Time;      //생성자 인자로 받은 movie_Time 저장하기 위함
-
     String person_type[] = { "일반", "청소년", "우대" };     // 예매하시는 분들 타입을 비교해야되기 때문에 선언
 
     JButton[] b_Normal;     //일반에 해당되는 1~8까지 버튼 선언
@@ -23,7 +20,7 @@ public class SeatCountView extends JFrame {
     JLabel l_Img, l_Title, l_Screen, l_MovieTime, l_Person;
 
     JLabel[] l_Label;
-    ReserveVO vo;
+    ReserveVO reserveVo;
 
     //버튼 좌표 임의
     int b_x=100;
@@ -35,19 +32,13 @@ public class SeatCountView extends JFrame {
     int count[];
 
 
-    public SeatCountView(ReserveVO vo, String info, String movie_Time){
+    public SeatCountView(ReserveVO reserveVo){  // reserveVo로 상영관, 시간 받음
         super("인원 선택");
-        this.info = info;
-        this.movie_Time = movie_Time;
-        this.vo = vo;
+
+        this.reserveVo = reserveVo;
         count = new int[3];
 
-        //잘받아왔나 찍어봄..
-        String time = info + " " + movie_Time;
-        System.out.println("SeatCountView() 47행" +info);
-        System.out.println("SeatCountView() 48행" +movie_Time);
-
-        System.out.println("SeatCountView() 50행" +vo.getTheater_time());
+        System.out.println("SeatCountView() 50행" +reserveVo.getStart_time());
 
         //버튼 라벨 패널 등등 초기화
         b_SeatChoose = new JButton(new ImageIcon("Movie/src/img/좌석선택.png"));
@@ -60,7 +51,7 @@ public class SeatCountView extends JFrame {
         b_Benefit = new JButton[8];
         l_Label = new JLabel[3];
         l_Title = new JLabel("SeatCountView 62행 영화제목");
-        l_MovieTime = new JLabel(time);
+        l_MovieTime = new JLabel(reserveVo.getStart_time());
 
         p_Screen = new JPanel();
         l_Screen = new JLabel(new ImageIcon("Movie/src/img/좌석.png"));
@@ -172,11 +163,12 @@ public class SeatCountView extends JFrame {
             }
 
          if(input.equals(b_SeatChoose)){
-             vo.setPerson_num(count[0] + count[1] + count[2]);  //저장된 총 카운트를 Person_num에 저장함
-             System.out.println(vo.getPerson_num());
-             System.out.println(vo.getTheater_time());
-             System.out.println(vo.getTheater_no());
-             new SeatRegistView(vo, person_type, count);   //SeatRegistView에서 필요한 정보들을 넘겨줌
+             reserveVo.setPerson_num(count[0] + count[1] + count[2]);  //저장된 총 카운트를 Person_num에 저장함
+             System.out.println("SeatCountView 170행 전체인원수 : " + reserveVo.getPerson_num());
+             System.out.println("SeatCountView 171행 시작시간 : " +reserveVo.getStart_time());
+             System.out.println("SeatCountView 172행 상영관 : " + reserveVo.getTheater_no());
+             // 전체인원수, 시작시각, 상영관 넘겨줌
+             new SeatRegistView(reserveVo, person_type, count);   //SeatRegistView에서 필요한 정보들을 넘겨줌
 
              dispose();
          }

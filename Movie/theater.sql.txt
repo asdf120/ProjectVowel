@@ -17,18 +17,32 @@ create table non_member(
 CREATE TABLE  movie (
             title 		VARCHAR2(30),
             run_time 		NUMBER(3,0) NOT NULL, --200분 이상 영화 존재x
+	        start_day		DATE NOT NULL, //상영 시작 날짜
+	        end_day		DATE NOT NULL, //상영 마감 날짜
             director 		VARCHAR2(30) NOT NULL,
             actor 		VARCHAR2(50) NOT NULL,
             audi_num 	NUMBER NOT NULL ,
             CONSTRAINT pk_movie_title PRIMARY KEY(title));
+
 -- 상영관 테이블
 CREATE TABLE theater(
 	theater_no 	varchar2(1), --상영관 번호 PK
 	start_time 	date,  -- 상영시각
 	title 		varchar2(30), -- 제목 FK(from movie)
-	seat_num	 	number NOT NULL,  -- 좌석 갯수
 	CONSTRAINT pk_theater_theater_no PRIMARY KEY(theater_no,start_time),
 	CONSTRAINT fk_theater_title FOREIGN KEY (title) REFERENCES movie(title));
+
+-- 상영관+시간별 좌석 테이블
+
+CREATE TABLE theater_seat(
+	theater_no 	varchar2(1),
+	start_time 	date,
+	row_no		varchar(1),		--행	(A)
+	column_no	varchar(2),		--열	(01~09)
+	seat_status	varchar(1),		--좌석 선택 여부
+	CONSTRAINT fk_theater1_time2_seat FOREIGN KEY (theater_no, start_time) REFERENCES theater(theater_no, start_time)
+);
+
 
 -- 예매 테이블
 CREATE TABLE reserve (
@@ -43,7 +57,7 @@ CREATE TABLE reserve (
             pay_money 	NUMBER NOT NULL, -- 결제금액
      	CONSTRAINT pk_reserve_reserve_no PRIMARY KEY(reserve_no),
        	CONSTRAINT fk_reserve_member_tel FOREIGN KEY(member_tel) REFERENCES member(tel),
-        CONSTRAINT fk_reserve_non_member_tel FOREIGN KEY(non_member_tel) REFERENCES non_member(tel),
+        	CONSTRAINT fk_reserve_non_member_tel FOREIGN KEY(non_member_tel) REFERENCES non_member(tel),
        	CONSTRAINT fk_reserve_theater FOREIGN KEY (theater_no,start_time) REFERENCES theater(theater_no,start_time),
        	CONSTRAINT check_reserve_pay_sys CHECK (pay_sys IN ('카드','현금')));
         

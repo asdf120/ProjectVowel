@@ -8,6 +8,9 @@ public class TheaterVO {
     private String title;       // 영화제목
     private int seat_num; // 좌석갯수
 
+    // 러닝타임으로 시간을 계산하기 위해 필요
+    private int run_time;
+
     public TheaterVO() {
     }
 
@@ -42,5 +45,13 @@ public class TheaterVO {
 
     public void setSeat_num(int seat_num) {
         this.seat_num = seat_num;
+    }
+
+    public int getRun_time() {
+        return run_time;
+    }
+
+    public void setRun_time(int run_time) {
+        this.run_time = run_time;
     }
 }

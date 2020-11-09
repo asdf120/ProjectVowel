@@ -1,5 +1,6 @@
 package movie.view;
 
+import movie.data.ReserveDAO;
 import movie.data.vo.ReserveVO;
 import movie.data.vo.Util;
 
@@ -7,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class PayView extends JFrame {
 
@@ -15,32 +17,40 @@ public class PayView extends JFrame {
     JLabel l_Pay, l_PayKind, l_Title, l_Date, l_Seat, l_Count, l_Price;
 
     JPanel p_Pay;
-    ReserveVO vo;
+    ReserveVO reserveVo;
+    ReserveDAO reserveDao;
     StringBuffer str;
-    String[] list;
-    Util u;
+    ArrayList<String> list;
+    Util util;
 
-    PayView(String[] list, StringBuffer str, ReserveVO vo) {
-
+    PayView(ArrayList<String> list, StringBuffer str, ReserveVO ReserveVo) {
         super("결제");
 
-        this.vo = vo;
+        try{
+            reserveDao = new ReserveDAO();
+        }catch (Exception e){
+            System.out.println("PayView 디비 연결 실패 :"+ e.toString());
+        }
+
+        this.reserveVo = ReserveVo;
         this.str = str;
         this.list = list;
-        u = new Util();
+        util = new Util();
 
-        StringBuffer sb = new StringBuffer(vo.getTheater_no());
+        StringBuffer sb = new StringBuffer(ReserveVo.getTheater_no()+"관");
 
         //좌석을 StringBuffer에 append
         loop:
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] != null) {
-                sb.append(" " + list[i] + ",");
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) != null) {
+                sb.append(" " + list.get(i) + ",");
             }
         }
         //마지막 , 제거
-        String sb2 = sb.substring(0, sb.length()-1);
-
+        String seat_no = sb.substring(0, sb.length()-1);
+        // ReserveVo에 좌석 저장
+        reserveVo.setSeat_no(seat_no);
+        System.out.println("44행 : " + seat_no);
 
         //초기화
         b_Pay_Card = new JButton(new ImageIcon("Movie/src/img/카드.png"));
@@ -53,11 +63,10 @@ public class PayView extends JFrame {
         p_Pay = new JPanel();
         //라벨에 제목, 시간, 좌석, 가격 등의 정보를 담음
         l_Title = new JLabel("    " + "영화제목");
-        l_Date = new JLabel("    " + u.today + " - " + vo.getTheater_time() + "~ " +vo.getTheater_time());
-        l_Seat = new JLabel(String.valueOf("    " + sb2));
+        l_Date = new JLabel("    " + util.today + " - " + ReserveVo.getStart_time() + "~ " +ReserveVo.getStart_time());
+        l_Seat = new JLabel(String.valueOf("    " + seat_no));
         l_Count = new JLabel(String.valueOf("    " + str));
-        l_Price = new JLabel(String.valueOf("    " + vo.getPay_money() + "원"));
-
+        l_Price = new JLabel("    " + ReserveVo.getPay_money() + "원");
 
         //좌표설정
         l_Title.setBounds(10, 50, 300, 50);
@@ -96,14 +105,21 @@ public class PayView extends JFrame {
         setSize(380, 450);
         setVisible(true);
     }
-
     class EventListner extends Component implements ActionListener {
-
         public void actionPerformed(ActionEvent e) {
 
             JButton input = (JButton) e.getSource();
 
             if (input.equals(b_Pay_Card)) {
+                System.out.println("PayView " + reserveVo.getPerson_num());
+                System.out.println("PayView " + reserveVo.getTheater_no());
+                System.out.println("PayView " + reserveVo.getStart_time());
+                System.out.println("PayView " + reserveVo.getPay_money());
+                System.out.println("PayView " + reserveVo.getSeat_no());
+                System.out.println("PayView " + reserveVo.getMember_tel());
+                System.out.println("PayView " + reserveVo.getNon_member_tel());
+                doReserve("카드");
+
                 JOptionPane.showMessageDialog(this, "카드를 넣어주세요!", "카드", JOptionPane.INFORMATION_MESSAGE);
             }
             if (input.equals(b_Pay_Phone)) {
@@ -116,5 +132,11 @@ public class PayView extends JFrame {
         }
     }
 
-
+    public void doReserve(String pay_sys){
+        try{
+            reserveDao.reserve(reserveVo, pay_sys);
+        }catch (Exception e){
+            System.out.println("예매실패 : "+ e.toString());
+        }
+    }
 }

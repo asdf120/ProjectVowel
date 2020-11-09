@@ -115,8 +115,7 @@ public class SearchPWView extends JFrame {
     class EventListner extends Component implements ActionListener {
         public void actionPerformed(ActionEvent e) {
 
-            Object input = (Object) e.getSource();
-
+            Object input = e.getSource();
             if (input.equals(search_button) || input.equals(member_field[1])) {
                 System.out.println("검색");
                 email = doSearchPW();
