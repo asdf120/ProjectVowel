@@ -9,6 +9,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.*;
 
 // 비회원예매 뷰
@@ -41,29 +43,29 @@ public class NonMemberShipView extends JFrame {
             System.out.println("NonMemberShipView 디비연결 실패 " + e.toString());
         }
 
-        String s[] = new String[] {"이름             ", "비밀번호     ", "전화번호     ", "이메일         ", "생년월일     "};
+        String s[] = new String[] {"전화번호     ", "생년월일     "};
 
         //이메일까지 초기화 생년월일은 따로 초기화
-        non_member_field = new JTextField[5];
+        non_member_field = new JTextField[2];
         for(int i = 0; i<non_member_field.length-1; i++){
             non_member_field[i] = new JTextField();
         }
-        non_member_field[4] = new HintTextField("6자리 숫자로 입력");
+        non_member_field[1] = new HintTextField("6자리 숫자로 입력");
 
         //라벨 String s로 초기화
-        non_member_label = new JLabel[5];
+        non_member_label = new JLabel[2];
         for(int i = 0; i<non_member_label.length; i++){
             non_member_label[i]=new JLabel(s[i]);
         }
 
         //멤버 패널 초기화
-        non_member_panel = new JPanel[5];
+        non_member_panel = new JPanel[2];
         for(int i=0; i<non_member_panel.length; i++){
             non_member_panel[i] = new JPanel(new BorderLayout());
         }
         //나머지 초기화
         non_membership_panel = new JPanel();
-        join_button = new JButton(new ImageIcon("Movie/src/img/RegistView/Join.png"));
+        join_button = new JButton(new ImageIcon("Movie/src/img/MembershipView/Join.png"));
         before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
         title_label = new JLabel("비회원가입");
 
@@ -98,7 +100,7 @@ public class NonMemberShipView extends JFrame {
         //이벤트 받음
         join_button.addActionListener(new EventListner());
         before_button.addActionListener(new EventListner());
-        non_member_field[4].addActionListener(new EventListner());
+        non_member_field[1].addActionListener(new EventListner());
 
         non_membership_panel.add(join_button);
         non_membership_panel.add(before_button);
@@ -114,23 +116,17 @@ public class NonMemberShipView extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
 
-            Object input = (Object) e.getSource();
+            Object input = e.getSource();
 
-            if (input.equals(join_button) || input.equals(non_member_field[4])) {
+            if (input.equals(join_button) || input.equals(non_member_field[1])) {
                 doRegist();
                 System.out.println("가입");
-//                int ans = JOptionPane.showConfirmDialog(this, "비회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
-//                JOptionPane.showMessageDialog(this, "비회원 가입 성공!!", "비회원가입", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
-
             }
-
             if(input.equals(before_button)){
                 System.out.println("이전");
                 dispose();
-
             }
-
         }
     }
 
@@ -139,9 +135,11 @@ public class NonMemberShipView extends JFrame {
      */
     public void doRegist(){
         try{
-            String tel = non_member_field[2].getText();
-            Date birth = dateFormat.parse(non_member_field[4].getText()); // Util.date 포맷으로 생년월일 변경해서 birth에 저장
-            System.out.println("129행" + birth);
+            String tel = non_member_field[0].getText();
+            Date birth = dateFormat.parse(non_member_field[1].getText()); // Util.date 포맷으로 생년월일 변경해서 birth에 저장
+
+            validationTel(tel);
+            validationDate(non_member_field[1].getText());
 
             java.sql.Date sqlBirth = new java.sql.Date(birth.getTime());        // sql.date 포맷으로 변경
             MemberVO memberVo = new MemberVO(tel,sqlBirth);
@@ -151,6 +149,37 @@ public class NonMemberShipView extends JFrame {
             new MovieView(reserveVo);
         }catch (Exception e){
             System.out.println("회원가입 실패 : " + e.toString());
+        }
+    }
+    /**
+     *  연락처 유효성체크
+     */
+    public boolean validationTel(String tel){
+        boolean flag = false;
+        Pattern pattern = Pattern.compile("^01(?:0|1|[6-9])-(?:\\d{3}|\\d{4})-\\d{4}$");
+        Matcher matcher = pattern.matcher(tel);
+        if (matcher.matches()) {
+            flag = true;
+        }else{
+            flag = false;
+        }
+        if (!flag) {
+            JOptionPane.showMessageDialog(null,"전화번호 형식에 맞게 작성해주세요");
+        }
+        return flag;
+    }
+
+    /**
+     * 생년월일 유효성체크
+     */
+    public boolean validationDate(String date) {
+        try {
+            dateFormat.setLenient(false);
+            dateFormat.parse(date);
+            return true;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "생년월일이 유효하지않음");
+            return false;
         }
     }
 }

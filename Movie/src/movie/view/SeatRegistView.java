@@ -177,8 +177,6 @@ public class SeatRegistView extends JFrame {
         p_Seat.add(b_PayCancel);
         p_Seat.add(p_info);
         p_Seat.add(p_Center);
-
-
         p_Seat.setBackground(Color.white);
 
         add(p_Seat);
@@ -195,8 +193,13 @@ public class SeatRegistView extends JFrame {
             for (int i = 0; i < b_Seat.length; i++) {
                 for (int j = 0; j < b_Seat[i].length; j++) {
                     if (jButton.equals(b_Seat[i][j])) {
-                        seatList.add(sv[i][j].addColRow(sv[i][j].getRow(), sv[i][j].getCol()));
-                        b_Seat[i][j].setEnabled(false);
+                        if(seatList.contains(sv[i][j].addColRow(sv[i][j].getRow(), sv[i][j].getCol()))){
+                            seatList.remove(sv[i][j].addColRow(sv[i][j].getRow(), sv[i][j].getCol()));
+                            b_Seat[i][j].setEnabled(true);
+                        }else{
+                            seatList.add(sv[i][j].addColRow(sv[i][j].getRow(), sv[i][j].getCol()));
+                            b_Seat[i][j].setEnabled(false);
+                        }
                         System.out.println("SeatRegistView 205행 seatList 크기 : " +seatList.size());
                         if (reserveVo.getPerson_num() == seatList.size()) {
                             JOptionPane.showMessageDialog(null,"인원수만큼 클릭 완료");
@@ -231,12 +234,7 @@ public class SeatRegistView extends JFrame {
                 System.out.println("결제취소");
                 dispose();
             }
-
-
-
         }
-
-
     }
 }
 

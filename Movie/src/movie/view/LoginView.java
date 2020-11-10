@@ -48,7 +48,7 @@ public class LoginView extends JFrame {
         id_label = new JLabel(new ImageIcon("Movie/src/img/member/id.png"));
         pw_label = new JLabel(new ImageIcon("Movie/src/img/member/pw.png"));
         id_field = new HintTextField("ID");
-        pw_field = new HintTextField("PASSWORD");
+        pw_field = new JPasswordField();
         select_id = new JButton(new ImageIcon("Movie/src/img/LoginView/아이디찾기.png"));
         select_pw = new JButton(new ImageIcon("Movie/src/img/LoginView/비밀번호찾기.png"));
     }
@@ -111,7 +111,7 @@ public class LoginView extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
 
-            Object input = (Object) e.getSource();
+            Object input = e.getSource();
 
             if (input.equals(logins_button[0]) || input.equals(pw_field)) {
                 System.out.println("로그인 버튼");
@@ -129,20 +129,24 @@ public class LoginView extends JFrame {
             }
             if(input.equals(select_id)){
                 System.out.println("아이디찾기 버튼");
-                SearchIDView si = new SearchIDView();
+                new SearchIDView();
             }
             if(input.equals(select_pw)){
                 System.out.println("비밀번호찾기 버튼");
-                SearchPWView sp = new SearchPWView();
+                new SearchPWView();
             }
         }
     }
 
+    /**
+     * 로그인을 시도하여 회원정보와 맞으면 email을 리턴
+     */
     public void doLogin() {
         String id =  id_field.getText();
+        String pass = pw_field.getText();
         System.out.println(id);
         try {
-            reserveVo = memberDao.login(id); // 있으면 회원번호가 리턴
+            reserveVo = memberDao.login(id,pass); // 있으면 회원번호가 리턴
             if(reserveVo.getMember_tel() == null) {    // 회원번호가 없으므로 로그인실패
                 JOptionPane.showMessageDialog(this, "로그인 실패", "로그인", JOptionPane.INFORMATION_MESSAGE);
             }else {

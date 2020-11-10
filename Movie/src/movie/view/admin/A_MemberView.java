@@ -207,7 +207,6 @@ public class A_MemberView extends JPanel implements ActionListener{
 			}
 		});
 	}
-	
 	//이벤트 처리
 	public void actionPerformed(ActionEvent e) {
 		Object evt = e.getSource();

@@ -25,7 +25,6 @@ public class MemberDAO {
      * 회원가입 메소드
      */
     public void regist(MemberVO memberVo, int type) throws Exception {
-        int memberType = 0;
         PreparedStatement st;
         System.out.println("type : " + type);
         // 회원가입
@@ -39,7 +38,6 @@ public class MemberDAO {
             st.setString(4, memberVo.getName());
             st.setDate(5, memberVo.getBirth());
             st.setString(6, memberVo.getEmail());
-            memberType = 1;
         } else {  // 비회원가입
             String sql = " INSERT INTO non_member (tel,birth) values (?,?) ";
 
@@ -47,7 +45,6 @@ public class MemberDAO {
             System.out.println("31행");
             st.setString(1, memberVo.getTel());
             st.setDate(2, memberVo.getBirth());
-            memberType = 2;
         }
 
         System.out.println("38행" + memberVo.getBirth());
@@ -56,21 +53,21 @@ public class MemberDAO {
 
         st.close();
         System.out.println("MemberDao 회원가입 성공");
-//        return memberType;
     }
 
     /**
      * LoginView에서 호출
      * 로그인 메소드
      */
-    public ReserveVO login(String id) throws Exception {
+    public ReserveVO login(String id,String pass) throws Exception {
         ReserveVO reserveVo = new ReserveVO();
 
-        String sql = "SELECT * FROM member WHERE member_id=?";
+        String sql = "SELECT * FROM member WHERE member_id=? and password = ?";
 
         PreparedStatement st = con.prepareStatement(sql);
 
         st.setString(1, id);
+        st.setString(2, pass);
         ResultSet rs = st.executeQuery();
 
         if (rs.next()) {
@@ -138,6 +135,22 @@ public class MemberDAO {
         st.setString(1, password);
         st.setString(2, email);
 
+        st.executeUpdate();
+
+        st.close();
+    }
+
+    /**
+     * 회원정보 변경
+     */
+    public void modifyInfo(MemberVO memberVo, ReserveVO reserveVo) throws Exception{
+        String sql = "update member set name = ?, email = ?, password = ? where tel = ? ";
+
+        PreparedStatement st = con.prepareStatement(sql);
+        st.setString(1,memberVo.getName());
+        st.setString(2,memberVo.getEmail());
+        st.setString(3,memberVo.getPassword());
+        st.setString(4,reserveVo.getMember_tel());
         st.executeUpdate();
 
         st.close();

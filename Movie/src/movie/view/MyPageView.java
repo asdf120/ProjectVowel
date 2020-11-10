@@ -1,4 +1,9 @@
 package movie.view;
+import movie.HintTextField;
+import movie.data.MemberDAO;
+import movie.data.vo.MemberVO;
+import movie.data.vo.ReserveVO;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -10,6 +15,11 @@ public class MyPageView extends JFrame{
     JLabel title_label;
     JButton change_button, before_button, identify_button;
 
+    boolean flag;
+    MemberDAO memberDao;
+    ReserveVO reserveVO;
+    MemberVO memberVo;
+
     //x,y,z setbounds 배열 초기화시 사용
     int x = 50;
     int y = 55;
@@ -18,23 +28,32 @@ public class MyPageView extends JFrame{
     public MyPageView(){
         super("마이페이지");
 
-        String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "전화번호     ", "이메일         ", "생년월일     "};
+        try{
+            memberDao = new MemberDAO();
+            reserveVO = new ReserveVO();
+            memberVo = new MemberVO();
+        }catch (Exception e){
+            System.out.println("MyPageView 디비 연결 실패 : " + e.toString());
+        }
+
+        String s[] = new String[] {"아이디         ", "비밀번호     " ,"이름             ", "이메일         ", "비밀번호     " };
 
         //이메일까지 초기화 생년월일은 따로 초기화
-        member_field = new JTextField[6];
+        member_field = new JTextField[5];
         for(int i = 0; i<member_field.length-1; i++){
-            member_field[i] = new JTextField("내용을 입력해주세요");
+            member_field[i] = new HintTextField("내용을 입력해주세요");
         }
-        member_field[5] = new JTextField("YY/MM/DD 는 생략");
-
+        member_field[1] = new JPasswordField();
+        member_field[3] = new HintTextField("aaa@aaa.aaa 형식으로 입력");
+        member_field[4] = new JPasswordField();
         //라벨 String s로 초기화
-        member_label = new JLabel[6];
+        member_label = new JLabel[5];
         for(int i = 0; i<member_label.length; i++){
             member_label[i]=new JLabel(s[i]);
         }
 
         //멤버 패널 초기화
-        member_panel = new JPanel[6];
+        member_panel = new JPanel[5];
         for(int i=0; i<member_panel.length; i++){
             member_panel[i] = new JPanel(new BorderLayout());
         }
@@ -78,6 +97,8 @@ public class MyPageView extends JFrame{
         change_button.addActionListener(new EventListner());
         identify_button.addActionListener(new EventListner());
         before_button.addActionListener(new EventListner());
+        member_field[1].addActionListener(new EventListner());
+        member_field[4].addActionListener(new EventListner());
 
         mypageview_panel.add(identify_button);
         mypageview_panel.add(change_button);
@@ -94,30 +115,49 @@ public class MyPageView extends JFrame{
 
         public void actionPerformed(ActionEvent e) {
 
-            JButton input = (JButton) e.getSource();
+            Object input = e.getSource();
 
-            if (input.equals(change_button)) {
-
-                System.out.println("수정");
-                int ans = JOptionPane.showConfirmDialog(this, "해당 내용을 수정하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+            if(input.equals(identify_button) || input.equals(member_field[1])){
+                doConfirm();
+            }
+            if (input.equals(change_button) || input.equals(member_field[4])) {
+                doModify();
+                JOptionPane.showConfirmDialog(this, "해당 내용을 수정하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
                 JOptionPane.showMessageDialog(this, "수정 성공!!", "수정완료", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
             }
-
-            if(input.equals(identify_button)){
-                System.out.println("오류");
-                JOptionPane.showMessageDialog(this, "아이디나 비밀번호가 일치하지 않습니다.", "오류", JOptionPane.ERROR_MESSAGE);
-
-            }
-
             if(input.equals(before_button)){
                 System.out.println("이전");
                 dispose();
-
             }
+        }
+    }
 
+    /**
+     * 회원정보 확인 처리
+     */
+    public void doConfirm(){
+        String id = member_field[0].getText();
+        String pass = member_field[1].getText();
+        try{
+            reserveVO = memberDao.login(id,pass);
+            JOptionPane.showMessageDialog(null,"회원정보 확인완료");
+        }catch (Exception e){
+            System.out.println("MyPageView 141행: "+ e.toString());
+        }
+    }
 
-
+    /**
+     * 회원정보 수정 처리
+     */
+    public void doModify(){
+        memberVo.setName(member_field[2].getText());
+        memberVo.setEmail(member_field[3].getText());
+        memberVo.setPassword(member_field[4].getText());
+        try{
+            memberDao.modifyInfo(memberVo,reserveVO);
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null,"회원정보 변경 실패");
         }
     }
 

@@ -111,15 +111,14 @@ public class PayView extends JFrame {
             JButton input = (JButton) e.getSource();
 
             if (input.equals(b_Pay_Card)) {
-                System.out.println("PayView " + reserveVo.getPerson_num());
-                System.out.println("PayView " + reserveVo.getTheater_no());
-                System.out.println("PayView " + reserveVo.getStart_time());
-                System.out.println("PayView " + reserveVo.getPay_money());
-                System.out.println("PayView " + reserveVo.getSeat_no());
-                System.out.println("PayView " + reserveVo.getMember_tel());
-                System.out.println("PayView " + reserveVo.getNon_member_tel());
+                System.out.println("PayView " + reserveVo.getPerson_num()); // 인원
+                System.out.println("PayView " + reserveVo.getTheater_no()); // 상영관
+                System.out.println("PayView " + reserveVo.getStart_time()); // 시작시각
+                System.out.println("PayView " + reserveVo.getPay_money());  // 가격
+                System.out.println("PayView " + reserveVo.getSeat_no());    // 좌석
+                System.out.println("PayView " + reserveVo.getMember_tel()); // 전화번호
+                System.out.println("PayView " + reserveVo.getNon_member_tel()); // 비회원번호
                 doReserve("카드");
-
                 JOptionPane.showMessageDialog(this, "카드를 넣어주세요!", "카드", JOptionPane.INFORMATION_MESSAGE);
             }
             if (input.equals(b_Pay_Phone)) {

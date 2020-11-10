@@ -49,8 +49,6 @@ public class MovieDAO {
 
 
     public ArrayList<MovieVO> showMovie() throws Exception {
-
-
         String sql = "SELECT title, img_loc, run_time FROM movie WHERE sysdate<=end_day";
         movieList = new ArrayList<MovieVO>();
 

@@ -12,6 +12,9 @@ public class ReserveDAO {
         this.con = DbSingleton.getInstance();
     }
 
+    /**
+     *  영화 예메 메소드
+     */
     public void reserve(ReserveVO reserveVo,String pay_sys)throws Exception{
         PreparedStatement st = null;
         if(reserveVo.getNon_member_tel().equals(null)){ // nonmember_tell이 null이면 회원의 전화번호값으로 쿼리실행

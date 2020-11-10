@@ -8,6 +8,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.*;
 
 public class RegistView extends JFrame {
@@ -123,11 +125,6 @@ public class RegistView extends JFrame {
 
             if (input.equals(join_button) || input.equals(member_field[5])) {   // 가입 버튼 클릭 또는 생년월일까지 입력후 엔터
                 doRegist();
-                System.out.println("가입");
-//                int ans = JOptionPane.showConfirmDialog(this, "회원 가입을 진행하시겠습니까?", "확인", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
-//                JOptionPane.showMessageDialog(this, "회원 가입 성공!!", "회원가입", JOptionPane.INFORMATION_MESSAGE);
-//                dispose();  //프레임 종료
-
             }else if(input.equals(before_button)){
                 System.out.println("이전");
                 dispose();  //프레임 종료
@@ -146,6 +143,11 @@ public class RegistView extends JFrame {
             String name = member_field[2].getText();
             String tel =member_field[3].getText();
             String email = member_field[4].getText();
+
+            validationTel(tel); //전화번호 유효성검증
+            validationEmail(email); // 이메일 유효성 검증
+            validationDate(member_field[5].getText());  // 생년월일 유효성
+
             Date birth = dateFormat.parse(member_field[5].getText()); // Util.date 포맷으로 생년월일 변경해서 birth에 저장
             System.out.println("143행" + birth);
             java.sql.Date sqlBirth = new java.sql.Date(birth.getTime());        // sql.date 포맷으로 변경
@@ -156,4 +158,58 @@ public class RegistView extends JFrame {
             System.out.println("회원가입 실패 : " + e.toString());
         }
     }
+
+    /**
+     *  연락처 유효성체크
+     */
+    public boolean validationTel(String tel){
+        boolean flag = false;
+        Pattern pattern = Pattern.compile("^01(?:0|1|[6-9])-(?:\\d{3}|\\d{4})-\\d{4}$");
+        Matcher matcher = pattern.matcher(tel);
+        if (matcher.matches()) {
+            flag = true;
+        }else{
+            flag = false;
+        }
+        if (!flag) {
+            JOptionPane.showMessageDialog(null,"전화번호 형식에 맞게 작성해주세요");
+        }
+        return flag;
+    }
+
+    /**
+     * 이메일 유효성체크
+     */
+    public boolean validationEmail(String email){
+        boolean flag = false;
+        if(email == null){
+            return flag;
+        }else{
+            Pattern pattern = Pattern.compile("^[_a-z0-9-]+(.[_a-z0-9-]+)*@(?:\\w+\\.)+\\w+$");
+            Matcher matcher = pattern.matcher(email);
+            if (matcher.matches()) {
+                flag = true;
+            }
+        }
+        if (!flag) {
+            JOptionPane.showMessageDialog(null,"이메일 형식에 맞게 작성해주세요");
+        }
+        return flag;
+    }
+
+    /**
+     * 생년월일 유효성체크
+     */
+    public boolean validationDate(String date) {
+        try {
+            dateFormat.setLenient(false);
+            dateFormat.parse(date);
+            return true;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "생년월일이 유효하지않음");
+            return false;
+        }
+    }
+
+
 }

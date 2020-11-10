@@ -15,6 +15,9 @@ public class TheaterDAO {
         this.con = DbSingleton.getInstance();
     }
 
+    /**
+     * TheaterView에 상영중인 영화를 띄워줌
+     */
     public List<TheaterVO> showMovie()throws  Exception{
         TheaterVO theaterVo = null;
 
@@ -45,6 +48,9 @@ public class TheaterDAO {
         return movieList;
     }
 
+    /**
+     * ReserveView에 상영시간표를 띄워줌
+     */
     public List<TheaterVO> showMovie_Time(String title) throws Exception{
         TheaterVO theaterVO;
         List<TheaterVO> theaterVOList = new ArrayList<>();
