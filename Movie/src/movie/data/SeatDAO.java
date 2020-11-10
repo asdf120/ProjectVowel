@@ -19,13 +19,14 @@ public class SeatDAO {
         this.con = DbSingleton.getInstance();
     }
 
-    public SeatVO[][] regist() throws Exception {
+    public SeatVO[][] regist(String start_time) throws Exception {
         seatVo = new SeatVO[5][9];
         int i = 0;
         int j = 0;
-        String sql = "SELECT row_no, column_no, seat_status FROM theater_seat WHERE to_char(start_time, 'yy/mm/dd hh24:mi') = '20/11/09 01:06'";
-
+        String sql = "SELECT row_no, column_no, seat_status FROM theater_seat WHERE to_char(start_time, 'yy/mm/dd hh24:mi') = ?";
+        System.out.println("SeatDao 27행: " + start_time);
         PreparedStatement st = con.prepareStatement(sql);
+        st.setString(1,start_time);
         ResultSet rs = st.executeQuery();
         while (rs.next()) {
             seatVo_test = new SeatVO();
@@ -38,7 +39,6 @@ public class SeatDAO {
             seatVo_test.setStatus(rs.getString("seat_status"));
 
             seatVo[i][j] = seatVo_test;
-
             j++;
         }
         rs.close();

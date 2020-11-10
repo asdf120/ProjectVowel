@@ -28,9 +28,9 @@ public class TheaterDAO {
 //                " on m.title = t.title " +
 //                " where t.start_time <= (sysdate + 3)" +
 //                " order by start_time";
-        String sql = "SELECT DISTINCT title " +
-                " FROM theater " +
-                " WHERE start_time <= (SYSDATE + 3) ";
+        String sql = "SELECT DISTINCT t.title " +
+                " FROM theater t, movie m " +
+                " WHERE t.start_time <= m.end_day";
 
         PreparedStatement st = con.prepareStatement(sql);
         ResultSet rs = st.executeQuery();
@@ -55,7 +55,7 @@ public class TheaterDAO {
         TheaterVO theaterVO;
         List<TheaterVO> theaterVOList = new ArrayList<>();
 
-        String sql = "SELECT to_char(start_time, 'hh24:mi') start_time, m.run_time run_time " +
+        String sql = "SELECT to_char(start_time, 'yy/mm/dd hh24:mi') start_time, m.run_time run_time " +
                 " FROM theater t INNER JOIN movie m " +
                 " ON t.title = m.title " +
                 " WHERE t.title = ? " +

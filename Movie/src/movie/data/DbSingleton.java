@@ -19,8 +19,8 @@ public class DbSingleton {
         Class.forName("oracle.jdbc.driver.OracleDriver");
 
         //TODO 접속하려는 디비 주소에 맞게 입력
-        con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "theater", "theater");
-//        con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.57:1521:orcl", "movie", "1234");
+//        con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "theater", "theater");
+        con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.57:1521:orcl", "movie", "1234");
     }
     public static Connection getInstance() throws Exception {
         if (con == null) {

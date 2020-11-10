@@ -11,7 +11,12 @@ public class ReserveVO {
     private String pay_sys; // 결제방법
     private int pay_money;  // 결제금액
 
+
     public ReserveVO() {
+    }
+
+    public void setReserve_no(int reserve_no) {
+        this.reserve_no = reserve_no;
     }
 
     public String getMember_tel() {

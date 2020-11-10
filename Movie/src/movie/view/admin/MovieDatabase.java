@@ -5,32 +5,32 @@ import java.util.*;
 
 public class MovieDatabase {
 
-	String URL = "jdbc:oracle:thin:@192.168.0.79:1521:orcl";
-	String USER ="scott";
-	String PASS = "tiger";
+	String URL = "jdbc:oracle:thin:@192.168.0.57:1521:orcl";
+	String USER ="movie";
+	String PASS = "1234";
 
 	public ArrayList<ArrayList> getData() {
 
 		ArrayList<ArrayList> data = new ArrayList<ArrayList>();
 		try{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection(URL, USER , PASS);	
-			
+			Connection con = DriverManager.getConnection(URL, USER , PASS);
+
 			//***************************************************************
-			String sql = "SELECT ename,sal\r\n" + 
-					"FROM (SELECT * FROM emp WHERE sal IS NOT NULL ORDER BY sal DESC) e\r\n" + 
-					"WHERE rownum <=10";
+			String sql = "SELECT title,sum(person_num) sum_person \r\n" +
+					"FROM (SELECT r.person_num person_num ,t.title title FROM reserve r, theater t \r\n" +
+					"WHERE t.theater_no = r.theater_no and t.start_time = r.start_time) m group by m.title";
 			//***************************************************************
-			
-			PreparedStatement stmt = con.prepareStatement( sql );	
+
+			PreparedStatement stmt = con.prepareStatement( sql );
 
 			ResultSet rset = stmt.executeQuery();
 
-			
+
 			while( rset.next() ){
 				ArrayList temp = new ArrayList();
-				temp.add( rset.getInt("sal"));				//****************
-				temp.add( rset.getString("ename"));		//****************		
+				temp.add( rset.getInt("sum_person"));            //****************
+				temp.add( rset.getString("title"));      //****************
 				data.add(temp);
 			}
 			rset.close();

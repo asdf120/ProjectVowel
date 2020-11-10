@@ -2,6 +2,7 @@ package movie.data;
 
 import movie.data.vo.ManagerVO;
 import movie.data.vo.MemberVO;
+import movie.data.vo.ReserveVO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,17 +11,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 
+
 public class AdminDAO {
-	
-	Connection	con;
+
+	Connection   con;
 
 	//constructor
 	public AdminDAO() throws Exception{
 		con = DbSingleton.getInstance();
 	}
-	
+
 	// ########## A_MemberView ############
-	
+
 	/**
 	 *  역할 : 받아온 아이디와 DB에 저장된 아이디와 비교하여  사용가능한 아이디면 0, 이미 존재하는 아이디면 -1 리턴
 	 */
@@ -29,7 +31,7 @@ public class AdminDAO {
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, id);
 		ResultSet rs = st.executeQuery();
-		
+
 		if(rs.next()) {
 			rs.close();
 			st.close();
@@ -38,10 +40,10 @@ public class AdminDAO {
 			rs.close();
 			st.close();
 			return 0;
-		} 
-		
+		}
+
 	}
-	
+
 	/**
 	 *  역할 : 받아온 전화번호와 DB에 저장된 아이디와 비교하여  사용가능한 전화번호면 0, 이미 존재하는 전화번호면 -1 리턴
 	 */
@@ -59,11 +61,11 @@ public class AdminDAO {
 			rs.close();
 			st.close();
 			return 0;
-		} 
-		
+		}
+
 	}
-	
-	
+
+
 	/**
 	 *  역할 : 받아온 값을  DB member테이블에 저장
 	 */
@@ -78,9 +80,9 @@ public class AdminDAO {
 		st.setString(6, mem.getEmail());
 		st.executeUpdate();
 		st.close();
-		
+
 	}
-		
+
 	/**
 	 *  역할 : 회원 검색 시 콤보박스 인덱스와 검색키워드 값 가져와서 DB와 비교하여 해당하는 데이터 ArrayList 타입으로 리턴
 	 */
@@ -102,7 +104,7 @@ public class AdminDAO {
 		st.close();
 		return data;
 	}
-	
+
 	/**
 	 *  역할 : 회원 검색 시 콤보박스 인덱스가 '생년월일'일 경우 검색키워드 값 가져와서 DB와 비교하여 해당하는 데이터 ArrayList 타입으로 리턴
 	 */
@@ -129,7 +131,7 @@ public class AdminDAO {
 	 */
 	public MemberVO searchByID(String id) throws Exception{
 		MemberVO vo = new MemberVO();
-		
+
 		String sql = "SELECT * FROM member WHERE member_id = ?";
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, id);
@@ -144,10 +146,10 @@ public class AdminDAO {
 		}
 		rs.close();
 		st.close();
-		
+
 		return vo;
 	}
-	
+
 	/**
 	 *  역할 : 가져온 값과 DB의 값 비교하여 일치하는 곳 레코드를 업데이트
 	 */
@@ -162,10 +164,10 @@ public class AdminDAO {
 		st.setString(5, vo.getEmail());
 		st.setString(6, vo.getTel());
 		st.executeQuery();
-		
+
 		st.close();
 	}
-	
+
 	/**
 	 *  역할 : 가져온 전화번호와 일치하는 레코드 찾아 DB에서  DELETE
 	 */
@@ -175,62 +177,68 @@ public class AdminDAO {
 		st.setString(1, tel);
 		st.close();
 	}
-	
+
 	/**
 	 *  역할 : Reserve 테이블의 예매번호와 가져온 예매번호를 비교하여 일치하는 레코드를 ReserveVO 타입으로 리턴
 	 */
-	public ArrayList searchReserve(String rNum) throws Exception{
-		ArrayList list = new ArrayList();
-		String sql = "SELECT reserve_no,theater_no,seat_no,person_num,pay_sys,pay_money FROM reserve WHERE reserve_no =?";
-		PreparedStatement st = con.prepareStatement(sql);
-		st.setString(1, rNum);
-		ResultSet rs = st.executeQuery();
+	public ReserveVO searchReserve(String rNum) throws Exception{
+		ReserveVO vo = new ReserveVO();
+		String sql = "SELECT reserve_no,theater_no,seat_no,person_num,pay_sys,pay_money FROM reserve WHERE reserve_no ="+rNum+"";
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(sql);
 		if(rs.next()) {
-			list.add(rs.getInt("reserve_no"));
-			list.add(rs.getString("theater_no"));
-			list.add(rs.getString("seat_no"));
-			list.add(rs.getInt("person_num"));
-			list.add(rs.getString("pay_sys"));
-			list.add(rs.getInt("pay_money"));
+			vo.setReserve_no(rs.getInt("reserve_no"));
+			vo.setTheater_no(rs.getString("theater_no"));
+			vo.setSeat_no(rs.getString("seat_no"));
+			vo.setPerson_num(rs.getInt("person_num"));
+			vo.setPay_sys(rs.getString("pay_sys"));
+			vo.setPay_money(rs.getInt("pay_money"));
 		}
 		rs.close();
 		st.close();
-		return list;
+		return vo;
 	}
-	
-	
+
+
 	/**
 	 *  역할 : member테이블에서 모든 아이디,이름,전화번호,이메일 가져와서 MemberVO 타입으로 리턴
-	 *  		A_MemberView의 모든 이슈마다 JTable 업데이트를 위한 목적
+	 *        A_MemberView의 모든 이슈마다 JTable 업데이트를 위한 목적
 	 */
 	public ArrayList select() throws Exception{
-		String sql = "SELECT member_id, name, tel, email FROM member";
+		String sql = "SELECT member_id, name, tel, birth FROM member";
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(sql);
 		ArrayList data = new ArrayList();
-		
+
 		while(rs.next()) {
 			ArrayList temp = new ArrayList();
 			temp.add(rs.getString("member_id"));
 			temp.add(rs.getString("name"));
 			temp.add(rs.getString("tel"));
-			temp.add(rs.getString("email"));
-			
+			temp.add(rs.getDate("birth"));
+
 			data.add(temp); // arraylist 타입의 2차원 배열
-			
+
 		}
-		
+
 		rs.close();
 		st.close();
 		return data;
 	}
-	
+
+	//예매 취소
+	public void cancelReserve(String reserveNum) throws Exception{
+		String sql = "DELETE FROM reserve WHERE reserve_no ="+reserveNum+"";
+		Statement st = con.createStatement();
+		st.executeQuery(sql);
+		st.close();
+	}
 	// ########### A_RegistView ###########
 	/**
 	 *  역할 : 받아온 값을  DB manager 테이블에 저장
 	 */
 	public void regist(ManagerVO vo) throws Exception{
-		String sql = "INSERT INTO manager(m_id,m_pw,m_name,m_tel,m_birth,hiredate)VALUES (seq_manager_id.NEXTVAL,?,?,?,?,sysdate)";
+		String sql = "INSERT INTO manager(m_id,m_pw,m_name,m_tel,m_birth,hiredate)VALUES (seq_m_id.NEXTVAL,?,?,?,?,sysdate)";
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, vo.getMgrPW());
 		st.setString(2, vo.getMgrName());
@@ -239,7 +247,7 @@ public class AdminDAO {
 		st.executeUpdate();
 		st.close();
 	}
-	
+
 	// ########### A_LoginView ###########
 	/**
 	 *  역할 : 받아온 아이디와 비밀번호를 DB manager 테이블과 비교하여 있으면 0, 없으면 -1 리턴
@@ -265,7 +273,7 @@ public class AdminDAO {
 	 */
 	public String searchID(String tel) throws Exception{
 		String id = null;
-		
+
 		String sql = "SELECT m_id FROM manager WHERE m_tel=?";
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, tel);
@@ -277,8 +285,33 @@ public class AdminDAO {
 		st.close();
 		return id;
 	}
-	
-	
-	
-	
+
+	//######## A_TimeTableView ########
+
+	/**
+	 *  역할 : 얻어온 전화번호와 manager 테이블의 레코드 비교하여 해당하는 사원번호 리턴
+	 */
+	public ArrayList searchMovie(int idx,String word) throws Exception{
+		String [] colName = {"title","director","actor"}; //int idx가 0이면 제목, 1이면 감독,2면 출연진으로 검색
+		String sql = "SELECT title,run_time,director,actor FROM movie WHERE "+colName[idx]+" LIKE '%"+word+"%'";
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(sql);
+		ArrayList data = new ArrayList();
+		while(rs.next()){
+			ArrayList temp = new ArrayList();
+			temp.add(rs.getString("title"));
+			temp.add(rs.getString("run_time"));
+			temp.add(rs.getString("director"));
+			temp.add(rs.getString("actor"));
+			data.add(temp); // arraylist 타입의 2차원 배열
+		}
+		rs.close();
+		st.close();
+
+		return data;
+
+	}
+
+
+
 }

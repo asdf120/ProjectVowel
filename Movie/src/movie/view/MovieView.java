@@ -18,7 +18,6 @@ public class MovieView extends JFrame{
     JLabel title_label;
     JButton before_button, mypage_button;
     JButton movie_button[];
-    String[] movie_title;
 
     //영화 좌표값들 임의설정
     int x = 50;
@@ -48,9 +47,10 @@ public class MovieView extends JFrame{
         }catch (Exception e){
             System.out.println("TheaterView() 디비 연결 실패 " + e.toString());
         }
-        movie_title = new String[]{"위플래쉬", "다만 악에서 구하소서", "담보", "도굴", "바스켓볼 다이어리", "삼진그룹 영어토익반"};
         movie_panel = new JPanel();
-        movie_button = new JButton[6];
+
+        movie_button = new JButton[2];
+
         before_button = new JButton(new ImageIcon("Movie/src/img/before.png"));
 
         //TODO 비회원이면 setVisible(false) 처리할것
@@ -66,9 +66,9 @@ public class MovieView extends JFrame{
         }
 
         // 상영중인 영화 포스터 나타내기
-        for(int i = 0; i<movietitle_list.size(); i++){
-            movie_button[i] = new JButton(new ImageIcon("Movie/src/img/movie/"+movietitle_list.get(i)+".png"));
-        }
+//        for(int i = 0; i<movietitle_list.size(); i++){
+//            movie_button[i] = new JButton(new ImageIcon("Movie/src/img/movie/"+movietitle_list.get(i)+".png"));
+//        }
 
         //영화패널, 라벨, 버튼 좌표, 사이즈
         movie_panel.setLayout(null);
@@ -108,7 +108,7 @@ public class MovieView extends JFrame{
 
         movie_panel.setBackground(Color.white);
         add(movie_panel);
-        setSize(500,900);
+        setSize(500,600);
         setVisible(true);
     }
 

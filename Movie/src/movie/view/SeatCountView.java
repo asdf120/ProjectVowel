@@ -39,6 +39,7 @@ public class SeatCountView extends JFrame {
         count = new int[3];
 
         System.out.println("SeatCountView() 50행" +reserveVo.getStart_time());
+        System.out.println("SeatCountView() 50행" +reserveVo.getTheater_no());
 
         //버튼 라벨 패널 등등 초기화
         b_SeatChoose = new JButton(new ImageIcon("Movie/src/img/좌석선택.png"));

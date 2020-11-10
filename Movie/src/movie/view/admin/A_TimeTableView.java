@@ -1,5 +1,6 @@
 package movie.view.admin;
 
+import movie.data.AdminDAO;
 import movie.data.MovieDAO;
 import movie.data.vo.MovieVO;
 
@@ -59,15 +60,16 @@ public class A_TimeTableView extends JPanel {
     int y=50;
 
     int p_x = 105;
-    int p_y = 160;
+    int p_y = 120;
     int p_z = 245;
     int p_zz= 30;
 
 
-    String [] cbSearchStr = {"영화제목","감독","출연진"};
-    String[] s = new String[]{"영화 제목     ", "러닝 타임     ","종료 날짜     ", "감독              ", "출연진          ", "이미지 경로 "};
+    String [] cbSearchStr = {"영화제목","감독","출연진"}; //콤보박스 카테고리
+    String[] s = new String[]{"영화 제목     ", "러닝 타임     ","시작 날짜     ", "종료 날짜     ", "감독              ", "출연진          ", "이미지 경로 "};
 
     MovieDAO movieDao;
+    AdminDAO dao;
 
     public A_TimeTableView(){
         addlayout();
@@ -77,6 +79,14 @@ public class A_TimeTableView extends JPanel {
         }catch (Exception e){
             System.out.println("TimeTableView 디비연결 실패 " + e.toString());
         }
+        try {
+            dao = new AdminDAO();
+            System.out.println("TimeTableView 디비연결 성공 어드민 ");
+        } catch (Exception e) {
+            System.out.println("TimeTableView 디비연결 실패 어드민 " + e.toString());
+            e.printStackTrace();
+        }
+
     }
 
     private void addlayout() {
@@ -88,9 +98,9 @@ public class A_TimeTableView extends JPanel {
         p_table = new JPanel();
         p_combo = new JPanel();
 
-        tf_field = new JTextField[6];
-        l_label = new JLabel[6];
-        p_panel = new JPanel[6];
+        tf_field = new JTextField[7];
+        l_label = new JLabel[7];
+        p_panel = new JPanel[7];
         tf_combo = new JTextField();
 
         b_Search = new JButton(new ImageIcon("src/img/admin/검색.png"));
@@ -130,6 +140,8 @@ public class A_TimeTableView extends JPanel {
 
         b_Add.addActionListener(new EventListner());
         b_Delete.addActionListener(new EventListner());
+        b_Search.addActionListener(new EventListner());
+        tf_combo.addActionListener(new EventListner());
 
         p_combo.add(comMovieSearch);
         p_combo.add(tf_combo);
@@ -148,29 +160,35 @@ public class A_TimeTableView extends JPanel {
         add(p_combo);
     }
 
+    //이벤트 핸들러
     class EventListner extends Component implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
 
-            JButton input = (JButton) e.getSource();
+            Object input = e.getSource();
 
-            if(input.equals(b_Add)){
+            if(input==b_Add){ //영화 추가 버튼을 눌렀을 때
                 System.out.println("추가");
                 doRegist();
             }
 
-            if (input.equals(b_Delete)) {
+            if (input==b_Delete) {
 
                 System.out.println("삭제");
                 doDelete();
                 //        JOptionPane.showMessageDialog(this, "삭제 성공!!", "삭제완료", JOptionPane.INFORMATION_MESSAGE);
 
             }
+            if(input==b_Search||input==tf_combo) {//영화 검색 버튼 눌렀을 때
+                searchMovie();
+            }
 
         }
     }//end EventListner
 
-    public void doRegist() {
+
+    //영화 추가
+    void doRegist() {
 
         try {
             MovieVO vo = new MovieVO();
@@ -190,7 +208,9 @@ public class A_TimeTableView extends JPanel {
 
     }// end doRegist
 
-    public void doDelete() {
+    //영화 삭제
+
+    void doDelete() {
 
         try {
             String title = tf_field[0].getText();
@@ -201,6 +221,22 @@ public class A_TimeTableView extends JPanel {
             System.out.println("영화 삭제 실패" + e.toString());
         }
 
+    }
+
+    //영화 검색
+    void searchMovie() {
+        int idx = comMovieSearch.getSelectedIndex();
+        String word = tf_combo.getText();
+        try {
+            ArrayList list = dao.searchMovie(idx,word);
+            tableModel.data = list;
+            table_member.setModel(tableModel);
+            tableModel.fireTableDataChanged();
+            System.out.println("영화검색 성공");
+        } catch (Exception e) {
+            System.out.println("영화검색 실패");
+            e.printStackTrace();
+        }
 
     }
 

@@ -8,7 +8,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class PayView extends JFrame {
 
@@ -23,9 +25,10 @@ public class PayView extends JFrame {
     ArrayList<String> list;
     Util util;
 
-    PayView(ArrayList<String> list, StringBuffer str, ReserveVO ReserveVo) {
-        super("결제");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yy/mm/dd/ hh24:mm:ss");
 
+    public PayView(ArrayList<String> list, StringBuffer str, ReserveVO ReserveVo) {
+        super("결제");
         try{
             reserveDao = new ReserveDAO();
         }catch (Exception e){
@@ -109,15 +112,15 @@ public class PayView extends JFrame {
         public void actionPerformed(ActionEvent e) {
 
             JButton input = (JButton) e.getSource();
-
             if (input.equals(b_Pay_Card)) {
-                System.out.println("PayView " + reserveVo.getPerson_num()); // 인원
-                System.out.println("PayView " + reserveVo.getTheater_no()); // 상영관
-                System.out.println("PayView " + reserveVo.getStart_time()); // 시작시각
-                System.out.println("PayView " + reserveVo.getPay_money());  // 가격
-                System.out.println("PayView " + reserveVo.getSeat_no());    // 좌석
-                System.out.println("PayView " + reserveVo.getMember_tel()); // 전화번호
-                System.out.println("PayView " + reserveVo.getNon_member_tel()); // 비회원번호
+                System.out.println("PayView 인원 " + reserveVo.getPerson_num()); // 인원
+                System.out.println("PayView 상영관" + reserveVo.getTheater_no()); // 상영관
+                System.out.println("PayView 시각" + reserveVo.getStart_time()); // 시작시각
+                System.out.println("PayView 가격" + reserveVo.getPay_money());  // 가격
+                System.out.println("PayView 좌석번호" + reserveVo.getSeat_no());    // 좌석
+                System.out.println("PayView 전화번호" + reserveVo.getMember_tel()); // 전화번호
+                System.out.println("PayView 비회원전화번호" + reserveVo.getNon_member_tel()); // 비회원번호
+
                 doReserve("카드");
                 JOptionPane.showMessageDialog(this, "카드를 넣어주세요!", "카드", JOptionPane.INFORMATION_MESSAGE);
             }
@@ -133,7 +136,12 @@ public class PayView extends JFrame {
 
     public void doReserve(String pay_sys){
         try{
-            reserveDao.reserve(reserveVo, pay_sys);
+            System.out.println("PayView 139행 상영관번호 : " + reserveVo.getTheater_no());
+            System.out.println("PayView 140행  상영시각 : " +reserveVo.getStart_time());
+//            Date start_time = dateFormat.parse(reserveVo.getStart_time());
+//            java.sql.Date sql_time= new java.sql.Date(start_time.getTime());
+//            System.out.println("PayView 136행 " + reserveVo.getStart_time()); // 시작시각
+            reserveDao.reserveMovie(reserveVo, pay_sys);
         }catch (Exception e){
             System.out.println("예매실패 : "+ e.toString());
         }

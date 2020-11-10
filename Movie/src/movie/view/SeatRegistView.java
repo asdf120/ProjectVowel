@@ -40,7 +40,6 @@ public class SeatRegistView extends JFrame {
 
     //좌석 저장
     ArrayList<String> seatList;
-
     public SeatRegistView(ReserveVO reserveVo, String[] type, int[] count) {
 
         super("좌석");
@@ -49,13 +48,13 @@ public class SeatRegistView extends JFrame {
         this.type = type;
         this.count = count;
 
-
+        System.out.println("SeatRegistView 51행  : " + reserveVo.getTheater_no());
 
         sv = new SeatVO[5][9];
         try {
             seatDAO = new SeatDAO();
 
-            sv = seatDAO.regist();
+            sv = seatDAO.regist(reserveVo.getStart_time());
 
         } catch (Exception e) {
             e.printStackTrace();
