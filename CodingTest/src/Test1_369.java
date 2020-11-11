@@ -24,5 +24,6 @@ public class Test1_369 {
             }
         }
         System.out.println(count);
+        scanner.close();
     }
 }

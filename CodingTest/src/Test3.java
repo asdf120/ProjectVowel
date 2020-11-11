@@ -12,10 +12,11 @@ public class Test3 {
         max_range = scanner.nextInt();
 
         for(int i = 1; i<=max_range; i++){
-            if (i % mod1 == 0 && i % mod2 != 0) {
-                result++;
+			if (i % mod1 == 0 && i % mod2 != 0) {
+				result++;
             }
         }
         System.out.println(result);
+        scanner.close();
     }
 }
