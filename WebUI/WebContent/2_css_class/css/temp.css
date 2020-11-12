@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* 요소(태그)로 찾기 */
+div{
+    color:#FF7738; /* RGB(Red, Green, Blue) */
+    color:#F80;
+}
+/* id로 찾기 */
+#point100{
+    color: pink;
+    color: purple;
+}
+/* 클래스로 찾기 */
+.point10{
+    color: cyan;
+}

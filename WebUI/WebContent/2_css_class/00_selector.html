@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 연습</title>
+<link type="text/css" rel="stylesheet" href="css/temp.css"/>
+    <!-- 16진수 : 0~9,A,B,C,D,E,F-->
+    <style type="text/css">
+        div#point100{
+            color: blue;
+        }
+        body div#point100{
+            color: greenyellow;
+        }
+        /* 속성찾기 */
+        input[type=text]{
+            border: 2px solid red;
+        }
+        input:first-of-type{
+            border:2px dashed blue;
+        }
+        /* 마지막 요소 찾아서 변경 */
+        input:last-of-type{
+            border: 1px solid deeppink;
+        }
+        /* 5번째 요소 찾아서 변경 */
+        input:nth-child(5){
+            border:1px solid mediumpurple;
+        }
+        /* 뒤에서 요소 찾기*/
+        input:nth-last-child(2){
+            border:4px solid aquamarine;
+        }
+        /* 비활성화 속성으로 요소 찾기 */
+        /*input:disabled{*/
+            /*border:5px solid royalblue;*/
+        /*}*/
+    </style>
+
+</head>
+<body>
+
+<div id="point100" class="point10">안녕하세요</div>
+
+
+<p>
+    <input type="text" value="입력1">
+    <input type="checkbox"> 선택
+    <input type="radio" name="rd" checked="checked"> 예
+    <input type="radio" name="rd"> 아니오
+    <input type="text" value="입력2" disabled="disabled">
+    <input type="button" value="확인">
+    <input type="button" value="취소">
+</p>
+
+
+</body>
+</html>
