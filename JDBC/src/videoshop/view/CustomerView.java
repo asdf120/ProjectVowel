@@ -173,7 +173,6 @@ public class CustomerView extends JPanel implements ActionListener {
      * 역할 : 회원가입을 위해 사용자 입력값을 받아서 모델로 전달
      */
     public void registMember() {
-        //TODO
         //1.화면 입력값 받아오기
         String name = tfCustName.getText();
         String tel = tfCustTel.getText();

@@ -3,6 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Positioning</title>
+	<style type="text/css">
+		/* float : left/right */
+		#header{
+			border:2px solid black;
+		}
+		#left{
+			float: left;
+			width: 300px;
+			height: 100px;
+			border: 2px solid pink;
+		}
+		#content{
+			float:right;
+			width: 400px;
+			height: 400px;
+			border: 2px dotted green;
+		}
+		#footer{
+			clear: both;
+			width: fit-content;
+			border: 2px dashed red;
+		}
+	</style>
+	<style type="text/css" media="print">
+		#header, #left, #footer{
+			display: none;
+		}
+		#content{
+			float: left;
+		}
+	</style>
+
+	<style type="text/css" media="screen and (max-width:600px)">
+		#left{
+			display: none;
+		}
+		#content{
+			float: left;
+		}
+	</style>
 </head>
 
 <body>
@@ -10,7 +50,7 @@
 <div id="wrap">
 	<div id="header">헤더영역</div>
 	<div id="left">왼쪽의 메뉴 영역</div>
-	<div id="content">						
+	<div id="content">
 						<ul>
 							<li>17세기 일본 돗토리번(鳥取藩)의 오야(大谷) 및 무라카와(村川) 양가는 조선 영토인 울릉도에서 불법 어로행위를 하다가 1693년 울릉도에서 <strong>안용복</strong>을 비롯한 조선인들과 만나게 되었습니다. </li>
 							<li>양가는 일본 정부(에도 막부)에 조선인들의 울릉도 도해(渡海)를 금지해달라고 청원하였고, 막부가쓰시마번(對馬藩)에 조선 정부와의 교섭을 지시함에 따라 양국간 교섭이 개시되는데, 이를 ‘울릉도쟁계’라 합니다.</li>
@@ -18,8 +58,8 @@
 							<li>이로써 한&#183;일 양국간 분쟁은 마무리되었고, 울릉도쟁계 과정에서울릉도와 독도가 우리나라 영토임이 확인되었습니다.</li>
 						</ul></div>
 	<div id="footer">밑에 영역</div>
-</div>	
- 
+</div>
+
 
 </body>
 </html>

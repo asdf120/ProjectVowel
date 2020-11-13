@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06_html5_form.html</title>
+    <link href="../2_css_class/css/html5_form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend id="login_info">로그인 정보</legend>
+            <ol>
+                <li>
+                    아이디  <input type="text" name="id">
+                </li>
+                <li>
+                    비밀번호 <input type="password" name="password">
+                </li>
+                <li>
+                    비밀번호 확인 <input type="password" name="passwordConfirm">
+                </li>
+                <li>
+                    회원 등급 <input type="text" name="grade" value="준회원">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend id="member_info">개인 정보</legend>
+            <ol>
+                <li>
+                    이름 <input type="text" name="name" placeholder="5자미만 공백없이" maxlength="5">
+                </li>
+                <li>
+                    메일 주소 <input type="email" name="email" placeholder="abcd@domain.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                </li>
+                <li>
+                    연락처 <input type="tel" name="tel">
+                </li>
+                <li>
+                    생일 <input type="date" name="birth" placeholder="연도-월-일">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend id="coding_pro">코딩 숙련도(상,중,하)</legend>
+            <ol>
+                <li>
+                    <input type="range" max="2" id="proficiency" value="1">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+        <input type="submit" value="제출">
+        </fieldset>
+    </form>
+</body>
+</html>

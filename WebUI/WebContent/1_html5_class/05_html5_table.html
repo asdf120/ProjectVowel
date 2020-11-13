@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>05_html5_table.html</title>
+    <style type="text/css">
+        table{
+            border: green 1px solid;
+            border-collapse: collapse;
+        }
+
+        /* 제목줄
+          폭 : 150px, 높이 100px
+          여백 : 10px;
+          배경색 : 다크그레이
+          글자색 : 노랑
+        */
+        table[border="1"] th{
+            width : 150px;
+            height: 100px;
+            padding: 10px;
+            background: darkgray;
+            color: yellow;
+        }
+
+        tr:hover{
+            background: olive;
+        }
+        tr:nth-child(odd){
+            background: aliceblue;
+        }
+
+    </style>
 </head>
 <body>
     <table border="2">
         <tr>
-            <td rowspan="2">홍길동,홍길동</td><td>박길동</td> <!-- 행을 2개 합침 -->
+            <th rowspan="2">홍길동,홍길동</th><th>박길동</th> <!-- 행을 2개 합침 -->
         </tr>
         <tr>
             <td>박길동</td>

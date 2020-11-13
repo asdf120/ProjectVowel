@@ -3,12 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <title> 테이블 꾸미기 연습 </title>
+  <link href="" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .data{
+      border-collapse: collapse;
+    }
+    .data{
+      margin: auto;
+    }
+    th{
+      padding: 10px;
+    }
+    td{
+      width: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    tr>td:first-of-type{
+      background: darkslateblue;
+      color: white;
+    }
+
+    .singer{
+      background: blue;
+      color:white;
+    }
+    .actor{
+      background: hotpink;
+      color: white;
+    }
+    .domestic{
+      background: springgreen;
+      color: white;
+    }
+    .abroad{
+      background: blueviolet;
+      color: white;
+    }
+    .male{
+      background: darkgray;
+      color: white;
+    }
+    .female{
+      background: yellow;
+      color: plum;
+      font-weight: bold;
+    }
+
+  </style>
 </head>
 <body>
 
 <div id="celebs">
         <h2 class="heading"> 우리 스타 보기</h2>
-        <table class="data">
+        <table class="data" border="1px">
           <thead>
             <tr>
               <th>ID</th>
@@ -20,39 +69,39 @@
           <tbody>
             <tr>
               <td>203A</td>
-              <td>샤이니</td>
-              <td>가수</td>
-              <td>용인</td>
+              <td class="male">샤이니</td>
+              <td class="singer">가수</td>
+              <td class="domestic">용인</td>
             </tr>
             <tr>
               <td>141B</td>
-              <td>소녀시대</td>
-              <td>가수</td>
-              <td>부산</td>
+              <td class="female">소녀시대</td>
+              <td class="singer">가수</td>
+              <td class="domestic">부산</td>
             </tr>
             <tr>
               <td>2031</td>
-              <td>김수현</td>
-              <td>배우</td>
-              <td>뉴욕</td>
+              <td class="male">김수현</td>
+              <td class="actor">배우</td>
+              <td class="abroad">뉴욕</td>
             </tr>
             <tr>
               <td>007F</td>
-              <td>국카스텐</td>
-              <td>가수</td>
-              <td>마산</td>
+              <td class="male">국카스텐</td>
+              <td class="singer">가수</td>
+              <td class="domestic">마산</td>
             </tr>
             <tr>
               <td>8A05</td>
-              <td>김태희</td>
-              <td>배우</td>
-              <td>서울</td>
+              <td class="female">김태희</td>
+              <td class="actor">배우</td>
+              <td class="domestic">서울</td>
             </tr>
             <tr>
               <td>6636</td>
-              <td>송혜교</td>
-              <td>배우</td>
-              <td>런던</td>
+              <td class="female">송혜교</td>
+              <td class="actor">배우</td>
+              <td class="abroad">런던</td>
             </tr>
           </tbody>
         </table>

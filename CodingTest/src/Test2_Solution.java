@@ -28,6 +28,47 @@ public class Test2_Solution {
             Collections.sort(list);
             System.out.println(list);
         }
+        solution(arr);
 
     }
+
+    public static void solution(int[] arr) {
+
+        boolean[] alreadyExist = new boolean[100];
+        int index = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+
+                    if(alreadyExist[arr[i]]) {
+                        alreadyExist[arr[i]] = false;
+                        break;
+                    }
+
+                    alreadyExist[arr[i]] = true;
+                }
+            }
+        }
+
+
+        for (int i = 0; i < alreadyExist.length; i++) {
+            if(alreadyExist[i]) {
+                index++;
+            }
+        }
+
+        if(index == 0) {
+            System.out.println("-1");
+        }
+        else {
+            for (int i = 0; i < alreadyExist.length; i++) {
+                if(alreadyExist[i]) {
+                    System.out.print(i + " ");
+                }
+            }
+        }
+
+    }
+
 }
