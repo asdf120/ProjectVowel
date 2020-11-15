@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 public class DbSingleton {
     private static Connection con;
 
-    // TODO tel 스태틱
+    // T`ODO tel 스태틱
     public static String tel;
 
     String url;
