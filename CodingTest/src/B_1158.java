@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -17,18 +15,11 @@ public class B_1158 {
         int pNum = 7;
         int k = 3;
         boolean flag = true;
-        Queue<Integer> oneQueue = new 
         for (int i = 1; i <= pNum; i++) {
-            n.add(i);
         }
 
         while (flag) {
-
-            if (n.size() == 0) {
-                flag = false;
-            }
         }
 
-        System.out.println(result);
     }
 }

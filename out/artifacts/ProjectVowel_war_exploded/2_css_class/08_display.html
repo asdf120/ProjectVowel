@@ -1,0 +1,42 @@
+<!-- 
+	display:block			:		 항상 새라인에서 시작하고 옆에 다른 요소 배치 안됨
+											width, height, padding, margin, border 조절 가능
+	display:inline		:		 새라인에서 시작 못하고 옆에 다른 요소와 배치 가능
+											width, height, padding, margin, border 조절 불가능
+	display:inline-block : 	새라인에서 시작 못하고 옆에 다른 요소와 배치 가능
+											width, height, padding, margin, border 조절 가능
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 박스의 유형 제어 - display </title>
+	<style type="text/css">
+		/*
+			1)img는 inline 요소이므로 개행 X
+			2)div로 감싸면 div는 block요소이므로 개행가능
+			3)div에 "display : inline;" 속성으로 한줄에 보이게
+		 */
+		div > div{
+			margin: 20px;
+			padding: 30px;
+			display: inline-block;
+		}
+		/* 두번재 카드 안보이게 */
+		div>div:nth-of-type(2){
+			visibility: hidden;
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<hr/>
+	<div style="background : orange">
+	<div><img src='./img/spade-2.png'  width='200px' height='300px'/></div>
+	<div><img src='./img/spade-3.png'  width='200px' height='300px'/></div>
+	<div><img src='./img/spade-7.png'  width='200px' height='300px'/></div>
+
+</div>
+
+</body>
+</html>

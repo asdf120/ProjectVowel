@@ -7,25 +7,102 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69e524e2-21ca-457d-b2b0-a55dd394d758" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/server-config.wsdd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/06_simpleForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/01_html5_section.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/02_html5_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/03_html5_text.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/04_html5_span.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/05_html5_table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/06_simpleForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/css/temp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingTest/src/Test2_Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingTest/src/Test2_Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/03_html5_text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/03_html5_text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/99_html5구조_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/99_html5구조_css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/ProjectVowel_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/3_bootstrap_class/Ex01_Sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebUI/WebContent/3_bootstrap_class/Ex05_formBoot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/ProjectVowel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/ProjectVowel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/ojdbc61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CodingTest/src/B_1158.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingTest/src/B_1158.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WebP_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Apache_Axis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/axis.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-discovery-0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxrpc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/log4j-1.2.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/saaj.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/wsdl4j-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebP_war_exploded/WEB-INF/classes/example/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebP_war_exploded/WEB-INF/server-config.wsdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebP_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebP_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebP/example/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/server-config.wsdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/09_positioning1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebUI/WebContent/2_css_class/09_positioning1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/B_1158.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/B_1158.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/GUI$BtnHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/GUI$BtnHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/GUI$MosHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/GUI$MosHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Test1_369.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Test1_369.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Test2_Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Test2_Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Test3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/AdminStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/AdminStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/AdminDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/AdminDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/DbSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/DbSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/MovieDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/MovieDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/ReserveDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/ReserveDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/SeatDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/SeatDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/TheaterDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/TheaterDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/ManagerVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/ManagerVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/MovieVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/MovieVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/ReserveVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/ReserveVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/SeatVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/SeatVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/TheaterVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/TheaterVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/data/vo/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/LoginView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/LoginView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MovieView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MovieView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MovieView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MovieView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MyPageView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MyPageView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MyPageView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/MyPageView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/NonMemberShipView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/NonMemberShipView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/NonMemberShipView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/NonMemberShipView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/PayView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/PayView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/PayView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/PayView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/RegistView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/RegistView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/RegistView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/RegistView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/ReserveView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/ReserveView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/ReserveView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/ReserveView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SearchPWView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SearchPWView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SearchPWView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SearchPWView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatCountView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatCountView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatCountView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatCountView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatRegistView$ClickListenr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatRegistView$ClickListenr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatRegistView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatRegistView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatRegistView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/SeatRegistView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_GraphView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_GraphView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_MemberView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_MemberView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_MemberView$MemberTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_MemberView$MemberTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_MemberView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_MemberView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_RegistView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_RegistView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_RegistView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_RegistView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_TimeTableView$EventListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_TimeTableView$EventListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_TimeTableView$MovieTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_TimeTableView$MovieTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_TimeTableView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/A_TimeTableView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/MovieDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/MovieDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/MovieGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/movie/view/admin/MovieGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/plusCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/plusCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/CustomerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/CustomerView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$ButtonEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$ButtonEventHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$VideoTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView$VideoTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/videoshop/view/VideoView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,20 +112,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/example/HelloWorld.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/web/3_bootstrap_class/Ex07_toggletab.html" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -57,10 +132,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -68,36 +144,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WebP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605149750728" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebUI" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605506134173" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectVowel\WebP\web" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,8 +177,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Ex07_toggletab.html">
+    <configuration name="Ex07_toggletab.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.391" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/3_bootstrap_class/Ex07_toggletab.html" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="WebP:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_WebP" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63371" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="WebP:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.391" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.391" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="1_html5_class 2_css_class 3_bootstrap_class" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="WebP:war exploded">
@@ -256,6 +396,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.391" />
+      <item itemvalue="Tomcat Server.Ex07_toggletab.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Tomcat Server.Ex07_toggletab.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -270,16 +419,18 @@
       <workItem from="1605149528245" duration="11000" />
       <workItem from="1605149555788" duration="197000" />
       <workItem from="1605170731973" duration="633000" />
+      <workItem from="1605504652270" duration="1084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="841000" />
+    <option name="totallyTimeSpent" value="1925000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="976" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.33624455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -321,6 +472,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/1_html5_class/02_html5_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/check/bad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/3_bootstrap_class/Ex07_toggletab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
