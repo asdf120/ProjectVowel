@@ -23,6 +23,8 @@ public class Sum_Plndr {
         int ten;
         int one;
 
+        System.out.println("solution2의 결과 : " + solution2(input));
+
         while (flag) {
             if (input == 100000) {
                 System.out.println("YES");
@@ -30,33 +32,52 @@ public class Sum_Plndr {
             } else if (input >= 10000) {
                 temp = input / 10000;
                 input = input % 10000;
-                sum+= temp;
+                sum += temp;
             } else if (input >= 1000) {
                 temp = input / 1000;
                 input = input % 1000;
                 sum += temp;
             } else if (input >= 100) {
-                temp = input /100;
+                temp = input / 100;
                 input = input % 100;
                 sum += temp;
             } else if (input >= 10) {
                 temp = input / 10;
                 input = input % 10;
                 sum += temp;
-            } else if (input < 10){
+            } else if (input < 10) {
                 temp = input;
                 sum += temp;
                 flag = false;
             }
         }
-
+        System.out.println("sum 값 : " + sum);
         ten = sum / 10;
         one = sum % 10;
         if (sum < 10 || ten == one) {
             System.out.println("YES");
-        }else{
+        } else {
             System.out.println("NO");
         }
 
+    }
+
+    public static String solution2(int input) {
+        int sum = 0;
+        int ten = 0;
+        int one = 0;
+
+        for (int i = input; i > 0; i = (i / 10)) {
+            int value = i % 10;
+            sum += value;
+        }
+        ten = sum / 10;
+        one = sum % 10;
+
+        if (sum < 0 || sum == one) {
+            return "YES";
+        }else{
+            return "NO";
+        }
     }
 }
