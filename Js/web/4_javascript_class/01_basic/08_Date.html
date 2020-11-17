@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date 객체</title>
+<script type="text/javascript">	
+ 	
+	var d = new Date('2020/08/15');
+	document.writeln( d  + '<br/>');
+	document.writeln( d.getYear()  + '<br/>');
+	document.writeln( d.getFullYear()  + '<br/>');
+	document.writeln( d.getMonth()  + '<br/>');	// ************ 
+	document.writeln( d.getDate()  + '<br/>');
+	document.writeln( d.getDay()  + '<br/>');
+
+	var d = new Date();
+	d.setFullYear(2025) // 2025년 12월 25일
+	// 12월 25일
+	d.setMonth(11)
+	d.setDate(25)
+
+	document.writeln(d + "<br/>")
+	document.writeln(d.toLocaleString() + "<br/>")
+	document.writeln(d.toDateString() + "<br/>")
+	document.writeln(d + "<br/>")
+	
+	// 날짜형 계산
+	d.setMonth(d.getMonth()+1);
+	document.writeln(d + "<br/>")
+	//현재 날짜에서 20일후
+	var today = new Date();
+	today.setDate(today.getDate()+20);
+	document.writeln(today + "<br/>")
+
+	//[*]
+	d.setDate(0) // 전달의 마지막날짜
+	
+	document.writeln(d + "<br/>")
+	
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

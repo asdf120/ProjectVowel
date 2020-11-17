@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -23,14 +25,29 @@ public class Dice_1951 {
         int n1 = scanner.nextInt();
         int n2 = scanner.nextInt();
         int n3 = scanner.nextInt();
-        int[] sumCount = new int[n1*n2*n3];
+        int[] sumCount = new int[n1 + n2 + n3];
+        int max = sumCount[0];
+        int result = 0;
 
-        for(int first = 1; first <= n1; first++){
-            for (int second = 1; second<=n2; second++){
-                for(int third = 1; third<=n3; third++){
-                    System.out.println(first + second + third);
+        for (int first = 1; first <= n1; first++) {
+            for (int second = 1; second <= n2; second++) {
+                for (int third = 1; third <= n3; third++) {
+                    System.out.print(first + second + third + " ");
+                    sumCount[first+second+third-3]++;
                 }
             }
         }
+        System.out.println();
+
+        for(int i = 1; i<sumCount.length; i++){
+            System.out.println("sumCount[" + i +"]의 값 : " + sumCount[i]);
+            if(max < sumCount[i]){
+                max = sumCount[i];
+                result = i;
+                System.out.println("max의 값 : " + max);
+            }
+        }
+        System.out.println(max);
+        System.out.println(result+3);
     }
 }
