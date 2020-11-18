@@ -74,7 +74,9 @@ public class Sum_Plndr {
         ten = sum / 10;
         one = sum % 10;
 
-        if (sum < 0 || sum == one) {
+        System.out.println("solution2 값 : " + sum);
+
+        if (sum < 0 || ten == one) {
             return "YES";
         }else{
             return "NO";
