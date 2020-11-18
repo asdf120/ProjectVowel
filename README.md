@@ -5,3 +5,4 @@
 - JDBC : swing이용한 UI & DB(Oracle) 연동
 - Movie : Oracle연동 영화관 프로젝트
 - WebUI : html과 css 익히기
+- Js : JavaScript
