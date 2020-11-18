@@ -60,6 +60,7 @@ public class Sum_Plndr {
             System.out.println("NO");
         }
 
+
     }
 
     public static String solution2(int input) {
@@ -78,7 +79,7 @@ public class Sum_Plndr {
 
         if (sum < 0 || ten == one) {
             return "YES";
-        }else{
+        } else {
             return "NO";
         }
     }

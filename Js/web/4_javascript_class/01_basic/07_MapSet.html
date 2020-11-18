@@ -12,9 +12,70 @@ m.set('script','2222');
 m.set('nodejs', '2222');
 m.set('java','3333');
 
+// function test(){
+// 	let id = document.getElementById('id').value
+// 	let password = document.getElementById('password').value
+// 	document.write(id + " : " + password)
+// 	alert(id)
 
+// 	// 위의 map에 저장된 아이디와 패스워드를 비교하여 로그인 성공여부 메세지 출력
+// 	// for(let [key,value] of m){
+// 	// 	if(key === id){
+// 	// 		alert("아이디 있음")
+// 	// 		if(value === password){
+// 	// 			alert("로그인 성공")
+// 	// 			break;
+// 	// 		}else{
+// 	// 			alert("비밀번호가 일치하지않음")
+// 	// 			break;
+// 	// 		}
+// 	// 	}else{
+// 	// 		alert("아이디가 없음")
+// 	// 		break;
+// 	// 	}
+// 	// }
 
+// 	if(m.has(id) && m.get(id) == password){
+// 		alert("로그인성공")
+// 	}else{
+// 		alert("로그인 실패")
+// 	}
+// } // test() END
 
+// for(let key of m.keys()){
+// 	document.write(key + "<br/>")
+// }
+// document.write("<br/>")
+// for(let key of m.values()){
+// 	document.write(key + "<br/>")
+// }
+// document.write("<br/>")
+// // map.entries() --> key와 value를 같이뽑음
+// for(let [key,value] of m.entries()){
+// 	document.write(key + " : " + value + "<br/>")
+// }
+// document.write("<br/>")
+// for(let [key,value] of m){
+// 	document.write(key + " : " + value + "<br/>")
+// }
+
+// Map은 for..in은 안되고 for..of만 되는 이유
+for(var k in m.keys()){
+	console.log(k)
+	document.write(k + "<br/>")
+}
+
+m.set(1,'1111')
+
+var key = {'temp': '000000'}
+
+m.set(key,'홍길동');
+
+for(var k of m.keys()){
+	document.write(k + "<br/>")
+}
+document.write(key + " : " + m.get(key) + "<br/>")
+document.write({'temp': '000000'} + " : " + m.get({'temp': '000000'}) + "<br/>")
 
 
 /* [참고] Map과 객체 리터럴의 차이 
@@ -22,10 +83,6 @@ m.set('java','3333');
  		 객체뿐만 아니라 NaN도 키가 될 수 있다
  	2) Map은 size를 통해 요소의 갯수를 파악한다
  */
-
- 
- 
- 
  
 //-------------------------------------------------------
 // 2. Set  : 중복 값을 허용하지 않는 집합 관리 객체
@@ -35,10 +92,32 @@ s.add('dog');
 s.add('lion');
 s.add('dog');
 
+for(let v of s){
+	document.write(v + "<br/>")
+}
+
+// Set 객체를 이용하여 로또 6개 출력
+// let lotto = new Set();
+// while(lotto.size<6){
+// 	lotto.add(parseInt(Math.random()*45)+1)
+// }
+
+// for(let v of lotto){
+// 	document.write(v + " ")
+// }
+
+
 
 </script>
 </head>
 <body>
 
+	<!-- 아이디 : <input type ='text' id='id'><br/>
+	패스워드 : <input type ='password' id='password'><br/>
+	<input type="button" value="전송" onclick="test()"><br/> -->
+
+	
+	<!--TODO  서버로 전송하려면 반드시 form안에 구현 -->
+	
 </body>
 </html>

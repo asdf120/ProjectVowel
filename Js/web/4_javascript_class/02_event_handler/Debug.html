@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>디버그</title>
+    <!-- 개발자 모드(F12)
+        디버깅모드 : Source 탭 선택 후 해당 파일 선택
+        break point 지정
+        F9 : next step
+        F10 : step over 함수는 안들어가고 함수 결과만 받음
+        F11 : step into 함수 안으로 들어감
+    -->
+    <script type="text/javascript">
+        let result = 0;
+        
+        window.onload = function(){
+            let button = document.getElementById('button');
+            let re = document.getElementById('re')
+            button.onclick = function(){
+                for(let i = 10; i>0; i-=2){
+                    result +=i;
+                }
+                result += func1();
+                re.value = result;
+            }
+        
+        function func1(){
+            var temp = 10000;
+            return temp;
+        }
+            
+        }
+        
+        </script>
+</head>
+
+<body>
+    <input type="button" value="시작" id="button">
+    <input type="text" id="re">
+</body>
+</html>

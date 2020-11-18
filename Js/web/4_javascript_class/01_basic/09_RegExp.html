@@ -4,18 +4,24 @@
 <meta charset="UTF-8">
 <title> RegExp 객체</title>
 <script type="text/javascript">
+//      http://www.aaaa/temp/id=java&password=1234
 var p = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-.\/?%&=]*)?/gi;
 // var p = /http(s)?:\/\/([\w]+\.)+[\w]+(\/[\w.\/?%&=]*)?/gi;     - url에 하이픈(-) 없이
 //var p = new RegExp('http(s)?://([\\w-]+\\.)+[\\w-]+(/[\\w-./?%&=]*)?','gi');
 var str = '한 번을 둘러봐야 하는 사이트 http://www.w3schools.com/ 입니다';
 str += ' 또한 집중적으로 봐야하는 사이트 http://jqapi.ru/ 입니다';
 
-
+var result = str.match(p);
+for(var i = 0; i<result.length; i++){
+    document.write(result[i] + '<br/>')
+}
 
 // 매치 성공여부 검증 
 var one = '한 번을 둘러봐야 하는 사이트 http://www.w3schools.com/ 입니다';
-var two= '또한 집중적으로 봐야하는 사이트 http://jqapi.ru/ 입니다';
+var two = '또한 집중적으로 봐야하는 사이트 http://jqapi.ru/ 입니다';
 
+document.write(p.test(two) + "<br/>") // test() -> 한번만 확인후 나머지 체크는 모두 false
+document.write(p.test(one) + "<br/>")
 
 </script>
 </head>

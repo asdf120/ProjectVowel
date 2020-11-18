@@ -16,6 +16,7 @@ public class B_1158 {
         int k = 3;
         boolean flag = true;
         for (int i = 1; i <= pNum; i++) {
+
         }
 
         while (flag) {

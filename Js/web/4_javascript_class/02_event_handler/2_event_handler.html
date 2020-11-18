@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title> 이벤트 핸들러 연결 </title>
-  </head>
- <body>
-	<input type='button' value='눌러'  id='btn' />
- </body>
+  <meta charset="UTF-8">
+  <title> 이벤트 핸들러 연결 </title>
+  <script type="text/javascript">
+    // window.onload = init; // init은 init(); 은 호출
+
+    // function init() {
+    //   let btn = document.getElementById('btn')
+    //   btn.onclick = function() {
+    //     alert('클릭이벤트 발생2')
+    //   }
+    //   console.log(btn)
+    // }
+  // window.onload = init; // init은 init(); 은 호출
+
+  //   function init() {
+  //     let btn = document.getElementById('btn')
+  //     btn.onclick = btn_event
+
+  //     function btn_event() {
+  //       alert('클릭이벤트 발생')
+  //     }
+  //     console.log(btn)
+  //   }
+
+  window.onload =  function () {
+      let btn = document.getElementById('btn')
+      btn.onclick = function() {
+        alert('클릭이벤트 발생3')
+      }
+      console.log(btn)
+    }
+  </script>
+
+</head>
+
+<body>
+  <input type='button' value='눌러' id='btn' />
+</body>
+
 </html>

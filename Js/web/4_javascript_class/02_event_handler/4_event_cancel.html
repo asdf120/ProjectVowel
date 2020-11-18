@@ -10,6 +10,32 @@
 			- preventDefault() : 이벤트 본래의 동작 취소
 	*/
 
+	
+	window.onload = function(){
+		let inner = document.getElementById('inner')
+		let outer = document.getElementById('outer')
+		
+		//2번방식
+		inner.onclick = function(event){
+			event.stopPropagation();
+			event.preventDefault();
+			alert('inner 클릭')
+		}
+		outer.onclick = function(){
+			alert('outer 클릭')
+		}
+
+		//3번방식
+		// outer.addEventListener('click',function(){
+		// 	alert('outer 클릭')
+		// })
+		// inner.addEventListener('click',function(event){
+		// 	event.stopPropagation()
+		// 	event.preventDefault()
+		// 	alert('inner 클릭')
+		// })
+		
+	}
 
 </script>
 </head>

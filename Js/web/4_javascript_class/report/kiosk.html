@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>키오스크 버거왕</title>
+    <style type="text/css">
+        td {
+            text-align: center;
+        }
+
+        img {
+            width: 38%;
+            height: 100px;
+        }
+    </style>
+    <script type="text/javascript">
+        let orderCount = 0; // 주문번호
+        let amountPrice = 0; // 총 금액
+        let menuMap = new Map();
+        
+
+        window.onload = function () {
+            let textPrice = document.getElementById('amountPrice')
+            let set = document.querySelectorAll('.set') // 배열형태
+            let count = 1;
+
+            for (let i = 0; i < set.length; i++) {
+                set[i].onclick = function () {
+                    let orderCon = document.getElementById('orderCon')
+                    let menu = this.getAttribute('name')
+                    console.log("메뉴이름 : " + menu)
+                    let price = parseInt(this.getAttribute('price'))
+                    if (menuMap.has(menu)) {
+                        count++
+                        console.log(count)
+                        price *= count
+                        menuMap.set(menu, price)
+                        console.log("시발 " + menuMap.get(menu))
+                        orderCon.innerHTML = menu + " " + count +"개, " + menuMap.get(menu)+"원"
+                    } else {
+                        menuMap.set(menu, price)
+                        console.log("가격 : " + menuMap.get(menu))
+                        orderCon.innerHTML = menu + " " + count +"개, " + menuMap.get(menu)+"원"
+                    }
+                    
+                    amountPrice += parseInt(price) // 주문 총액
+                }
+            }
+            let cancel = document.getElementById('cancel')
+            cancel.onclick = function () {
+                menuMap.clear()
+                amountPrice = 0;
+                textPrice.innerHTML = ""
+            }
+            let order = document.getElementById('order')
+            order.onclick = function () {
+                orderCount++;
+                console.log("주문번호 : " + orderCount + ", 총 금액 : " + amountPrice)
+                textPrice.innerHTML = amountPrice + "원"
+                amountPrice = 0;
+                menuMap.clear()
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tr id="header">
+            <td class='set' name='기네스콰트로치즈와퍼 세트' price='9700'><img src="img/set1.png">
+                <h5>기네스콰트로치즈와퍼 세트-9700원</h5>
+            </td>
+            <td class='set' name='칠리크랩통새우 세트 ' price='9000'><img src="img/set2.png">
+                <h5>칠리크랩통새우 세트-9000원</h5>
+            </td>
+            <td class='set' name='몬스터와퍼 세트' price='8800'><img src="img/set3.png">
+                <h5>몬스터와퍼 세트-8800원</h5>
+            </td>
+            <td rowspan="2" id = 'orderCon'>주문확인란</td>
+        </tr>
+        <tr>
+            <td class='set' name='콰트로치즈와퍼 세트' price='6700'><img src="img/set4.png">
+                <h5>콰트로치즈와퍼 세트-6700원</h5>
+            </td>
+            <td class='set' name='트러플머쉬룸와퍼 세트' price='8400'> <img src="img/set5.png">
+                <h5>트러플머쉬룸와퍼 세트-8400원</h5>
+            </td>
+            <td class='set' name='통새우와퍼 세트' price='8500'><img src="img/set6.png">
+                <h5>통새우와퍼 세트-8500원</h5>
+            </td>
+        </tr>
+        <tr>
+            <td class='set' name='베이컨치즈와퍼 세트' price='6100'><img src="img/set7.png">
+                <h5>베이컨치즈와퍼 세트-6100원</h5>
+            </td>
+            <td class='set' name='불고기와퍼 세트' price='5500'><img src="img/set8.png">
+                <h5>불고기와퍼 세트-5500원</h5>
+            </td>
+            <td class='set' name='와퍼 세트' price='5200'><img src="img/set9.png">
+                <h5>와퍼 세트-5200원</h5>
+            </td>
+            <td rowspan="2" id='amountPrice'></td>
+        </tr>
+        <tr>
+            <td>세트</td>
+            <td>단품</td>
+            <td>음료</td>
+        </tr>
+    </table>
+    <br />
+    <div align="center">
+        <input type="button" id="cancel" value="취소">
+        <input type="button" id="order" value="주문">
+    </div>
+</body>
+
+</html>
