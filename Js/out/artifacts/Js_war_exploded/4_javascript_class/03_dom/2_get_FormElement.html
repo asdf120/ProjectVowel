@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <title> Document 예제 </title>
 <meta charset="UTF-8">
@@ -13,8 +14,11 @@
 <script type="text/Javascript">
 	window.onload = function(){
     	document.getElementById('btn').onclick = function(){
-
- 
+			// let name = document.querySelector('#userName')
+			// let result = document.querySelector('#result')
+			// let name = document.frm.username/*태그의 name으로 찾음*/.value;
+			let name = document.forms[0].username.value;
+			result.innerHTML = name
     	}
     }
 </script>

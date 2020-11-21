@@ -8,7 +8,7 @@
 
 // 1. 숫자 형식 메소드 
 var su = 123.456789;
-document.writeln( su.toExponential(2)  + "<br/>" );	
+document.writeln( su.toExponential(5)  + "<br/>" );	
 document.writeln( su.toFixed(3)  + "<br/>" );		
 document.writeln( su.toFixed(7) + "<br/>" );	
 document.writeln( su.toPrecision(6)  + "<br/>" );	 
@@ -16,9 +16,24 @@ document.writeln( su.toPrecision(10)  + "<br/>" );
 
 //-------------------------------------------------
 // 2. 형변환
+var n = '0770';
+document.writeln(typeof n + "<br/>")
+document.writeln(Number(n) + "<br/>")
+document.writeln(parseInt(n) + "<br/>")
+document.writeln(parseFloat(n) + "<br/>")
+document.writeln(typeof parseInt(n) + "<br/>")
 
+var n = 'abc770'
+document.writeln(Number(n) + "<br/>")
+document.writeln(parseInt(n) + "<br/>")
 
+var n = '770abc'
+document.writeln(Number(n) + "<br/>")
+document.writeln(parseInt(n) + "<br/>")
 
+//------------------------------------------------------
+document.write(typeof(123 + "4")+ "<br/>")
+document.write("4" -123)
 
 </script>
 </head>

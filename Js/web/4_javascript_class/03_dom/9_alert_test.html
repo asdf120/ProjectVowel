@@ -4,13 +4,18 @@
 <meta charset="UTF-8">
 <title> Alert Test </title>
 <script type="text/javascript">
-	<!--
+	// <!--
 	window.onload = function(){
 		// 1. alert
-		
-		
+		console.log("아아아")
+		alert('이 페이지는 이사감 \n 앞으로 이쪽으로 이동바람')
+		location.href = 'http://ikosmo.co.kr'
+	
 		// 2. confirm
-		
+		let result = confirm('이 페이지는 이사감 \n 앞으로 이쪽으로 오지마시오')
+		if(result){
+			window.location = 'http://ikosmo.co.kr'
+		}
 		
 		// 3. prompt : 
 		

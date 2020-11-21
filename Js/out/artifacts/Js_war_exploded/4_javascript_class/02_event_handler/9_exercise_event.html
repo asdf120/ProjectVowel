@@ -16,6 +16,7 @@
 		<input type="button" value="스타일 B" onclick="JavaScript:changeColor('B')">
 		<input type="button" value="스타일 C" onclick="JavaScript:changeColor('C')">
 	</form>
+	글씨색상
 	<ul>
 		<li><a href="http://www.cnn.com"> 여기는 미쿡 </a></li>
 		<li><a href="http://news.bbc.co.uk"> 여기는 영쿡 </a></li>
@@ -32,7 +33,17 @@
 			
 			// alert("넘겨받은 인자값 : " + colorVar);
 			// colorVar로 넘겨받은 값에 의해 분기하고자 switch~case 문 이용이 바람직
-
+			switch(colorVar){
+				case 'A': document.bgColor = '#cc3344'
+						document.fgColor = 'red';
+						break;
+				case 'B': document.bgColor = '#113248'
+						document.fgColor = 'yellow';
+						break;
+				case 'C': document.bgColor = '#21248'
+						document.fgColor = 'white';
+						break;		
+			}
 			
 		}
 	</script>

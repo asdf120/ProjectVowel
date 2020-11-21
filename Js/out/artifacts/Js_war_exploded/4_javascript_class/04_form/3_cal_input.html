@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <title> 폼 예제 3 </title>
 <script type="text/javascript">
+	window.onload = function(){
+		let date = new Date();
+		let yoil = new Array('일','월','화','수','목','금','토','일')
+		frm1.y.value = date.getFullYear();
+		frm1.m.value = date.getMonth()+1;
+		frm1.d.value = date.getDate();
+		document.querySelector('#btn').onclick = function(){
+			let year = document.frm1.y.value;
+			let month = document.frm1.m.value;
+			let day = document.frm1.d.value;
+			date.setFullYear(year)
+			date.setMonth(month-1)
+			date.setDate(day)
+			alert(date.getDay())
+			document.frm1.w.value = yoil[date.getDay()];
+		}
+	}
 
 </script>
 </head>

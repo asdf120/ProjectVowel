@@ -10,7 +10,6 @@
 	
 	  var bInsert = document.getElementById('bInsert');
 	  bInsert.onclick = insertCustomer;
-
   }
   
 	function insertCustomer(){
@@ -19,12 +18,36 @@
 	    	insertRow() , insertCell() 등
 	    */
 		// 1. 입력한 값들을 얻어온다.
+		let name = document.getElementById('name').value
+		let age = document.getElementById('age').value
+		let tel = document.getElementById('tel').value
+		let addr = document.getElementById('addr').value
 		// 2. 테이블요소 얻어온다.
+		let tableList = document.getElementById('listTable')
+
 		// 3. tr 요소와 td 요소를 생성한다.
+		let tr = document.createElement('tr')
+		let td1 = document.createElement('td')
+		let td2 = document.createElement('td')
+		let td3 = document.createElement('td')
+		let td4 = document.createElement('td')
 		// 4. 텍스트노드(1번의 입력값)로 생성한다.
+		let txtName = document.createTextNode(name)
+		let txtAge = document.createTextNode(age)
+		let txtTel = document.createTextNode(tel)
+		let txtAdddr = document.createTextNode(addr)
 		// 5. td 요소에 텍스트노드를 붙인다.
+		td1.appendChild(txtName)
+		td2.appendChild(txtAge)
+		td3.appendChild(txtTel)
+		td4.appendChild(txtAdddr)
 		// 6. tr 요소에 생성한 td 요소를 붙인다.
+		tr.appendChild(td1)
+		tr.appendChild(td2)
+		tr.appendChild(td3)
+		tr.appendChild(td4)
 		// 7. 테이블요소에 tr요소를 붙인다.
+		tableList.appendChild(tr)
 		
 	
 	}

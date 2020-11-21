@@ -4,7 +4,16 @@
 <meta charset="UTF-8">
 <title></title>
 <script type="text/javascript">
-
+	window.onload = function(){
+		let btn = document.querySelector('#btn')
+		btn.onclick = function(){
+			// document.myForm.txt0.value='데이터'
+			// document.myForm['txt1'].value='데이터2'
+			for(let i=0; i<4; i++){
+				document.myForm['txt' + i].value= '데이터' + parseInt(i+1)
+			}
+		}
+	}
 </script>
 </head>
 <body>

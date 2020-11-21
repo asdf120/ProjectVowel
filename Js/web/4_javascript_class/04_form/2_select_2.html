@@ -4,9 +4,33 @@
 <meta charset="UTF-8">
 <title> 폼 예제 2</title>
 </head>
-<script type="text/javascript">
-</script>
 <body>
+<script type="text/javascript">
+	window.onload = function(){
+		//TODO idx 0으로 갔을때 아래서부터 다시시작
+		let up = document.querySelector('#up').onclick = function(){
+			let idx = frm.play.selectedIndex;	// document 생략 가능
+			let opt = frm.play.options;
+			// alert(opt[idx].text)
+			let str = opt[idx].text	// text 문자형 & value 숫자
+			if(idx>0){
+				opt[idx].text = opt[idx-1].text
+				opt[idx-1].text = str;
+				opt[idx-1].selected=true
+			}
+		}
+		let down = document.querySelector('#down').onclick = function(){
+			idx = frm.play.selectedIndex;	// document 생략 가능
+			opt = frm.play.options;
+			str = opt[idx].text	// text 문자형 & value 숫자
+			if(idx<opt.length-1){
+				opt[idx].text = opt[idx+1].text
+				opt[idx+1].text = str;
+				opt[idx+1].selected = true
+			}
+		}
+	}
+</script>
 
 내가 제일 좋아하는 놀이 순서대로 한다면 <br>
 

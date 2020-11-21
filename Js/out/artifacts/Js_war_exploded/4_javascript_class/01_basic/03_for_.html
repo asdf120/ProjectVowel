@@ -5,16 +5,38 @@
 <title> 새로운 for 문장 </title>
 <script type="text/javascript">
 
+var  arr = ['송혜교', '김태희', '전지현' ];
+// 0. 원래 for문
+// for(var i = 0; i<arr.length; i++){
+//     document.write(arr[i] + "<br/>");
+// }
+
 // 1. for...in :  요소를 순서대로 처리하기
 
-var  arr = ['송혜교', '김태희', '전지현' ];
+/** for 요소 in 집합
+ * 요소 : 집합의 키 (배열 : 인덱스, 객체 : 멤버변수명)
+**/
 
+// for( : 집합) { }
+// for(var i in arr){
+//     document.write(i + " : " + arr[i] + "<br/>")
+// }
 
+// var obj = {fisrt:"길동", second:"홍"};
+// for(var j in obj){
+//     document.write(j + " : " + obj[j] + "<br/>");
+// }
 
 //----------------------------------------------------
 // 2. for...of  (es6) : 열거형의 요소를 순서대로 처리하기
+for(var i of arr){
+    document.write(i + " : " + arr[i] + "<br/>")
+}
 
-
+var obj = {fisrt:"길동", second:"홍"};
+for(var j of obj){
+    document.write(j + "<br/>");
+}
 
 
 </script>

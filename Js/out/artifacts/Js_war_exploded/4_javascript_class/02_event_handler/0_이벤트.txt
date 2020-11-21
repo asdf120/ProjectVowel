@@ -1,0 +1,17 @@
+    - 이벤트 처리
+
+ (1) HTML 요소에 이벤트함수 호출 : 기본방식으로 최근에는 사용 자제
+    <요소 onclick='함수명()'>
+
+ (2) 이벤트 핸들러 : HTML와 JS 분리
+    요소.on이벤트 = 함수명;
+
+ (3) 이벤트 리스너
+    요소.addEventListener('이벤트', 함수명);
+
+
+    - 기본 이벤트 막기 (ex. <a>)
+
+ (1) preventDefault()
+
+ (2) stopPropgation()

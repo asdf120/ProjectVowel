@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <title> 이벤트 예제 2 </title>
 <script type="text/javascript">
+	//TODO 2020-11-19 kiosk에 이거 활용하면 될듯
+	window.onload = function(){
+		let mango = document.frm.mango;
+		let avocado = document.frm.avocado;
+		let totalPrice = 0
+		mango.onchange = calc
+		avocado.onchange =calc
+
+		function calc(){
+			document.frm.total.value = (mango.value * 4000)+ (avocado.value * 5000);
+			console.log(totalPrice)
+		}
+		// let total = document.frm.total;
+	}
 </script>
 	
 </head>

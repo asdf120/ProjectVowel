@@ -4,15 +4,23 @@
 <meta charset="UTF-8">
 <title></title>
 <script type="text/javascript">
+	
 	window.onload = function(){
 		document.getElementById('btn').onclick = function(){
 			 var s = document.getElementById('startDate').value;
 			 var e = document.getElementById('endDate').value;
-			 
+			//  alert("시작일 : " + s + " ~ 종요일 : " + e)
+
 			 var sDate = new Date(s);
 			 var eDate = new Date(e);
 
-	
+			let diff = eDate - sDate
+			let second = diff/1000;
+			let minute = second / 60;
+			let hour = minute / 60;
+			let day = hour / 24;
+
+			alert(day +"일")
 		}
 	}
 </script>
