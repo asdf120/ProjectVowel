@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4480ed27-7e19-4686-85d5-eab12ce45692" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../WebP/web/WEB-INF/server-config.wsdd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/1_html5_class/06_simpleForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/01_html5_section.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/02_html5_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/03_html5_text.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/04_html5_span.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/05_html5_table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/06_simpleForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/2_css_class/css/temp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingTest/src/Test2_Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingTest/src/Test2_Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/1_html5_class/03_html5_text.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/1_html5_class/03_html5_text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/1_html5_class/99_html5구조_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/1_html5_class/99_html5구조_css.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Test2_Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Test2_Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/report/js/kiosk.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/web/4_javascript_class/report/js/kiosk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/report/kiosk.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/web/4_javascript_class/report/kiosk.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +13,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/2_css_class/05_html5_table연습.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,8 +69,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WebUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+              <item name="2_css_class" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -85,8 +99,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605072861268" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606048556247" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -106,20 +120,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat9">
+  <component name="RunManager" selected="JavaScript Debug.05_html5_table연습.html">
     <configuration name="01_html5_section.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebUI/WebContent/1_html5_class/01_html5_section.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="02_html5_list.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebUI/WebContent/1_html5_class/02_html5_list.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="05_html5_table연습.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebUI/WebContent/2_css_class/05_html5_table연습.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="bad.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebUI/WebContent/check/bad.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="good.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebUI/WebContent/check/good.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebUI/WebContent/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false">
@@ -187,20 +201,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.bad.html" />
       <item itemvalue="JavaScript Debug.good.html" />
       <item itemvalue="JavaScript Debug.01_html5_section.html" />
       <item itemvalue="JavaScript Debug.02_html5_list.html" />
       <item itemvalue="Tomcat Server.Tomcat9" />
+      <item itemvalue="JavaScript Debug.05_html5_table연습.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.05_html5_table연습.html" />
         <item itemvalue="JavaScript Debug.02_html5_list.html" />
         <item itemvalue="JavaScript Debug.01_html5_section.html" />
         <item itemvalue="JavaScript Debug.bad.html" />
         <item itemvalue="JavaScript Debug.good.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -219,16 +233,18 @@
       <workItem from="1605067999533" duration="1996000" />
       <workItem from="1605074257468" duration="41000" />
       <workItem from="1605171370680" duration="519000" />
+      <workItem from="1606043574335" duration="1476000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12987000" />
+    <option name="totallyTimeSpent" value="14463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="976" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2576419" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5382096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,13 +306,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
     <entry file="file://$PROJECT_DIR$/WebContent/1_html5_class/04_html5_span.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -341,6 +351,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/2_css_class/05_html5_table연습.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>

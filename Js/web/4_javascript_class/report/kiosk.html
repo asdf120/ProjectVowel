@@ -8,31 +8,14 @@
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 
     <title>키오스크 버거왕</title>
-    <style type="text/css">
-        body{
-
-        }
-        table{
-            border-collapse: collapse;
-            border-radius: 15px;
-
-        }
-        td {
-            text-align: center;
-        }
-
-        img {
-            width: 38%;
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/kiosk.css"/>
     <script type="text/javascript" src="js/kiosk.js">
 
     </script>
 </head>
 
 <body>
-<table border="1">
+<table>
     <tr id="header">
         <td class='menu' name='기네스콰트로치즈와퍼 세트' price='9700'><img class="menuImg" name='name' src="img/set1.png">
             <h5 class='menuName'>기네스콰트로치즈와퍼 세트-9700원</h5>
@@ -43,7 +26,7 @@
         <td class='menu' name='몬스터와퍼 세트' price='8800'><img class="menuImg" src="img/set3.png">
             <h5 class='menuName'>몬스터와퍼 세트-8800원</h5>
         </td>
-        <td rowspan="2" id='orderCon'>주문확인란</td>
+        <td rowspan="2" ><textarea id="orderCon" rows="23" placeholder="주문확인란"></textarea> </td>
     </tr>
     <tr>
         <td class='menu' name='콰트로치즈와퍼 세트' price='8700'><img class="menuImg" src="img/set4.png">
