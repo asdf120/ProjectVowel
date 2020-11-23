@@ -7,6 +7,8 @@
     <script type="text/javascript">
         window.onload = function () {
             let city = ['서울', '경기도', '인천']
+            frm.choiceCity.onchange = citySite
+
             // let win = window.open('cityPractice2.html', '', 'width=500,height=450')
             // frm.choiceCity.onchange = function () { // 옵션 선택시 함수
             //     // alert(frm.choiceCity.value)
@@ -15,8 +17,11 @@
 
             // let cityIdx = frm.choiceCity.selectedIndex;
             // // let winObj = window.open()
-            let cityIdx = frm.choiceCity.selectedIndex;
-            let winObj = window.open('cityPractice2.html', '', 'width=500,height=450')
+            function citySite(){
+                let cityIdx = frm.choiceCity.selectedIndex-1;
+                console.log(city[cityIdx])
+                let winObj = window.open('cityPractice2.html', '', 'width=500,height=450')
+            }
         }
     </script>
 
@@ -25,6 +30,7 @@
 <body>
     <form name="frm">
         <select name="choiceCity" id="choiceCity">
+            <option value="도시선택"></option>
             <option name='city' value="0">서울</option>
             <option name='city' value="1">경기도</option>
             <option name='city' value="2">인천</option>

@@ -5,22 +5,59 @@
     <meta charset="UTF-8">
     <title>도시 선택</title>
     <script type="text/javascript">
-        let Seoul = ['가산', '판교', '부평']
+        let city = ['서울', '경기도', '인천']
+        let cityLocation = [['가산', '판교', '부평'],['안양', '안산', '시흥'],['부평', '주안', '송도']]
+        let seoul = ['가산', '독산', '구로']
         let gyeongi = ['안양', '안산', '시흥']
         let incheon = ['부평', '주안', '송도']
         window.onload = function () {
-            let cityIdx = open
+            let Rcity = document.querySelectorAll('.city')
+            let p = document.querySelectorAll('.p')
+
+
+            let openerValue = opener.choiceCity.selectedIndex-1;    // cityPractice에서 받아온 index값
+            let txtCity = document.querySelector('#cityText')
+            txtCity.value = city[openerValue]
+
+            for(let j = 0; j<Rcity.length; j++){
+                Rcity.onclick = function () {
+
+                }
+                switch (openerValue) {
+                    case 0:{
+                        for(let i = 0; i<seoul.length; i++){
+                            Rcity[i].value = seoul[i];
+                            // console.log(Rcity[i].value)
+                            console.log(Rcity[i].value)
+                            p[i].innerHTML = Rcity[i].value
+                        }
+                        break;
+                    }case 1:{
+                        for(let i = 0; i<gyeongi.length; i++){
+                            Rcity[i].value = gyeongi[i]
+                            p[i].innerHTML = Rcity[i].value
+                        }
+                        break;
+                    }case 2:{
+                        for(let i = 0; i<incheon.length; i++){
+                            Rcity[i].value = incheon[i]
+                            p[i].innerHTML = Rcity[i].value
+                        }
+                    }
+                }
+            }
+
         }
     </script>
 
 </head>
 
 <body>
-    <form name="frm">
-        <input type='text' name='cityText'><br>
-        <input type="radio" name="city" value='0'><br>
-        <input type="radio" name="city" value='1'><br>
-        <input type="radio" name="city" value='2'><br>
+    <form name = 'frm'>
+        <input type='text' id='cityText'><br>
+        <input type="radio" class="city" name = 'city' value='0'><span class="p"></span><br/>
+        <input type="radio" class="city" name = 'city' value='1'><span class="p"></span><br/>
+        <input type="radio" class="city" name = 'city' value='2'><span class="p"></span><br/>
     </form>
 </body>
 
