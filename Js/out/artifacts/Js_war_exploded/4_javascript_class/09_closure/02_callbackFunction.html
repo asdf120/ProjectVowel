@@ -16,9 +16,21 @@
 		//------ 함수 호출
 		add(10,20); 
 */
-		
 
+function add(a,b,callbackFunc){
+	let result = a+b;
+	callbackFunc(result)
+	return function(){
+		return a+ " + "+ b + "=" + result;
+	}
+}
 		
+let returnVar = add(10,20, function(result){
+	document.write('결과 : ' + result + "<br/>")
+}); 
+
+document.write('returnVar의 값 : ' +  returnVar + "<br/>") 
+document.write('returnVar의 값 : ' +  returnVar()) 
 		
 </script>
 </head>

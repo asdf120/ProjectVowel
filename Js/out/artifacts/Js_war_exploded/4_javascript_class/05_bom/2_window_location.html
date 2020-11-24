@@ -27,6 +27,8 @@
 <meta charset="UTF-8">
 <title> window 예제 </title>
 <script type="text/javascript">
+	window.onload = function(){
+	frm.chooseSite.onchange = showSite
 	function showSite()
 	{
 		/*
@@ -34,8 +36,25 @@
 		2. 각각의 인덱스에 맞는 새로운 창을 연다
 			[예] 인덱스 값이 1이라면 http://www.daum.net으로 창을 연다
 		*/
-	
+<!--		window.open('경로','이름','width=500, height='450')-->
+
+		let idx = frm.chooseSite.selectedIndex
+		let link = ['http://daum.net','http://naver.com','http://nate.com']
+
+		let winObj = window.open(link[idx-1],'새창','width=500,height=450')
+		winObj.moveTo(screen.availWidth/4,screen.availHeight/4)	// 새창 x축 y축만큼이동
+
+
+// <!--		if(idx == 1){-->
+// <!--			window.open('http://daum.net','다음네','width=500, height=450')-->
+// <!--		}else if(idx == 2){-->
+// <!--			window.open('http://naver.com','네이버','width=500, height=450')-->
+// <!--		}else if(idx == 3){-->
+// <!--			window.open('http://nate.com','네이트','width=500, height=450')-->
+// <!--		}-->
 	}
+}
+
 </script>
 </head>
 <body>

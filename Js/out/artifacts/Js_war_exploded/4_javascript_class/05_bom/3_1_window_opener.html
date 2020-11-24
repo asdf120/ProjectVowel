@@ -1,7 +1,7 @@
 <!-- 
 	자기를 열어준 창을 제어할려면? opener
  -->
-
+<!--TODO ***************진짜진짜 중요****************-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,10 +10,16 @@
 </head>
 <body bgcolor="#ddddff">
 	원하는 사이트를 선택하여 주시면 넘어갈걸요?
-	
+
+	<input id="daum" type="button" value="다움">
+
 	<script type="text/javascript">
 		//3_2_window_opened.html 창을 열기
+		let winObj = window.open('3_2_window_opened.html','','width=600, height=400');
 
+		document.querySelector('#daum').onclick = function(){
+			winObj.frm.site.value = 0;
+		}
 	</script>
 </body>
 </html>

@@ -2,11 +2,29 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title> 새로 열려진 창 </title>
-<script type="text/javascript">
-	<!--
-			
-	//-->
+	<title> 새로 열려진 창 </title>
+	<script type="text/javascript">
+	window.onload = function(){
+
+		let sites = frm.site;
+		for(let i = 0; i<sites.length; i++){
+			sites[i].onclick = function(){
+				switch(this.value){
+				<!-- ************ TODO 자신을 호출한 창을 호출하는 키워드 opener-->
+				case '0':
+					opener.location.href = 'http://www.daum.net';
+					break;
+				case '1':
+					opener.location.href = 'http://www.naver.com';
+					break;
+				case '2':
+					opener.location.href = 'http://www.nate.com';
+					break;
+				}
+			}
+		}
+
+	}
 </script>
 </head>
 <body>

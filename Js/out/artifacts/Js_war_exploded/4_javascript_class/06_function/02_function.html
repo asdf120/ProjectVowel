@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>리터럴 함수</title>
+    <meta charset="UTF-8">
+    <title>리터럴 함수</title>
 </head>
 <body>
-	<script>
-	/*
-	// @ function 명령은 정적인 구조이고, 
-	// @ Function 생성자와 함수리터럴은 실행시 판단한다.
+<script>
+    // @ function 명령은 정적인 구조이고,
+    // @ Function 생성자와 함수리터럴은 실행시 판단한다.
 
-	document.writeln('삼각형의 면적은 2 ' +  triangle(4,3) + '</br>');
-	function triangle ( base, height ){
-				return base * height / 2;
-	}
-		document.writeln('삼각형의 면적은 ' +  triangle(4,3) + '</br>');		
-		var triangle = function( base, height ){
-			alert( this.base );
-			return base * height / 2;
-		} 	
-	*/
-	
-	
-	// @ 함수는 데이터형의 일종이다.
-	
-	
-	</script>
+    // document.writeln('삼각형의 면적은 2 ' +  triangle(4,3) + '</br>');
+    // function triangle ( base, height ){
+    // 			return base * height / 2;
+    // }
+    
+    var triangle = function( base, height ){
+    	alert( base );
+    	return base * height / 2;
+    }
+    document.writeln('삼각형의 면적은 ' +  triangle(4,3) + '</br>');
+
+
+    // @ 함수는 데이터형의 일종이다.
+    let base = 4;
+    var triangle = function( base, height ){
+    	// alert( this.base );
+    	return base * height / 2;
+    }
+    document.writeln('삼각형의 면적은 ' +  triangle(4,3) + '</br>');
+    // document.writeln("triangle 값 : " + triangle)
+    // triangle = 10000
+    // document.writeln("triangle 값 : " + triangle)
+    // document.writeln('삼각형의 면적은 2' +  triangle(4,3) + '</br>'); // error --> 함수가 아니기때문
+
+    // function doA(){
+    //     document.writeln('함수A <br/>')
+    // }
+    // function doB(){
+    //     document.writeln('함수B <br/>')
+    // }
+    // // 함수도 배열의 인자가 될 수 있음
+    // let arr = [doA, doB];
+    // console.log('함수 : ' + arr)
+    // doA()
+    // arr[1]();   // arr의 0번째 함수 호출
+
+    // // 반복문 이용하여 함수 호출
+    // for(let i = 0; i<arr.length; i++){
+    //     arr[i]();
+    // }
+
+    // 3. 함수는 다른 함수의 인자도 될 수 있고, 리턴값도 될 수 있다.
+    function f4(a1,a2,a3){
+        return a3(a1()+a2());
+    }
+
+    // let f1 = () => {return 2;}
+    // let f2 = () => {return 3;}
+    // let f3 = (a) => {return a*a}
+
+    // let result = f4(f1,f2,f3);
+    let result = f4(()=>{return 2}, ()=>{return 3}, (a) => {return a*a})
+    document.write('결과 : ' + result)
+
+
+</script>
 </body>
 </html>

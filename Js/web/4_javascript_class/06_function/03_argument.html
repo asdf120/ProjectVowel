@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title> 03_argument.html </title>
-<script type="text/javascript">
+    <meta charset="UTF-8">
+    <title> 03_argument.html </title>
+    <script type="text/javascript">
 
-//@함수의 인자는 갯수를 체크하지 않는다.
+        //@함수의 인자는 갯수를 체크하지 않는다.
+        // function multiple(first,second){
+        //     return first * second;
+        // }
+        // document.write('1. 곱은 ' + multiple(3,4) + "<br/>")
+        // document.write('2. 곱은 ' + multiple(3,4,5) + "<br/>")
+        // document.write('3. 곱은 ' + multiple(3) + "<br/>")
 
-</script>
+        // @ 여러개의 인수(파라미터)는 하나의 객체로 받음 ( JSON 객체)
+        function multiple(args) {
+            return args.first * args.second
+        }
+        document.write('4. 곱은 ' + multiple({first:3, second:4}) + "<br/>")
+
+    </script>
 </head>
+
 <body>
 
 </body>
+
 </html>

@@ -18,9 +18,22 @@
 		};
 
 		// 자식클래스
+		let Dog = function(){};
+		Dog.prototype = new Animal() // Animal클래스를 상속받음을 선언
 
-
-
+		let dog = new Dog();
+		// 1. 부모의 멤버 -> 그냥 사용
+		dog.sound()
+		// 2. 부모에게 없는 멤버 -> 그냥 추가
+		Dog.prototype.bark = function(){
+			document.write('강아지가 짖는다 <br/>')
+		}
+		dog.bark();
+		// 3. 부모의 멤버이지만 수정(재정의) -> 오버라이딩
+		Dog.prototype.sound = function(){
+			document.write('강아지는 멍멍 <br/>')
+		}
+		dog.sound()
 	</script>
 </body>
 </html>

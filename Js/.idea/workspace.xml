@@ -10,102 +10,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de0b703f-0d70-4af0-8a36-880bcd388e7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/4_javascript_class/report/css/kiosk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/4_javascript_class/report/js/kiosk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/bstack/array/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/bstack/array/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/bstack/list/ListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/bstack/list/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/bstack/list/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/cqueue/array/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/cqueue/array/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/cqueue/list/ListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/cqueue/list/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodingTest/src/cqueue/list/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/example/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/01_datatype.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/01_datatype.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/02_operation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/02_operation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/03_for_.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/03_for_.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/04_String.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/04_String.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/05_Number.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/05_Number.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/06_Array.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/06_Array.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/07_MapSet.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/07_MapSet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/08_Date.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/08_Date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/08_Date연습.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/08_Date연습.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/09_RegExp.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/01_basic/09_RegExp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/1_event_called.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/1_event_called.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/2_event_handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/2_event_handler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/3_event_listener.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/3_event_listener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/4_event_cancel.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/4_event_cancel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/9_eventTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/9_eventTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/9_exercise_event.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/02_event_handler/9_exercise_event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/1_get_element.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/1_get_element.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/2_get_FormElement.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/2_get_FormElement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/3_craete_Element.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/3_craete_Element.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/4_replace.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/4_replace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/9_alert_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/9_alert_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/scripts/replace.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/03_dom/scripts/replace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/0_form_html5.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/0_form_html5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/1_form_var.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/1_form_var.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/2_select_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/2_select_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/2_select_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/2_select_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/3_cal_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/3_cal_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/4_form_check.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/4_form_check.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/js/formCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/04_form/js/formCheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/99_practice/1_travel_agency/travel.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/99_practice/1_travel_agency/travel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/01_basic/08_Date.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/01_basic/08_Date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/03_dom/2_get_FormElement.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/03_dom/2_get_FormElement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/03_dom/3_craete_Element.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/03_dom/3_craete_Element.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/03_dom/4_replace.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/03_dom/4_replace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/03_dom/9_alert_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/03_dom/9_alert_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/03_dom/Review.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/03_dom/Review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/03_dom/scripts/replace.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/03_dom/scripts/replace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/0_form_html5.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/0_form_html5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/1_form_var.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/1_form_var.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/2_select_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/2_select_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/2_select_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/2_select_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/3_cal_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/3_cal_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/4_form_check.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/4_form_check.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/04_form/js/formCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/04_form/js/formCheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/99_practice/1_travel_agency/travel.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/99_practice/1_travel_agency/travel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/157dd998-69db-486b-9b59-32852184cba4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/1a763b71-0907-4ea6-942b-cacba55566b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/25a8b2be-6d52-442c-9c1f-6b1091e82bfd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/2e6d8669-53be-450b-84b1-361df9080bf0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/39c2a2e8-4d40-4b75-8f58-df5e1f98a74c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/3c743c9f-9d0b-4180-ad07-16db3c980656.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/45575542-e7f0-4dd6-b1c8-efe6e06aa990.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/48ca4e7f-b955-40e0-bc46-a556a2b87233.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger06.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/4b0c4eb7-328d-4724-b092-a4d24a6c879e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/63e25838-7686-41f4-891f-7c9c12b8c2fd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/687d0f01-5d9a-43c1-8920-dd1510392f47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/720ea526-7353-437c-8066-36c8e91ed84b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/a1808116-469a-4609-8f90-fb712e598186.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/analytics.js.다운로드" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/app.7a8cee4e.js.다운로드" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/app.fb107aca.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/cbbd0ea2-dd66-447a-aa3b-ea324a3e8ca6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/ce0445fd-1f0e-4d0a-b2b4-c81ffcbab8eb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/chunk-vendors.e6caa9bf.js.다운로드" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/d42a686a-2213-4aff-91b4-1d00c9311d46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/d47eb713-05e3-4054-bcc2-c8e1331061e5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/fc44b69d-f679-4c74-b5ae-3e15acfcc353.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/maps-geocoder.js.다운로드" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/maps.js.다운로드" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/report/kiosk.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/report/kiosk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Servers/Tomcat v9.0 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servers/Tomcat v9.0 Server at localhost-config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Servers/Tomcat v9.0 Server at localhost.server" beforeDir="false" afterPath="$PROJECT_DIR$/../Servers/Tomcat v9.0 Server at localhost.server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/02_html5_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebUI/WebContent/1_html5_class/02_html5_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/01_html5_section.html" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/01_html5_section.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/02_html5_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/02_html5_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/04_html5_span.html" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/04_html5_span.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/05_html5_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/05_html5_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/06_simpleForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/1_html5_class/06_simpleForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/classes/Sum_Plndr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/classes/Sum_Plndr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/check/good.html" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/check/good.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ProjectVowel/Sum_Plndr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ProjectVowel/Sum_Plndr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/1_location_href.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/1_location_href.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/1_progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/1_progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/2_window_location.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/2_window_location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/3_1_window_opener.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/3_1_window_opener.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/3_2_window_opened.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/3_2_window_opened.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/4_iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/4_iframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/4_sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/05_bom/4_sub.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/00_kinds_of_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/00_kinds_of_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/01_kinds_of_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/01_kinds_of_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/02_function.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/02_function.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/03_argument.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/03_argument.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/03_es6_argument.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/03_es6_argument.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/04_js_valuable.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/04_js_valuable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/05_js_parameter.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/05_js_parameter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/06_function_arg.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/06_function_arg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/js/arg_func.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/06_function/js/arg_func.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/08_oop/01_prototype.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/08_oop/01_prototype.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/08_oop/02_inherit.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/08_oop/02_inherit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/08_oop/04_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/08_oop/04_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/09_closure/01_functionReturn.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/09_closure/01_functionReturn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/09_closure/02_callbackFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/09_closure/02_callbackFunction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/09_closure/03_closure.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/09_closure/03_closure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/report/css/kiosk.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/report/css/kiosk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/report/js/kiosk.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/report/js/kiosk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/report/kiosk.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/report/kiosk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/01_basic/01_datatype.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/01_basic/01_datatype.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/03_argument.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/03_argument.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/03_es6_argument.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/03_es6_argument.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/04_js_valuable.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/04_js_valuable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/05_js_parameter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/05_js_parameter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/06_function_arg.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/06_function_arg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/06_function/js/arg_func.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/06_function/js/arg_func.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/08_oop/01_prototype.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/08_oop/01_prototype.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/08_oop/02_inherit.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/08_oop/02_inherit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/08_oop/04_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/08_oop/04_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/09_closure/01_functionReturn.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/09_closure/01_functionReturn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/09_closure/02_callbackFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/09_closure/02_callbackFunction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/09_closure/03_closure.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/09_closure/03_closure.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,38 +73,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/kiosk.html">
+        <entry file="file://$PROJECT_DIR$/src/example/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/css/kiosk.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/js/kiosk.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="148" column="17" lean-forward="true" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/4_javascript_class/04_form/4_form_check.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="306">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -159,6 +107,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -192,6 +141,9 @@
         <option value="$PROJECT_DIR$/web/4_javascript_class/report/css/kiosk.css" />
         <option value="$PROJECT_DIR$/web/4_javascript_class/report/js/kiosk.js" />
         <option value="$PROJECT_DIR$/web/4_javascript_class/report/kiosk.html" />
+        <option value="$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html" />
+        <option value="$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html" />
+        <option value="$PROJECT_DIR$/src/example/Test.java" />
       </list>
     </option>
   </component>
@@ -202,11 +154,10 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -216,6 +167,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,41 +179,24 @@
             <path>
               <item name="Js" type="b2602c69:ProjectViewProjectNode" />
               <item name="Js" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Js" type="b2602c69:ProjectViewProjectNode" />
               <item name="Js" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="4_javascript_class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Js" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="4_javascript_class" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Js" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="4_javascript_class" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605950790218" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606208231723" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -287,20 +223,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.kiosk.html">
-    <configuration name="3_cal_input.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/04_form/3_cal_input.html">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.Test" />
+      <module name="Js" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="00_kinds_of_func.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/06_function/00_kinds_of_func.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="02_function.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/06_function/02_function.html">
       <method v="2" />
     </configuration>
     <configuration name="4_form_check.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/04_form/4_form_check.html">
       <method v="2" />
     </configuration>
     <configuration name="kiosk.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/report/kiosk.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="menu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/99_practice/2_menupan/menu.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="travel.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/4_javascript_class/99_practice/1_travel_agency/travel.html">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false">
@@ -379,20 +325,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.3_cal_input.html" />
+      <item itemvalue="Application.Test" />
       <item itemvalue="JavaScript Debug.4_form_check.html" />
-      <item itemvalue="JavaScript Debug.menu.html" />
-      <item itemvalue="JavaScript Debug.travel.html" />
       <item itemvalue="JavaScript Debug.kiosk.html" />
+      <item itemvalue="JavaScript Debug.00_kinds_of_func.html" />
+      <item itemvalue="JavaScript Debug.02_function.html" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.39" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JavaScript Debug.02_function.html" />
+        <item itemvalue="JavaScript Debug.00_kinds_of_func.html" />
         <item itemvalue="JavaScript Debug.kiosk.html" />
         <item itemvalue="JavaScript Debug.4_form_check.html" />
-        <item itemvalue="JavaScript Debug.travel.html" />
-        <item itemvalue="JavaScript Debug.menu.html" />
-        <item itemvalue="JavaScript Debug.3_cal_input.html" />
       </list>
     </recent_temporary>
   </component>
@@ -410,11 +356,12 @@
       <workItem from="1605575905472" duration="1176000" />
       <workItem from="1605757449302" duration="19720000" />
       <workItem from="1605927201951" duration="23185000" />
+      <workItem from="1606210183890" duration="228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44131000" />
+    <option name="totallyTimeSpent" value="50492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,9 +373,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.470524" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48140043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -438,7 +386,7 @@
       <window_info id="Web" order="7" side_tool="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28258488" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,24 +543,12 @@
     <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger06.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/4b0c4eb7-328d-4724-b092-a4d24a6c879e.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/maps.js.다운로드">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/cbbd0ea2-dd66-447a-aa3b-ea324a3e8ca6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/45575542-e7f0-4dd6-b1c8-efe6e06aa990.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/63e25838-7686-41f4-891f-7c9c12b8c2fd.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/39c2a2e8-4d40-4b75-8f58-df5e1f98a74c.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/4b0c4eb7-328d-4724-b092-a4d24a6c879e.png" />
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/maps.js.다운로드" />
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/cbbd0ea2-dd66-447a-aa3b-ea324a3e8ca6.png" />
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/45575542-e7f0-4dd6-b1c8-efe6e06aa990.png" />
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/63e25838-7686-41f4-891f-7c9c12b8c2fd.png" />
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/img/burger6_files/39c2a2e8-4d40-4b75-8f58-df5e1f98a74c.png" />
     <entry file="file://$PROJECT_DIR$/web/4_javascript_class/04_form/2_select_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -629,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/css/kiosk.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        <state relative-caret-position="396">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -639,15 +575,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/js/kiosk.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="148" column="17" lean-forward="true" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+        <state relative-caret-position="2538">
+          <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/4_javascript_class/report/kiosk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="72">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/example/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

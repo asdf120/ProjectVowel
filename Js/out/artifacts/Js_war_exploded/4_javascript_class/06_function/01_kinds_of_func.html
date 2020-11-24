@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>자바스크립트 함수 만들기</title>
 	<script>
+
+		// 1. function 명령어 방식
+		function first() {
+			let txt = document.getElementById('first')
+			txt.style.backgroundColor = 'red'
+			txt.style.color = 'yellow'
+		}
+
+		// 2. function 생성자 방식
+		let second = new Function("", "let txt = document.getElementById('second');" +
+			"txt.style.backgroundColor = 'red';" +
+			"txt.style.color = 'yellow';"
+		);
+
+
+
+
+		// 3. 함수 리터럴 방식
+		// let third = function () {
+		// 	let txt = document.getElementById('third')
+		// 	txt.style.backgroundColor = 'red'
+		// 	txt.style.color = 'yellow'
+		// }
+		let third = function () {
+			let txt = document.getElementById('third');
+			txt.style.backgroundColor = 'red';
+			txt.style.color = 'yellow';
+			return;
+		}
+
+
+		// 4. 애로우 함수 방식
+		// let fourth = () => {
+		// 	let txt = document.getElementById('fourth')
+		// 	txt.style.backgroundColor = 'red'
+		// 	txt.style.color = 'yellow'
+		// }
+		let fourth = () => {
+			let txt = document.getElementById('fourth');
+			txt.style.backgroundColor = 'red';
+			txt.style.color = 'yellow';
+		}
+
 
 	</script>
 </head>
 
 <body>
 	<p> <span id="first"> function 명령 </span>
-		<input type="button" value="확인" onclick="javascript:first()"/>
+		<input type="button" value="확인" onclick="javascript:first()" />
 	</p>
 	<p> <span id="second"> Function 생성자 </span>
-		<input type="button" value="확인" onclick="javascript:second()"/>
+		<input type="button" value="확인" onclick="javascript:second()" />
 	</p>
 	<p> <span id="third"> 함수 리터럴 </span>
-		<input type="button" value="확인" onclick="javascript:third()"/>
+		<input type="button" value="확인" onclick="javascript:third()" />
 	</p>
 	<p> <span id="fourth"> 애로우 함수 </span>
-		<input type="button" value="확인" onclick="javascript:fourth()"/>
+		<input type="button" value="확인" onclick="javascript:fourth()" />
 	</p>
 </body>
+
 </html>

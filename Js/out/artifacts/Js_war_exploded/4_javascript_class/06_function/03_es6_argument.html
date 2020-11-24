@@ -6,19 +6,49 @@
 <script>
  
 	// @ 1. 인수의 기본값(default) 지정
-   	function multiple( first, second )
+   	function multiple( first=1, second=2 )
 	{
+		console.log(second)
 		return first * second;
 	}
-	document.writeln('곱은 ' +  multiple( 3, 4 ) + '<br/>'  );
-	document.writeln('곱은 ' +  multiple( 3, 4, 5 ) + '<br/>'  );
-	document.writeln('곱은 ' +  multiple( 3 ) + '<br/>' ); 
+	// document.writeln('곱은 ' +  multiple( 3, 4 ) + '<br/>'  );
+	// document.writeln('곱은 ' +  multiple( 3, 4, 5 ) + '<br/>'  );
+	// document.writeln('곱은 ' +  multiple( 3 ) + '<br/>' ); 
+	// document.writeln('곱은 ' +  multiple( undefined ) + '<br/>' ); 
 	
 
+	// (1) null/0/false 등의 값을 명시하면 기본값이 적용안됨
+	// but undefined --> 기본값 적용됨
+	// document.write('1- 곱은 ' + multiple(3,null) + '<br/>')
+	// document.write('2- 곱은 ' + multiple(3,0) + '<br/>')
+	// document.write('3- 곱은 ' + multiple(3,false) + '<br/>')
+	// document.write('3- 곱은 ' + multiple(3,undefined) + '<br/>')
 	
+	// (2) 함수도 기본값 지정 가능
+	// function method(value=multiple()){
+	// 	document.write('함수 인자의 기본값: ' + value + "<br/>")
+	// }
+	// method()
 	
 	// @ 2. 가변길이 인수(...)
+	function sum(first, ...num){
+		let result = 0;
 
+		//TODO 알아볼것
+		// for(let i in num){  // 인자로 계산됨 ex) i= 0 i = 1 i = 2
+		// 	result += parseInt(i)
+		// }
+		
+		result +=first
+		for(let i of num){
+			result += i
+		}
+		return result
+	}
+	
+	document.write(sum(1,2,3) + "<br/>")
+	document.write(sum(1,2,3,4) + "<br/>")
+	document.write(sum(1,2,3,4,5) + "<br/>")
 	 
 		 
  

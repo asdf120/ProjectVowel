@@ -1,16 +1,80 @@
-body{
 
-}
-table{
+table {
+    background: whitesmoke;
     border-collapse: collapse;
-    border-radius: 15px;
-
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+tr:last-of-type {
+    border-radius: 15%;
+    height: 45px;
+}
+
 td {
+    width: fit-content;
+    border: 1px;
+    border-radius: 15%;
     text-align: center;
 }
 
 img {
-    width: 38%;
+    width: 34%;
     height: 100px;
+}
+
+input {
+    width: 100px;
+    border-radius: 15%;
+    font-size: 20px;
+}
+input:first-child{
+    border-color: red;
+    background: red;
+    color: white;
+}
+input:first-child:hover{
+    cursor: pointer;
+    background: white;
+    color:red
+}
+input:last-child{
+    border-color: blue;
+    background: blue;
+    color:white
+}
+input:last-child:hover{
+    cursor: pointer;
+    background: white;
+    color:blue;
+}
+
+.menu {
+    width: 200px;
+}
+
+.menu:hover, .type:hover {
+    background: #c4e3f3;
+    cursor: pointer;
+}
+
+textarea #orderCon {
+    overflow-y: scroll;
+    width: 100%;
+    outline: none;
+    alignment: top;
+    vertical-align: top;
+
+    box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+}
+
+
+#orderCon, #amountPrice {
+    background: whitesmoke;
+    border: black solid;
+    resize: none;
+    border: 0px;
+    width: 300px;
+    height: auto;
 }

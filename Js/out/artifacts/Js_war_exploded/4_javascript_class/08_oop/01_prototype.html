@@ -5,7 +5,71 @@
 	<title> Javascript 객체지향 </title>
 </head>
 <body>
-<script>
+<script type="text/javascript">
+	// 1. 클래스 선언
+	// 변수를 첫글자를 대문자 권장
+	// ex) let Xxx = function(name,kor,eng){}
+	let Student = function(name, kor, eng){
+		// 멤버 변수를 따로 안하고 this.변수명 으로하면 멤버변수가됨
+		this.name = name; 
+		this.kor = kor;
+		this.eng = eng;
+
+		// 멤버 메소드
+		// this.sum = ()=>{
+		// 	return kor + eng;
+		// }
+	}
+
+	// 2. 객체생성
+	let s = new Student('홍길동',100,50)
+
+	let s2 = new Student('홍길자',80,90)
+
+	// [참고] new를 안붙이면 함수로 인식해서 에러
+	// let s2 = Student('홍길동',100,50) 
+	// document.write(s2.name + "님 총점 : " + s2.sum())
+
+	// 3. js는 동적로 멤버 추가 가능
+
+	//TODO 에로우함수는 숫자가 undefined
+	Student.prototype.showInfo = ()=>{
+		return this.name + " : " + this.kor + ", " + this.eng +"<br/>"
+	}
+
+	// Student.prototype.showInfo = function(){
+	// 	return this.name + " : " + this.kor + ", " + this.eng +"<br/>"
+	// }
+	
+	document.write("홍길동 정보 : " + s.showInfo())
+	document.write("홍길자 정보 : " + s2.showInfo())
+
+	// Student.prototype.sum = () =>{
+	// 	return this.kor + this.eng;
+	// }
+
+	// document.write(s.name + "님 총점 : " + s.sum()+ "<br/>")
+	// document.write(s2.name + "님 총점 : " + s2.sum()+ "<br/>")
+
+	/**
+	Student.prototype = {
+		sum : function(){
+			return this.kor + this.eng;
+		},
+		showInfo : function(){
+			return this.name + " : " + this.kor + ", " + this.eng +"<br/>"
+		}
+	}
+	let s = new Student('홍길동',100,50)
+
+	let s2 = new Student('홍길자',80,90)
+	
+	document.write("홍길자 정보 : " + s2.showInfo())
+	document.write("홍길동 정보 : " + s.showInfo())
+
+	document.write(s.name + "님 총점 : " + s.sum()+ "<br/>")
+	document.write(s2.name + "님 총점 : " + s2.sum()+ "<br/>")
+	**/
 
 </script>
 </body>

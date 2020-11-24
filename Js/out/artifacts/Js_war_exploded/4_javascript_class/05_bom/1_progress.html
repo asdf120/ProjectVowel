@@ -14,8 +14,19 @@
 	var progress = document.getElementById("progress");
 	var current = 0;
 
-	
-	
+	var intervalId = setInterval(function(){
+		progress.value = ++current
+		if(current == 100){
+			clearInterval(intervalId)
+			}
+		},100)
+
+<!--	function update(){-->
+<!--		progress.value = ++current-->
+<!--		if(current == 100){-->
+<!--			clearInterval(intervalId)-->
+<!--		}-->
+<!--	}-->
 	
 
 	/* [참고]

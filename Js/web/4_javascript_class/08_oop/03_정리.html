@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>03_정리.html</title>
+    <script type="text/javascript">
+
+        /**
+         * 함수도 자료형이다
+         *  - 함수도 인자가 된다
+         *  - 함수도 리턴값이 된다
+         */
+        function add_maker(a){
+            // console.log(a)
+            return (b) =>{
+                return a+b;
+            }
+        }
+        let add10 = add_maker(10)
+        document.write(add10)
+        document.write("<br/>")
+        document.write(add10(20))
+        document.write("<br/>")
+
+        document.writeln(add_maker(30)(20));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

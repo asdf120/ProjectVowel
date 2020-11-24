@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>자바스크립트 변수와 범위</title>
 	<script>
+		// 1. 글로벌 변수와 지역 변수
+		// let scope = '글로벌 변수'
+		// function getValue(){
+		// 	let scope = '지역변수'
+		// 	return scope;
+		// }
+		// document.write('1> ' + getValue() + "<br/>") // 지역변수
+		// document.write('2> ' + scope) // 글로벌 변수
 
+		// 2. var 생략 가능 -> 어느 위치든 글로벌 변수로 취급
+
+		// scope = '글로벌 변수'
+		function getValue(){
+			scope = '지역변수'
+			document.write('0> ' + scope + "<br/>")
+			test = 'test'
+			return test;
+		}
+		document.write('1> ' + getValue() + "<br/>") // 지역변수
+		document.write('2> ' + scope + "<br/>") // 글로벌변수
+		document.write('3> ' + test)	
+
+		// 3. var 지역변수 - 함수블록에 유효
+		// let 지역변수 - 블록에 유효 (자바 처럼 블록단위로 끊음) if(){} for(){} 도 가능
+			// let i = 10;	// 글로벌
+			// if(true){
+			// 	// var i = 100;
+			// 	let i = 100; // 지역변수
+			// 	document.write('i> ' + i+ "<br/>")
+			// }
+			// document.write('i> ' + i+ "<br/>")
+
+			// for(var j = 0; j<3; j++){}
+			// document.write('j> ' + j + "<br/>")
 	</script>
 </head>
 
 <body>
 
-  
- </body>
+
+</body>
+
 </html>

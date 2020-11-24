@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> 01_prototype2.html </title>
+	<script type="text/javascript">
+		
+		let Member = function() {
+		}
+		Member.prototype.gender = '남자';
+
+		let kim = new Member();
+		let lee = new Member();
+
+		document.write(kim.gender + "|" + lee.gender)
+
+		lee.gender = '여자'
+		document.write(kim.gender + "|" + lee.gender)
+
+		delete lee.gender
+		document.write(kim.gender + "|" + lee.gender)
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
