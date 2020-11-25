@@ -15,10 +15,14 @@ import java.util.Scanner;
 public class RoomNum_1475 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int count = 0;
+        String N = scanner.nextLine();
+        char[] char_N = new char[N.length()];
 
-        int N = scanner.nextInt();
-        String[] card = {"1","2","3","4","5","6","7","8","9"};
+        for(int i = 0; i<N.length(); i++){
+            char_N[i] = N.charAt(i);
 
+        }
 
     }
 }

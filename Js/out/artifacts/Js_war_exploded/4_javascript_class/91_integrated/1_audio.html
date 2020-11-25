@@ -9,7 +9,34 @@ input{
 }
 </style>
 <script type="text/javascript">
+	
+	let audio = new Audio('../../media/iu.mp3');
 
+	audio.addEventListener('timeupdate', () => {
+		let time = document.querySelector('#time')
+			time.value = audio.currentTime
+	})
+
+	let togglePlay = () =>{
+		if(audio.paused || audio.ended){
+			audio.play();
+			// play 글자 대신에 '일시정지'
+			// document.querySelector('#control').innerHTML = '일시정지'
+
+			// 아이디를 직접찾아주지도 않아도 되긴함
+			control.innerHTML = '일시정지'	
+		}else{
+			audio.pause()
+			// '재생'이라고 글자 변경
+			// document.querySelector('#control').innerHTML = '재생'
+			control.innerHTML = '재생'
+		}
+	}
+
+	let toggleMute = () =>{
+		//TODO on off를 한번누름으로써 바뀌게하는법
+		audio.muted = !audio.muted	 
+	}
 </script>
 
 </head>
@@ -17,6 +44,7 @@ input{
 <div id="player">
 	<img src="../../images/sample/sensitive.jpg" id="img"/><br/>
 	<button id="control" onclick="togglePlay()">play</button>
+	<input type ='number' id='time'> 
 	<button id="mute" onclick="toggleMute()">mute</button>
 </div>
 </body>

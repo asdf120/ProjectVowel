@@ -1,0 +1,13 @@
+
+가급적 예문 만들기
+
+1. this 와 $(this) 차이점
+
+2.  mouseover, mouseout
+    mouseenter, mouseleave 차이점
+
+3. eq()와 nth-child() 차이점
+
+4. find() / filter() 차이점
+
+5. 주소검색 + 다음이나 네이버 지도 출력

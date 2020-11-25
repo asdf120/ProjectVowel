@@ -1,0 +1,15 @@
+
+` 이미지 폴더 images
+		- common : 공통영역 이미지
+		- main : 메인 컨텐츠 이미지
+		
+` css 폴더 
+		- common.css : 공통 영역의 스타일
+		- main.css : 메인 콘텐츠의 스타일
+		- reset.css : HTML 초기 스타일
+
+` js 폴더
+		- 자바스크립트나 제이쿼리 파일
+		- libs : 라이브러리 파일들
+		
+		

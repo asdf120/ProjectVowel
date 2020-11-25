@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title> 첫 연습 </title>
+	<style type="text/css">
+		/* #here{position: absolute; top:0; left:0} */
+	</style>
+<script type="text/javascript" src='../lib/jquery-3.5.1.min.js'></script>
+<script type="text/javascript">
+$(function(){
+	let v = $('#here')
+
+	// v.click(() => {
+	// 	v.text('클릭시 내용이 변경')
+	// });
+
+	// v.hover(() => {
+	// 	v.css('border','2px solid green')
+	// }, ()=>{
+	// 	v.css('border', '1px dashed red')
+	// })
+
+	// // mounseenter 마우스 갔다대면 이벤트 발생
+	// v.mouseenter(() =>{
+	// 	v.text('마우스 엔터')
+	// })
+
+	// mouseleave 마우스 떼면 이벤트 발생
+	// v.mouseleave(()=>{
+	// 	v.text('마우스 리브')
+	// })
+
+	// mouseover
+	// v.mouseover(() => {
+	// 	v.html('<img src = "images/cat.jpg">')
+	// })
+
+	// // mouseout
+	// v.mouseout( () => {
+	// 	v.html()
+	// })
+
+	// chain방식 함수에 함수를 덧붙이기 가능
+	// v.fadeOut(1000).fadeIn()	
+	// v.slideUp(1000).slideDown(2000)
+
+	// v.animate({top:200,left:200})
+
+	// let name = $('#student').find('#name')
+	let name = $('#student > #name')
+	// name.css('background', 'red')
+	// name.css('color','yellow')
+	name.css({background: 'red', color:'yellow'})
+
+})
+</script>
+</head>
+<body>
+	
+
+	<div id="here">
+	아자아자 제이쿼리~~!!! 
+	</div>
+	
+	
+	<div id="student">
+		<div id="name">홍길동</div>
+		<div id="age">34</div>
+	</div>
+
+
+	
+</body>
+</html>

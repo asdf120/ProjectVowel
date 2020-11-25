@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>find와 filter의 차이점</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            // filter()
+            let filter = $('div:nth-of-type(1)>p').filter('.findFilter')
+            filter.mouseover( () =>{
+                filter.text('filter()')
+                filter.css({background : 'black', color : 'white'})
+                
+                $('#description').text("filter() : 선택된 현재집합의 요소를 찾음")
+                $('#description2').text("filter() :$('div:nth-of-type(1)>p').filter('.findFilter')")
+
+            })
+            filter.mouseleave( () =>{
+                filter.text('fildFilter')
+                filter.css({background:'white', color:'black'})
+            })
+
+            // find ()
+            let find = $('div:nth-of-type(2)').find('.findFilter')
+            find.mouseover( () =>{
+                find.text('find()')
+                find.css({background : 'black', color : 'white'})
+                $('#description').text("find() :현재 선택된 요소 집합의 자식을 대상으로 찾고자하는 요소를 찾음")
+                $('#description2').text("find() :$('div:nth-of-type(2)').find('.findFilter')")
+
+            })
+            
+            find.mouseleave( () =>{
+                find.text('findFilter')
+                find.css({background:'white', color:'black'})
+            })
+
+
+        })  // function() END
+
+    </script>
+</head>
+
+<body>
+    <div id> 첫번째 div
+        <p class='findFilter'>findFilter</p>
+        <p class='findFilter'>findFilter</p>
+        <p>findFilter</p>
+        <p>findFilter</p>
+        <p class='findFilter'>findFilter</p>
+        <p class='findFilter'>findFilter</p>
+    </div><hr>
+
+    <div id> 두번째 div
+        <p class='findFilter'>findFilter</p>
+        <p class='findFilter'>findFilter</p>
+        <p>findFilter</p>
+        <p>findFilter</p>
+        <p class='findFilter'>findFilter</p>
+        <p class='findFilter'>findFilter</p>
+    </div><hr>
+    <p>설명</p>
+    <div id = 'description'></div>
+    <h3 id = 'description2'></h3>
+    <br><br>
+    <p>출처 : https://brain-library.tistory.com/entry/jQuery-find%EC%99%80-filter-%EC%B0%A8%EC%9D%B4%EC%A0%90</p>
+</body>
+
+</html>

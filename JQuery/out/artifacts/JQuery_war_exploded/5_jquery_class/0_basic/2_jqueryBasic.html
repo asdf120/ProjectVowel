@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title> 첫 연습 </title>
+
+	<style type="text/css">
+		.active {
+			border: 3px solid red;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.man').css({ background: 'lightpink' })
+			$('ul>li.woman').css({
+				fontSize: '20px', background: 'lightblue',
+				color: 'green'
+			})
+
+			$('.inputText').focus(function () {
+				$(this).addClass('active');
+			})
+
+			// blur() 포커스 잃었을때 이벤트처리
+			// $('.inputText').blur(function () {
+			// 	$(this).removeClass('active')
+			// })
+
+			$('.inputText').blur(() => {
+				$('.inputText').removeClass('active')
+			})
+
+			$('#divText').text('<img src="images/grim.jpg">');	// 이미지 경로를 그대로 나타냄
+			$('#divHtml').html('<img src="images/grim.jpg">');	// 이미지를 띄움
+			$('#divEmpty').empty();
+
+			// attr() 속성값을 얻어오거나 지정
+			$('#changeGrim').click(function () {
+				$('#changeGrim').attr('src', 'images/cat.jpg')
+			})
+
+			// form태그의 속성 value값을 얻거나 지정 : val()
+			$('#tf').val('홍길동')
+			// 텍스트에어리어에 '작성중.....' 글자 지정
+			$('#ta').val('작성중.....')
+			// select태그 - '마산' 선택
+			$('#sel').val('masan')
+			//리스트 - '제주도'와 '독도' 선택
+			$('#sel_m').val(['제주도', '독도'])
+
+			// $('#male').attr('checked', true)
+			$('input[name="gender"]:eq(0)').attr('checked', true)
+
+			// 확인버튼 눌렸을 때
+			// 사용자의 입력값이나 선택값들을 얻어서
+			// <div id='result'></div> 부분에 출력
+			// $('#check').click(() => {
+			// 	let tf = $('#tf').val()
+			// 	let ta = $('#ta').val()
+			// 	// let sel = $('#sel').val()
+			// 	let sel = $('#sel option:selected').text()
+			// 	let sel_m = $('#sel_m').val()
+			// 	let gender = $('input[name="gender"]:checked').val()
+			// 	console.log(tf)
+			// 	$('#result').html(tf + "<br/>" + ta + "<br/>" + sel + "<br/>" + sel_m
+			// 		+ "<br/>" + gender)
+			// })
+
+			let actor = $('#actor')
+			let tae = $('#tae')
+			let su = $('#su')
+			let bin = $('#bin')
+
+			actor.append(tae)
+			su.appendTo(actor)
+
+			actor.append('<div id="bo">박보검</div>')
+
+			let tag = $('<div/>')
+			tag.text('공유')
+			tag.attr({ id: 'gong' })
+			actor.append(tag)
+
+			let table = $('#tbl')
+			// 	$('#check').click(() => {
+			// 		let name = $('#tf').val()
+			// 		let addr = $('#sel').val()
+			// 		let gender = $('input[name="gender"]:checked').val()
+			// 		let msg = $('#ta').val()
+			// 		let tr = $('<tr/>')
+			// 		table.append(tr)
+			// 		let td1 = $('<td/>')
+			// 		let td2 = $('<td/>')
+			// 		let td3 = $('<td/>')
+			// 		let td4 = $('<td/>')
+			// 		td1.text(name)
+			// 		tr.append(td1)
+			// 		td2.text(addr)
+			// 		tr.append(td2)
+			// 		td3.text(gender)
+			// 		tr.append(td3)
+			// 		td4.text(msg)
+			// 		tr.append(td4)
+			// 	})
+			// })
+
+			$('#check').click(() => {
+				let tr = $('<tr/>')
+				table.append(tr)
+				let info = ({
+					name: $('#tf').val(), addr: $('#sel').val(), gender: $('input[name="gender"]:checked').val()
+					, msg: $('#ta').val()
+				})
+				console.log(info.name)
+
+				$.each(info, function (key, value) {
+					tr.append('<td>' + value + '</td>')
+				})
+
+			})
+
+
+			// 6 class "data" 클릭이벤트
+			$('.data').each(function () {
+				$(this).click(function () {
+					let data = $(this).text();
+					alert(data)
+				})
+			})
+
+
+
+
+		}) // $(function () { END
+	</script>
+</head>
+
+<body>
+	<!--  1 -->
+	<ul>
+		<li class="man">김수현</li>
+		<li class="woman">김희애</li>
+		<li class="woman">송혜교</li>
+		<li class="man">하정우</li>
+		<li class="woman">김태희</li>
+	</ul>
+	<!-- 2 -->
+	<input type="text" class="inputText" />
+	<input type="text" class="inputText" />
+	<input type="text" class="inputText" />
+
+
+	<!-- 3 -->
+	<div id="divText">여기에 글씨를</div>
+	<div id="divHtml">여기에 그림을</div>
+	<div id="divEmpty">여기를 비움</div>
+	<p>
+		<img src="images/puppy.jpg" id='changeGrim'>
+	</p>
+
+	<!-- 4 -->
+	<!-- <p>
+		<input id="tf" type="text" size="20" />
+		<textarea id="ta" rows="3" cols="20"></textarea>
+		<select id="sel">
+			<option value="seoul">서울</option> <!-- option에 value 값 없어도 됨 -->
+	<!-- <option value="busan">부산</option>
+	<option value="masan">마산</option>
+	<option value="incheon">인천</option>
+	</select>
+	<select id="sel_m" multiple="multiple">
+		<option value="제주도">제주도</option>
+		<option value="울릉도">울릉도</option>
+		<option value="독도">독도</option>
+		<option value="거제도">거제도</option>
+	</select>
+	<div>
+		<input type="radio" name='gender' id='male' value='남자'>남자
+		<input type="radio" name='gender' id='female' value='여자'>여자
+	</div>
+	<input type='button' id='check' value='확인' />
+	<input type='button' id='init' value='초기화' /> <!--  [과제] 클릭시 값 지정하려면  -->
+	<!-- <div id='result'></div>
+	</p> -->
+	<!-- [ 과제 ] 동적 테이블 만들기
+	이름	주소	성별	메세지
+	
+	-->
+	<table id='tbl' border="1px">
+		<tr>
+			<th>이름</th>
+			<th>주소</th>
+			<th>성별</th>
+			<th>메세지</th>
+		</tr>
+	</table>
+	<p>
+		이름 :<input id="tf" type="text" size="20" />
+		메세지 :<textarea id="ta" rows="3" cols="20"></textarea>
+		주소 :<select id="sel">
+			<option value="seoul">서울</option> <!-- option에 value 값 없어도 됨 -->
+			<option value="busan">부산</option>
+			<option value="masan">마산</option>
+			<option value="incheon">인천</option>
+		</select>
+		<select id="sel_m" multiple="multiple">
+			<option value="제주도">제주도</option>
+			<option value="울릉도">울릉도</option>
+			<option value="독도">독도</option>
+			<option value="거제도">거제도</option>
+		</select><br />
+	<div>
+		성별:<input type="radio" name='gender' id='male' value='남자'>남자
+		<input type="radio" name='gender' id='female' value='여자'>여자
+	</div>
+	<input type='button' id='check' value='확인' />
+	<input type='button' id='init' value='초기화' /> <!--  [과제] 클릭시 값 지정하려면  -->
+	<div id='result'></div>
+	</p>
+
+	<!-- 5 -->
+	<div id="actor">배우</div>
+	<div id="tae">김태희</div>
+	<div id="su">김수현</div>
+	<div id="bin">현빈</div>
+
+	<!-- 6 -->
+	<div class="data">이름</div>
+	<div class="data">직업</div>
+	<div class="data">나이</div>
+
+
+</body>
+
+</html>
