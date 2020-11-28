@@ -1,11 +1,11 @@
-$(function(){
+$(function () {
     let topDiv = $('.tabset')
     let anchors = $('.tabs a')
     let panelDivs = $('div.panel')
 
     anchors.show();
     panelDivs.hide();
-    
+
     let lastAnchor = anchors.filter('.on')
     let lastPanel = $(lastAnchor.attr('href'))
     lastPanel.show();
@@ -16,9 +16,9 @@ $(function(){
     //     })
     // })
 
-    anchors.click(function(){
+    anchors.click(function () {
         lastAnchor.removeClass('on')
-        
+
         let currentAnchor = $(this)
         currentAnchor.addClass('on')
         let currentPanel = $(currentAnchor.attr('href'))
@@ -30,4 +30,4 @@ $(function(){
         lastPanel = currentPanel;
     })
 
-})
+}) // function(){}  END
