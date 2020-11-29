@@ -7,28 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="533e7ebf-c17b-415a-9153-dffc92398649" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/report/FindFilter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/report/KakaoMap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Js/web/media/IU.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Js/web/media/peng.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingTest/src/RoomNum_1475.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingTest/src/RoomNum_1475.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JQuery_war_exploded/5_jquery_class/1_menuPan과제/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JQuery_war_exploded/5_jquery_class/1_menuPan과제/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/5_jquery_class/1_menuPan과제/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/5_jquery_class/1_menuPan과제/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/z_doit_project_class/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/z_doit_project_class/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Js/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/1_audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/1_audio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/2_video_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/2_video_canvas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/92_dragndrop/ChristmasView.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/92_dragndrop/ChristmasView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/99_etc/jasmine/MyArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/out/artifacts/Js_war_exploded/4_javascript_class/99_etc/jasmine/MyArea_spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/91_integrated/1_audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/web/4_javascript_class/91_integrated/1_audio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/91_integrated/2_video_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/web/4_javascript_class/91_integrated/2_video_canvas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/92_dragndrop/ChristmasView.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Js/web/4_javascript_class/92_dragndrop/ChristmasView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/99_etc/jasmine/MyArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Js/web/4_javascript_class/99_etc/jasmine/MyArea_spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/classes/Dog_Chick.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/classes/Dog_Chick.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/example/HelloWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -51,17 +36,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/5_jquery_class/1_css_event/jquery_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+            <state relative-caret-position="190">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/5_jquery_class/0_basic/2_jqueryBasic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/5_jquery_class/1_menuPan과제/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/5_jquery_class/0_basic/2_jqueryBasic.html">
+        <entry file="file://$PROJECT_DIR$/web/z_doit_project_class/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="95">
+              <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/z_doit_project_class/js/exam.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -71,6 +83,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/5_jquery_class/1_menuPan과제/menu.html" />
+        <option value="$PROJECT_DIR$/web/z_doit_project_class/index.html" />
+      </list>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -79,9 +99,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -89,8 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,39 +132,32 @@
               <item name="JQuery" type="b2602c69:ProjectViewProjectNode" />
               <item name="JQuery" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="5_jquery_class" type="462c0819:PsiDirectoryNode" />
-              <item name="0_basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JQuery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="5_jquery_class" type="462c0819:PsiDirectoryNode" />
-              <item name="1_css_event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JQuery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="z_doit_project_class" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606305189992" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606658486915" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JQuery\web\5_jquery_class\1_menuPan과제" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,8 +171,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.391">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="2_jqueryBasic.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/web/5_jquery_class/0_basic/2_jqueryBasic.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/z_doit_project_class/index.html">
       <method v="2" />
     </configuration>
     <configuration name="jquery_test.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.0.51:8080/web/5_jquery_class/1_css_event/jquery_test.html">
@@ -176,7 +191,7 @@
       <option name="COMMON_VM_ARGUMENTS" value="-Duser.language=en -Duser.region=us" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="JQuery:war exploded">
           <settings>
@@ -186,6 +201,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_JQuery" />
+        <option name="JNDI_PORT" value="1199" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -247,8 +263,16 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.2_jqueryBasic.html" />
+      <item itemvalue="JavaScript Debug.jquery_test.html" />
+      <item itemvalue="JavaScript Debug.jquery_test.html (1)" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.391" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.2_jqueryBasic.html" />
         <item itemvalue="JavaScript Debug.jquery_test.html (1)" />
         <item itemvalue="JavaScript Debug.jquery_test.html" />
@@ -268,17 +292,17 @@
       <updated>1606268472572</updated>
       <workItem from="1606268478998" duration="694000" />
       <workItem from="1606304695671" duration="492000" />
+      <workItem from="1606656726511" duration="1747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1186000" />
+    <option name="totallyTimeSpent" value="2933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -288,7 +312,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40851063" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,24 +340,55 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/example/HelloWorld.java">
+    <entry file="file://$PROJECT_DIR$/web/z_doit_project_class/js/exam.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="2">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/5_jquery_class/1_css_event/jquery_test.html">
+    <entry file="file://$PROJECT_DIR$/src/example/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/5_jquery_class/1_menuPan과제/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/5_jquery_class/0_basic/2_jqueryBasic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="213">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/5_jquery_class/1_css_event/jquery_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/z_doit_project_class/완성1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/5_jquery_class/1_menuPan과제/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/z_doit_project_class/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
         </state>
       </provider>
     </entry>

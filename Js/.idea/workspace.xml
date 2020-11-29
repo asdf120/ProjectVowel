@@ -9,30 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/web/4_javascript_class/report/kiosk.html" line="29" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0b703f-0d70-4af0-8a36-880bcd388e7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery/web/report/FindFilter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery/web/report/KakaoMap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/media/IU.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/media/peng.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingTest/src/RoomNum_1475.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingTest/src/RoomNum_1475.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/1_audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/1_audio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/2_video_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/91_integrated/2_video_canvas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/92_dragndrop/ChristmasView.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/92_dragndrop/ChristmasView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/99_etc/jasmine/MyArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Js_war_exploded/4_javascript_class/99_etc/jasmine/MyArea_spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/91_integrated/1_audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/91_integrated/1_audio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/91_integrated/2_video_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/91_integrated/2_video_canvas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/92_dragndrop/ChristmasView.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/4_javascript_class/92_dragndrop/ChristmasView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/99_etc/jasmine/MyArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/4_javascript_class/99_etc/jasmine/MyArea_spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/classes/Dog_Chick.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/ProjectVowel_war_exploded/WEB-INF/classes/Dog_Chick.class" afterDir="false" />
-    </list>
+    <list default="true" id="de0b703f-0d70-4af0-8a36-880bcd388e7c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="209">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -55,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -63,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/example/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="323">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
@@ -123,10 +100,10 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="975" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -136,8 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,13 +135,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606305190007" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JQuery" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -328,11 +305,12 @@
       <workItem from="1606210183890" duration="228000" />
       <workItem from="1606268557023" duration="43000" />
       <workItem from="1606304838208" duration="353000" />
+      <workItem from="1606656703080" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50888000" />
+    <option name="totallyTimeSpent" value="50901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,10 +322,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50328225" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20201342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -385,13 +362,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/java/jdk_1_8/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/java/jdk_1_8/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/example/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -558,24 +529,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/example/Test.java">
+    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="209">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/00_kinds_of_func.html">
+    <entry file="file://$PROJECT_DIR$/src/example/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/4_javascript_class/06_function/02_function.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
