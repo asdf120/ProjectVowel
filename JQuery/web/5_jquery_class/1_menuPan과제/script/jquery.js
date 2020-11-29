@@ -1,9 +1,4 @@
 $(function () {
-
-    //TODO
-    //개별 메뉴 갯수 더해주기
-    //주문버튼 처리
-
     let menuTd = $('.menus>td')
     let menuImg = menuTd.find('img')
 
