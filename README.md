@@ -6,4 +6,5 @@
 - Movie : Oracle연동 영화관 프로젝트
 - WebUI : html과 css 익히기
 - Js : JavaScript
-- JQuery
+- JQuery 
+- JSP
