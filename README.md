@@ -7,4 +7,4 @@
 - WebUI : html과 css 익히기
 - Js : JavaScript
 - JQuery 
-- JSP
+- JSP : Web Backend 익히기
