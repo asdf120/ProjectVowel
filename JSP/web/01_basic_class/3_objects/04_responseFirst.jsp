@@ -47,7 +47,10 @@
 
 
 		<!-- #######  리다이렉트 페이지 이동  -->
-		
+		<%--페이지를 바꿈--%>
+		<%
+			response.sendRedirect("04_responseSecond.jsp");
+		%>
 		
 		
 </body>

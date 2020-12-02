@@ -11,10 +11,17 @@
 <h4>다음은 클라이언트 브라우저의 쿠키에서 얻어온 값 : </h4><br><br>
 
 <%	
-	// 1. 클라이언트로부터 Cookie를 얻어옴 
-	
+	// 1. 클라이언트로부터 Cookie를 얻어옴
+	Cookie[] cookies = request.getCookies();
 	// 2. 쿠키 이름 중에 "yourid"가 있다면 그 쿠키의 값을 출력
-	
+	for(int i = 0; cookies != null && i<cookies.length; i++){
+		if(cookies[i].getName().equals("yourId")){
+			out.write(cookies[i].getValue() + "님 접속중");
+		}
+	}
+	for(Cookie c :cookies){
+
+	}
 %>
 
 <br><a href="01_ChangeCookie.jsp"> 쿠키값 변경 </a><br/>

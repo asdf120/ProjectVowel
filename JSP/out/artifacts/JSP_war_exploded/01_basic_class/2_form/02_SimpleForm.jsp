@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
 <title> 폼과 서블릿 </title></head>
 
 <body>
-	<form method="get" action="">
+	<form method="post" action="02_result.jsp">
 		<h4>  입력 후 전송 버튼을 누릅니다 </h4>
 
 		이름	: <input type="text" name="name"><br/>

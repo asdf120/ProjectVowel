@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		.list{color: 'purple'}
+	</style>
+	<script type="text/javascript" src="./js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 1.'시간' 버튼이 눌렸을 때
+			$('#get_time').click(()=>{
+				$.ajax({
+					// type:'get', 생략가능
+					url:'./jsp/time.jsp',
+					dataType :'text',
+					success : (data) =>{
+						$('#result').text(data)
+					}
+				})
+			})
+
+			// 2. '멜론' 버튼이 눌렸을때
+			$('#melon').click( () =>{
+				$.ajax({
+					url:'./jsp/proxy_melon.jsp',
+					success : (data) =>{
+						// alert(data)
+						let songchart = $('.typeRealtime > ul > li',data)
+						songchart.each(function(){
+							// text()는 같은 태그에 있는걸 다가져오고
+							// html()은 해당 태그 맨첫번째 글만 가져옴
+							let title = $('.song',this).text()
+							let singer = $('.artist a',this).html();
+
+							//TODO 이미지 나타내보기
+							let img = $('.thumb img', this)
+							// $('#result').append(title + "-->" + singer + "<br/>")
+							$('#result').append('<div class = "list">' + title + "-->" + singer + "</div>")
+							// $('#result').append(img)
+						})
+					}
+				})
+			})
+
+			$('#nate').click(()=>{
+				$.ajax({
+					url:'./jsp/proxy_nate.jsp',
+					success:(data)=>{
+						let isKeyword = $('.isKeyword li', data)
+
+						isKeyword.each(function(){
+							$('#result').append(this)
+						})
+					}
+				})
+			})
+
+		})	// function(){} END
+	</script>
+</head>
+<body>
+	<h1>선택</h1>
+	<button id="get_time">시간</button>
+	<button id="nate">네이트</button>
+	<button id="melon">멜론</button>
+	<button id="kma">날씨</button>
+	<div id="result"></div>
+</body>
+</html>

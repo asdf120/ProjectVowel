@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax 계산기</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			// 버튼이 눌려도 페이지 안넘어가도록 해주기
+			$('#frm').submit( () => {
+				$.ajax({
+					url:'./jsp/calc-action.jsp',
+					type:'get',
+					data : {
+						'op1' : $('#op1').val(),
+						// 'opr' : $('#opr').val(),
+						'op2' : $('#op2').val()
+					},
+					dataType : 'text',
+					success : (data) =>{
+						$('#result').text(data)
+					},
+					error : (err) => {
+						console.log(err)
+					}
+				})
+
+				return false;	// submit(전송) 안되게하기
+			})
+
+		})	// function(){} END
+	</script>
+</head>
+<body>
+
+	<form id='frm' action="./jsp/calc-action.jsp" method="get">
+	<input name="op1" id='op1' size="3">
+	<select name="opr" id='opr'>
+		<option>+</option>
+		<option>-</option>
+		<option>*</option>
+		<option>/</option>
+		<option>%</option>
+	</select>
+	<input name="op2" id='op2' size="3">
+	<input type="submit" value=" = ">
+	</form>
+	<fieldset>
+		<legend>실행결과</legend>
+		<div id="result"></div>
+	</fieldset>
+
+</body>
+</html>

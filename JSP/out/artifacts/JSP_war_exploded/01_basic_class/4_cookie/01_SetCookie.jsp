@@ -4,11 +4,13 @@
 
 <%	
 	// 1. Cookie 객체 생성
-	
+	Cookie cookie = new Cookie("yourId","kyg");
+
 	// 2. 속성 부여
-	
+	//유효기간 설정
+	cookie.setMaxAge(1*30); // 1분
 	// 3. 클라이언트에 쿠키 전송
-	
+	response.addCookie(cookie);
 %>
 
 <html>

@@ -18,7 +18,7 @@
     String pass = "tiger";
     Connection con = DriverManager.getConnection(url, user, pass);
     // 3. sql 문장 만들기
-    String sql = "SELECT * FROM emp2";
+    String sql = "SELECT * FROM emp";
     // 4. 전송 객체 얻어오기
     PreparedStatement ps = con.prepareStatement(sql);
     // 5. 전송

@@ -2,6 +2,7 @@
   <library name="tomcat-api">
     <CLASSES>
       <root url="jar://C:/java/apache-tomcat-9.0.40/lib/tomcat-api.jar!/" />
+      <root url="jar://C:/java/apache-tomcat-9.0.40/lib/taglibs-standard-impl-1.2.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
