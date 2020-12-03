@@ -7,45 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9eb417-3e09-4162-bdfe-7373f8bfac93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/01_basic_class/2_form/02_result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/01_basic_class/form/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/js/bookjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_melon.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_nate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JQuery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JQuery/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/info/beans/InfoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/exam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_kma.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/tomcat_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/tomcat_api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/1_base/02_DBtest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/1_base/02_DBtest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/2_form/02_SimpleForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/2_form/02_SimpleForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/3_objects/04_responseFirst.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/3_objects/04_responseFirst.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/4_cookie/01_GetCookie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/4_cookie/01_GetCookie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/4_cookie/01_SetCookie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/4_cookie/01_SetCookie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/01_login/LoginService.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/01_login/LoginService.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/01_login/MainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/01_login/MainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/02_cart/Buy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/02_cart/Buy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/02_cart/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/01_basic_class/5_session/02_cart/Cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/META-INF/JSP.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/example/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/example/HelloWorld.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/temp/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/temp/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSP/example/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JSP/temp/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/temp/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/1_base/02_DBtest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/1_base/02_DBtest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/2_form/02_SimpleForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/2_form/02_SimpleForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/3_objects/04_responseFirst.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/3_objects/04_responseFirst.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/4_cookie/01_GetCookie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/4_cookie/01_GetCookie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/4_cookie/01_SetCookie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/4_cookie/01_SetCookie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/5_session/01_login/LoginService.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/5_session/01_login/LoginService.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/5_session/01_login/MainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/5_session/01_login/MainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/Buy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/Buy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/Cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/05_jquery_ajax_ex/DataSelect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/05_jquery_ajax_ex/DataSelect.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/06_jquery_ajax_proxy/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/6_ajax_class/06_jquery_ajax_proxy/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/temp/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temp/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/temp/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataSelect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataSelect.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,90 +32,95 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/exam.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="72">
+                    <caret line="4" column="91" lean-forward="true" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="288">
+              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/01_ajax_get_csv.jsp">
+        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/exam.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/01_server.jsp">
+        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_kma.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="18">
+              <caret line="1" column="148" selection-start-line="1" selection-start-column="148" selection-end-line="1" selection-end-column="148" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/02_server.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/03_server.jsp">
+        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/02_beans_class/3_member/MemberForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/02_beans_class/3_member/CheckId.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/04_server.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/member/beans/MemberDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/calc-form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/jsp/calc-action.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/js/bookjs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/time.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+            <state relative-caret-position="719">
+              <caret line="100" column="20" lean-forward="true" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -149,8 +131,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -158,6 +141,7 @@
     <findStrings>
       <find>start</find>
       <find>var</find>
+      <find>button</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -169,18 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/jsp문법.txt" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/01_basic_class/1_base/03_MimeSecond.jsp" />
-        <option value="$PROJECT_DIR$/web/01_basic_class/1_base/04_body.jsp" />
-        <option value="$PROJECT_DIR$/src/temp/HelloServlet.java" />
-        <option value="$PROJECT_DIR$/web/first.jsp" />
-        <option value="$PROJECT_DIR$/web/01_basic_class/2_form/01_first.jsp" />
-        <option value="$PROJECT_DIR$/web/01_basic_class/2_form/01_second.jsp" />
-        <option value="$PROJECT_DIR$/web/01_basic_class/2_form/02_SimpleForm.jsp" />
-        <option value="$PROJECT_DIR$/web/01_basic_class/2_form/02_result.jsp" />
         <option value="$PROJECT_DIR$/src/form/EmpVO.java" />
         <option value="$PROJECT_DIR$/web/01_basic_class/1_base/02_DBtest.jsp" />
         <option value="$PROJECT_DIR$/web/01_basic_class/form/09_server.jsp" />
@@ -213,10 +185,25 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_melon.jsp" />
         <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_nate.jsp" />
-        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html" />
         <option value="$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/index.html" />
         <option value="$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/js/bookjs.js" />
         <option value="$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/calc-form.html" />
+        <option value="$PROJECT_DIR$/src/main/java/temp/HelloServlet.java" />
+        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_kma.jsp" />
+        <option value="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp" />
+        <option value="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataSelect.jsp" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/0_actionTags/01_body.jsp" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/0_actionTags/02_forwardFirst.jsp" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/0_actionTags/03_paramBody.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/info/beans/InfoBean.java" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/1_Info/InfoSave.jsp" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/3_member/InsertMember.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/member/beans/MemberDao.java" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/3_member/MemberForm.jsp" />
+        <option value="$PROJECT_DIR$/web/02_beans_class/3_member/CheckId.jsp" />
+        <option value="$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp" />
+        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/exam.html" />
+        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html" />
       </list>
     </option>
   </component>
@@ -240,10 +227,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -254,7 +241,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,7 +251,32 @@
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="02_beans_class" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="02_beans_class" type="462c0819:PsiDirectoryNode" />
+              <item name="1_Info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="02_beans_class" type="462c0819:PsiDirectoryNode" />
+              <item name="3_member" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
@@ -278,22 +289,14 @@
               <item name="JSP" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="6_ajax_class" type="462c0819:PsiDirectoryNode" />
-              <item name="02_jquery_ajax_basic" type="462c0819:PsiDirectoryNode" />
+              <item name="04_jquery_ajax_idcheck" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSP" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="6_ajax_class" type="462c0819:PsiDirectoryNode" />
-              <item name="03_jquery_ajax_calculate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="6_ajax_class" type="462c0819:PsiDirectoryNode" />
-              <item name="03_jquery_ajax_calculate" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="06_jquery_ajax_proxy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
@@ -303,30 +306,33 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606901143035" />
-    <property name="last_opened_file_path" value="C:/java/apache-tomcat-9.0.40/lib/taglibs-standard-impl-1.2.5.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606996902859" />
+    <property name="last_opened_file_path" value="D:/apache-tomcat-9.0.39/lib/servlet-api.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2413793" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\6_ajax_class\03_jquery_ajax_html\js" />
-      <recent name="C:\Users\sssw0\IdeaProjects\JSP\web\WEB-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ProjectVowel\JSP\src\main\java" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\6_ajax_class\06_jquery_ajax_proxy\jsp" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\01_basic_class\form" />
       <recent name="C:\Users\sssw0\IdeaProjects\JSP\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\6_ajax_class\03_jquery_ajax_html\js" />
+      <recent name="C:\Users\sssw0\IdeaProjects\JSP\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,27 +347,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="IdForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/6_ajax_class/04_jquery_ajax_idcheck/IdForm.jsp">
+  <component name="RunManager" selected="JavaScript Debug.test.html">
+    <configuration name="InfoInput.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/02_beans_class/1_Info/InfoInput.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="calc-form-json.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/6_ajax_class/03_jquery_ajax_calculate/calc-form-json.html">
+    <configuration name="InfoSave.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/02_beans_class/1_Info/InfoSave.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/6_ajax_class/03_jquery_ajax_html/index.html">
+    <configuration name="MemberForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/02_beans_class/3_member/MemberForm.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="proxy_melon.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_melon.jsp">
+    <configuration name="exam.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/6_ajax_class/06_jquery_ajax_proxy/exam.html">
       <method v="2" />
     </configuration>
     <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/6_ajax_class/06_jquery_ajax_proxy/test.html">
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="COMMON_VM_ARGUMENTS" value="-Duser.language=en -Duser.region=us" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="JSP:war exploded">
           <settings>
@@ -434,20 +439,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.calc-form-json.html" />
-      <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="JavaScript Debug.IdForm.jsp" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.39" />
+      <item itemvalue="JavaScript Debug.InfoInput.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat" />
+      <item itemvalue="JavaScript Debug.InfoSave.jsp" />
+      <item itemvalue="JavaScript Debug.MemberForm.jsp" />
       <item itemvalue="JavaScript Debug.test.html" />
-      <item itemvalue="JavaScript Debug.proxy_melon.jsp" />
+      <item itemvalue="JavaScript Debug.exam.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.test.html" />
-        <item itemvalue="JavaScript Debug.proxy_melon.jsp" />
-        <item itemvalue="JavaScript Debug.IdForm.jsp" />
-        <item itemvalue="JavaScript Debug.calc-form-json.html" />
+        <item itemvalue="JavaScript Debug.exam.html" />
+        <item itemvalue="JavaScript Debug.MemberForm.jsp" />
+        <item itemvalue="JavaScript Debug.InfoInput.jsp" />
+        <item itemvalue="JavaScript Debug.InfoSave.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -466,11 +471,12 @@
       <workItem from="1606710240143" duration="19000" />
       <workItem from="1606710353118" duration="60735000" />
       <workItem from="1606890627826" duration="8384000" />
+      <workItem from="1606954800060" duration="37608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73207000" />
+    <option name="totallyTimeSpent" value="110815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,10 +488,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4872449" visible="true" weight="0.18456376" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4872449" weight="0.12793177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -495,16 +501,16 @@
       <window_info id="Web" order="7" sideWeight="0.5127551" side_tool="true" weight="0.12818792" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26666668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989083" visible="true" weight="0.3789704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3248227" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32808024" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989083" weight="0.3242059" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32858709" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010917" side_tool="true" weight="0.3383948" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.22672509" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32858709" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32907802" />
@@ -557,271 +563,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/ref-lg-2072.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/2_form/02_SimpleForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/2_form/02_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/form/09_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/3_objects/04_responseFirst.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/4_cookie/01_GetCookie.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/tv-samsung-1020.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/form/EmpVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/form/09_server.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/form/EmpDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/zulu8.50.0.51-ca-jdk8.0.275-win_x64/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="235" column="9" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/apache-tomcat-9.0.40/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/5_session/02_cart/Cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cart/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/5_session/01_login/LoginForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/loginform/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/01_basic_class/5_session/01_login/LoginService.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/01_js_ajax_basic/00_server.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/01_js_ajax_basic/normal&amp;server 설명.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/01_js_ajax_basic/01_server.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/01_js_ajax_basic/00_normal_web.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/01_js_ajax_basic/01_ajax_get_csv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/03_ajax_post_xml.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/css/ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/calc-form-json.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/04_jquery_ajax_idcheck/IdCheck.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/js/jquery-1.11.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/04_ajax_post_json.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/calc-form-xml.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/jsp/calc-action-xml.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/jsp/calc-action-json.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/apache-tomcat-9.0.40/lib/taglibs-standard-impl-1.2.5.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/04_jquery_ajax_idcheck/IdForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_nate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_melon.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/화면.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -836,37 +577,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/js/bookjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/time.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/01_ajax_get_csv.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="324">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/01_server.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="216">
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
@@ -876,29 +596,308 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/03_server.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="234">
           <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/04_server.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/jsp/calc-action.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_html/js/bookjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/6_ajax_class/03_jquery_ajax_calculate/calc-form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="385">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/02_jquery_ajax_basic/04_server.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/temp/HelloServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_melon.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/화면.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/customer.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataSelect.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/01_footer.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/01_header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/01_body.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/02_forwardFirst.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/02_forwardSecond.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/03_paramImage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/0_actionTags/03_paramBody.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/1_base/02_DBtest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/2_form/02_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/form/09_form.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/1_Info/InfoInput.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beans/InfoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/form/09_server.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/member/beans/MemberException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/3_member/member.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/2_form/01_second.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/2_form/01_first.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/01_basic_class/1_base/01_QuizNumber.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/1_Info/InfoSave.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/js/jquery-1.11.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="3728" column="12" selection-start-line="3728" selection-start-column="12" selection-end-line="3728" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/form/EmpDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/time.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/04_jquery_ajax_idcheck/IdCheck.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/04_jquery_ajax_idcheck/IdForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/3_member/InsertMember.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/member/beans/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-tomcat-9.0.39/lib/taglibs-standard-impl-1.2.5.jar!/META-INF/c.tld">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/3_member/MemberForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/member/beans/MemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="100" column="20" lean-forward="true" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/02_beans_class/3_member/CheckId.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_kma.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="148" selection-start-line="1" selection-start-column="148" selection-end-line="1" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/DataInput.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/05_jquery_ajax_ex/InputCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/exam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
         </state>
       </provider>
     </entry>

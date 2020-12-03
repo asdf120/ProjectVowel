@@ -4,16 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 	<style type="text/css">
-		.list{color: 'purple'}
+		/*.list{color: 'purple'}*/
 	</style>
 	<script type="text/javascript" src="./js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript">
 		$(function(){
+
+			google.charts.load('current', {packages: ['corechart', 'line']});
+
 			// 1.'시간' 버튼이 눌렸을 때
 			$('#get_time').click(()=>{
 				$.ajax({
 					// type:'get', 생략가능
-					url:'./jsp/time.jsp',
+					url:'./jsp/time.jsp',	// 서버 요청 url
 					dataType :'text',
 					success : (data) =>{
 						$('#result').text(data)
@@ -34,16 +38,18 @@
 							let title = $('.song',this).text()
 							let singer = $('.artist a',this).html();
 
-							//TODO 이미지 나타내보기
 							let img = $('.thumb img', this)
 							// $('#result').append(title + "-->" + singer + "<br/>")
 							$('#result').append('<div class = "list">' + title + "-->" + singer + "</div>")
 							// $('#result').append(img)
+
+
 						})
 					}
 				})
 			})
 
+			// 3.네이트 키워드
 			$('#nate').click(()=>{
 				$.ajax({
 					url:'./jsp/proxy_nate.jsp',
@@ -57,6 +63,84 @@
 				})
 			})
 
+			// 4 기상청 날씨 가져오기
+			// TODO 기온 그래프로 나타내기
+			let hours = new Array();	// 날짜,시각
+			let temp = new Array();	// 기온
+			$('#kma').click( () =>{
+				$.ajax({
+					url:'./jsp/proxy_kma.jsp',
+					success : (data) =>{
+						// alert($('category',data).text()); // 지역명
+						let timeData =$('data',data)
+						timeData.each(function(){
+							let hour = parseInt($(this).find('hour').text());
+							let temperature = parseInt($(this).find('temp').text());
+							let day = $(this).find('day').text();
+							let wfKor = $(this).find('wfKor').text();
+
+
+							// var hour = $('hour',this).text();
+							// var tempo = $('temp',this).text();
+							// var wfkor = $('wfKor',this).text();
+
+							$('#result').append(day + "일 ")
+							$('#result').append(hour + "시 ")
+							$('#result').append(temperature + "도 ")
+							$('#result').append(wfKor + "<br/>")
+
+							hours.push(hour)
+							temp.push(temperature)
+
+							let data = new google.visualization.DataTable();
+							data.addColumn('number', 'X');
+							data.addColumn('number', 'Dogs');
+
+							data.addRows([
+								[hour,temperature]
+							]);
+
+							let options = {
+								hAxis: {
+									title: 'Time'
+								},
+								vAxis: {
+									title: 'Temperature'
+								}
+							};
+
+							let chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+							chart.draw(data, options);
+						})
+					}
+				})
+			})
+
+			// function drawBasic() {
+			//
+			// 	var data = new google.visualization.DataTable();
+			// 	data.addColumn('number', 'X');
+			// 	data.addColumn('number', 'Dogs');
+			//
+			// 	data.addRows([
+			// 		[0, 0],   [1, 10]
+			// 	]);
+			//
+			// 	var options = {
+			// 		hAxis: {
+			// 			title: 'Time'
+			// 		},
+			// 		vAxis: {
+			// 			title: 'Popularity'
+			// 		}
+			// 	};
+			//
+			// 	var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+			//
+			// 	chart.draw(data, options);
+			// }
+
 		})	// function(){} END
 	</script>
 </head>
@@ -67,5 +151,6 @@
 	<button id="melon">멜론</button>
 	<button id="kma">날씨</button>
 	<div id="result"></div>
+	<div id="chart_div"></div>
 </body>
 </html>
