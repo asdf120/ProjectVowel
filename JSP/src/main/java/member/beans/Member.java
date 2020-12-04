@@ -38,7 +38,4 @@ public class Member {
 		this.addr = addr;
 	}
 	
-
-	
-	
 }

@@ -72,7 +72,7 @@
 						timeData.each(function(){
 							let hour = $(this).find('hour').text();
 							let temperature = parseInt($(this).find('temp').text());
-							let day = $(this).find('day').text();
+							// let day = $(this).find('day').text();
 							let wfKor = $(this).find('wfKor').text();
 
 							// var hour = $('hour',this).text();
@@ -84,8 +84,8 @@
 							// $('#result').append(temperature + "도 ")
 							// $('#result').append(wfKor + "<br/>")
 
-							hours.push(day +"일 " + hour +"시")
-							// hours.push(hour)
+							// hours.push(day +"일 " + hour +"시")
+							hours.push(hour)
 							temp.push(temperature)
 						})
 
