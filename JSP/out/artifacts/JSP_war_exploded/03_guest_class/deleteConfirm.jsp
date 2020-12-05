@@ -9,9 +9,6 @@
 	System.out.println("deleteConfirm 7line : " + msgId);
 	String password = request.getParameter("password");
 	// 2. 서비스의 delete() 메소드로 1번의 값을 넘겨주고 삭제된 행 수를 리턴받아 delCnt 변수에 지정
-	DeleteMessageService deleteMessageService = DeleteMessageService.getInstance();
-	delCnt = deleteMessageService.delete(msgId,password);
-
 
 	delCnt = DeleteMessageService.getInstance().delete(msgId,password);
 

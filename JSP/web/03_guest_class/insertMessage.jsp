@@ -9,7 +9,9 @@
 	<script type="text/javascript">
 		$(function(){
 			//TODO 유효성검사해주기
-
+            $('input[name="guestName"]').blur(()=>{
+                alert('확인')
+            })
 			$('input[type="button"]').click(()=>{
 				$('form[name="frm"]').submit()
 			})

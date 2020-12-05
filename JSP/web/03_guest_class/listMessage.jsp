@@ -1,26 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@ page import="guest.model.*,guest.service.*" %>
+<%@ page import="guest.service.ListMessageService,guest.vo.MessageVO" %>
 <%@ page import="java.util.List" %>
-<%@ page import="guest.vo.MessageVO" %>
+<%@ page import="guest.model.MessageException" %>
 
 <%
-    /**
-     * 여기 추가
-     */
-//    String currentPage = request.getParameter("currentPage");
-//    int pageNo = 0;
-//    if(currentPage != null){
-//        pageNo = Integer.parseInt(currentPage);
-//    }
-    int currentPage = Integer.parseInt(request.getParameter("currentPage"));
-    // 전체 메세지 레코드 검색
+    String currentPage = request.getParameter("currentPage");
+    int pageNo = 1;
+    if(currentPage != null){
+        pageNo = Integer.parseInt(currentPage);
+    }
+    List<MessageVO> mList = null;
+    int totalPageCount= 0;
 
-    List<MessageVO> mList = ListMessageService.getInstance().getMessageList(currentPage);
+    try{
+        mList = ListMessageService.getInstance().getMessageList(pageNo);
+        ListMessageService listMessageService = ListMessageService.getInstance();
 
-    ListMessageService listMessageService = ListMessageService.getInstance();
-    int totalPageCount = listMessageService.getTotalPage();
-
+        totalPageCount = listMessageService.getTotalPage();
+        System.out.println("listMessage.jsp 21line : " + totalPageCount);
+    }catch (MessageException e){
+        System.out.println(e.toString());
+    }
 
 %>
 <!DOCTYPE html>
