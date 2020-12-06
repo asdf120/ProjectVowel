@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+fieldset {
+    border: white;
+    width: 350px;
+    background: #F2CE16;
+    border-radius: 5px;
+
+}
+
+fieldset:nth-of-type(4){
+    margin-top: 5px;
+    text-align: center;
+}
+
+legend {
+    font-family:fantasy;
+    border-radius: 5px;
+    background: #F2BB16;
+    color: white;
+}
+
+li {
+    margin: 2px;
+    padding: 1px;
+}
+
+input[type=text]{
+    border-radius: 3px;
+}
+input[type=range]{
+
+}
+input[type=submit]{
+    border-radius: 3px;
+}
