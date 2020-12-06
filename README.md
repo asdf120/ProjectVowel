@@ -8,4 +8,4 @@
 - Js : JavaScript
 - JQuery 
 - JSP : Backend 익히기
-- Spring : Sprin
+- Spring : Spring framework 익히기
