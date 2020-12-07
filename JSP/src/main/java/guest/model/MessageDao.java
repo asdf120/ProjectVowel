@@ -84,51 +84,50 @@ public class MessageDao {
      * 메세지 목록 전체를 얻어올 때
      */
 //    public List<MessageVO> selectList() throws MessageException {
-////        List<MessageVO> mList = new ArrayList<MessageVO>();
-////        boolean isEmpty = true;
-////        try {
-////            con = DriverManager.getConnection(dbUrl,dbUser,dbPass);
-////            String sql = "SELECT * FROM guestTB";
-////            ps = con.prepareStatement(sql);
-////            rs = ps.executeQuery();
-////
-////            while (rs.next()) {
-////                MessageVO messageVo = new MessageVO();
-////                messageVo.setId(rs.getInt("MESSAGE_ID"));
-////                messageVo.setGuestName(rs.getString("GUEST_NAME"));
-////                messageVo.setMessage(rs.getString("MESSAGE"));
-////                mList.add(messageVo);
-////                isEmpty = false;
-////            }
-////            if (isEmpty) return Collections.emptyList();
-////            return mList;
-////        } catch (Exception ex) {
-////            throw new MessageException("방명록 ) DB에 목록 검색시 오류  : " + ex.toString());
-////        } finally {
-////            if (rs != null) {
-////                try {
-////                    rs.close();
-////                } catch (SQLException ex) {
-////                }
-////            }
-////            if (ps != null) {
-////                try {
-////                    ps.close();
-////                } catch (SQLException ex) {
-////                }
-////            }
-////            if (con != null) {
-////                try {
-////                    con.close();
-////                } catch (SQLException ex) {
-////                }
-////            }
-////        }
-////    }
+//        List<MessageVO> mList = new ArrayList<MessageVO>();
+//        boolean isEmpty = true;
+//        try {
+//            con = DriverManager.getConnection(dbUrl,dbUser,dbPass);
+//            String sql = "SELECT * FROM guestTB";
+//            ps = con.prepareStatement(sql);
+//            rs = ps.executeQuery();
+//
+//            while (rs.next()) {
+//                MessageVO messageVo = new MessageVO();
+//                messageVo.setId(rs.getInt("MESSAGE_ID"));
+//                messageVo.setGuestName(rs.getString("GUEST_NAME"));
+//                messageVo.setMessage(rs.getString("MESSAGE"));
+//                mList.add(messageVo);
+//                isEmpty = false;
+//            }
+//            if (isEmpty) return Collections.emptyList();
+//            return mList;
+//        } catch (Exception ex) {
+//            throw new MessageException("방명록 ) DB에 목록 검색시 오류  : " + ex.toString());
+//        } finally {
+//            if (rs != null) {
+//                try {
+//                    rs.close();
+//                } catch (SQLException ex) {
+//                }
+//            }
+//            if (ps != null) {
+//                try {
+//                    ps.close();
+//                } catch (SQLException ex) {
+//                }
+//            }
+//            if (con != null) {
+//                try {
+//                    con.close();
+//                } catch (SQLException ex) {
+//                }
+//            }
+//        }
+//    }
     /* -------------------------------------------------------
      * 현재 페이지에 보여울 메세지 목록  얻어올 때
      */
-    //TODO isEmpty 처리 안해줘도 다 됨 ==> 물업올것
     public List<MessageVO> selectList(int firstRow, int endRow) throws MessageException {
         List<MessageVO> mList = new ArrayList<>();
         boolean isEmpty = true;

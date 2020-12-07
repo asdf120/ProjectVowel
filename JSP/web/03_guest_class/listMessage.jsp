@@ -5,20 +5,20 @@
 <%@ page import="guest.model.MessageException" %>
 
 <%
+    List<MessageVO> mList = null;
+    int totalPageCount= 0;
     String currentPage = request.getParameter("currentPage");
     int pageNo = 1;
+
     if(currentPage != null){
         pageNo = Integer.parseInt(currentPage);
     }
-    List<MessageVO> mList = null;
-    int totalPageCount= 0;
 
     try{
         mList = ListMessageService.getInstance().getMessageList(pageNo);
         ListMessageService listMessageService = ListMessageService.getInstance();
 
         totalPageCount = listMessageService.getTotalPage();
-        System.out.println("listMessage.jsp 21line : " + totalPageCount);
     }catch (MessageException e){
         System.out.println(e.toString());
     }
