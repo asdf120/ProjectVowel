@@ -57,11 +57,11 @@
       <handler type="URLMapper"/>
       <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
 
-      <!--comment following line for REMOVING wsdl spying via SOAPMonitor-->
+      <!--commentVO following line for REMOVING wsdl spying via SOAPMonitor-->
       <handler type="soapmonitor"/>
     </requestFlow>
     <responseFlow>
-      <!--comment following line for REMOVING wsdl spying via SOAPMonitor-->
+      <!--commentVO following line for REMOVING wsdl spying via SOAPMonitor-->
       <handler type="soapmonitor"/>
     </responseFlow>
     <parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>

@@ -31,5 +31,6 @@
     <orderEntry type="library" name="ojdbc6" level="application" />
     <orderEntry type="library" name="tomcat-api" level="project" />
     <orderEntry type="library" name="servlet-api" level="application" />
+    <orderEntry type="library" name="tomcat_lib" level="project" />
   </component>
 </module>

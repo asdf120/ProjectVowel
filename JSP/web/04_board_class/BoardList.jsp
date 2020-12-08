@@ -63,6 +63,13 @@
         <td><%=boardVO.getArticleId()%>
         </td>
         <td>
+            <% for(int i = 0; i<boardVO.getLevel(); i++){ %>
+             &nbsp;
+            <% } %>
+            <%--답글 이미지 표시--%>
+            <% if(boardVO.getLevel() != 0){ %>
+                <img alt="답글표시" src="imgs/board_re.gif">
+            <% } %>
             <a href='BoardView.jsp?articleId=<%=boardVO.getArticleId()%>'>
                 <%=boardVO.getTitle()%>
             </a>

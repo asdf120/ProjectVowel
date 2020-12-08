@@ -20,7 +20,7 @@
 
 create table article (article_id number primary key,
         group_id number,
-        sqeuence_no char(16),
+        sequence_no char(16),
         posting_date date,
         read_count number,
         writer_name varchar2(20),

@@ -13,9 +13,9 @@ public class BoardDao {
 
     // DB 연결시  관한 변수
     private static final String dbDriver = "oracle.jdbc.driver.OracleDriver";
-    private static final String dbUrl = "jdbc:oracle:thin:@localhost:1521:orcl";
-    private static final String dbUser = "kosmo_04";
-    private static final String dbPass = "kosmo";
+    private static final String dbUrl = "jdbc:oracle:thin:@localhost:1536:orcl";
+    private static final String dbUser = "kyg";
+    private static final String dbPass = "1234";
 
     PreparedStatement ps = null;
     ResultSet rs = null;
@@ -164,7 +164,7 @@ public class BoardDao {
                     "                            from (select article_id from article\n" +
                     "                order by article_id desc))\n" +
                     "                where rnum>=? and rnum<=?)\n" +
-                    "order by article_id desc";
+                    "order by SEQUENCE_NO desc";
             ps = con.prepareStatement(sql);
             ps.setInt(1, firstRow);
             ps.setInt(2, endRow);

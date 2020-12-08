@@ -19,7 +19,7 @@ public class ReplyArticleService {
 		return instance;
 	}
 	
-	public BoardVO reply(String pId, BoardVO rec ) throws BoardException{
+	public BoardVO reply(String pId, BoardVO boardVo ) throws BoardException{
 		
 		int parentId = 0;
 		if( pId != null ) parentId = Integer.parseInt(pId);
@@ -41,14 +41,14 @@ public class ReplyArticleService {
 		String sequenceNumber = getSequenceNumber( parent,lastChildSeq);
 		
 		
-		rec.setGroupId(parent.getGroupId()); // 부모의 그룹번호와 동일하게 지정
-		rec.setSequenceNo(sequenceNumber);	 // 위에서 구한 답변글의 순서번호 지정
-		rec.setPostingDate( (new Date()).toString());	 // 등록일
+		boardVo.setGroupId(parent.getGroupId()); // 부모의 그룹번호와 동일하게 지정
+		boardVo.setSequenceNo(sequenceNumber);	 // 위에서 구한 답변글의 순서번호 지정
+//		boardVo.setPostingDate( (new Date()).toString());	 // 등록일
 		
-		int articleId = dao.insert(rec);
-		rec.setArticleId(articleId);
+		int articleId = dao.insert(boardVo);
+		boardVo.setArticleId(articleId);
 		
-		return rec;
+		return boardVo;
 		
 	}
 	

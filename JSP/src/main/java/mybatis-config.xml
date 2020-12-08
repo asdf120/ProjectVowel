@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- porperties속성 파일을 매핑 -->
+    <!-- 데이터베이스 정보를 한곳에서 관리하여 연결시킴-->
+    <properties resource="dbConnect.properties"></properties>
+
+    <!-- TODO 테이블의 컬럼명과 VO의 멤버변수가 다른 경우 (이름 규칙을 맞추었다면) -->
+    <!-- DB의 컬럼명과 VO의 변수명이 각각 다른걸 매핑시켜줌-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 클래스 별칭 부여 ==> CommentMapper.xml 의 resultType에서 쓰임 (* xml타입에서만 유효)-->
+    <typeAliases>
+        <typeAlias type="mybatis.guest.model.CommentVO" alias="CommentVO"/>
+    </typeAliases>
+
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${dbcon.driver}"/>
+                <property name="url" value="${dbcon.url}"/>
+                <property name="username" value="${dbcon.user}"/>
+                <property name="password" value="${dbcon.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!-- 매퍼 등록(연결)-->
+        <mapper resource="mybatis/guest/mapper/CommentMapper.xml"/>
+    </mappers>
+</configuration>

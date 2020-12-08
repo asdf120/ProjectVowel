@@ -42,7 +42,7 @@
     <tr>
         <td colspan="2">
             <a href="BoardList.jsp">목록보기</a>
-            답변하기
+            <a href="BoardReplyForm.jsp?articleId=<%=boardVO.getArticleId()%>">답변하기</a>
             <a href="BoardModifyForm.jsp?articleId=<%=boardVO.getArticleId()%>">수정하기</a>
             <a href="BoardDeleteForm.jsp?articleId=<%=boardVO.getArticleId()%>">삭제하기</a>
         </td>

@@ -1,0 +1,6 @@
+테이블 명 : comment_tab
+
+글번호 comment_ no number(10) pk
+사용자 user_id varchar2(30)
+글내용 comment_content varchar2(500)
+작성날짜 reg_date date

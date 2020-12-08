@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CommentMapper">
+
+    <!-- ******* resultType resultMap과 혼동하지 말것 *********-->
+    <!--<select id="selectComment" resultType="CommentVO">-->
+    <!--SELECT *-->
+    <!--FROM COMMENT_TAB-->
+    <!--</select>-->
+
+    <insert id="insertComment" parameterType="CommentVO">
+      INSERT INTO COMMENT_TAB (COMMENT_NO, USER_ID, COMMENT_CONTENT, REG_DATE)
+      VALUES (#{commentNo},#{userId},#{commentContent},sysdate)
+    </insert>
+
+    <select id="selectComment" parameterType="hashmap" resultType="CommentVO">
+        SELECT *
+        FROM COMMENT_TAB
+        <where>
+            <if test="commentNo != null">
+                COMMENT_NO = #{commentNo}
+            </if>
+        </where>
+    </select>
+
+    <update id="modifyComment" parameterType="CommentVO">
+      UPDATE COMMENT_TAB
+      SET USER_ID = #{userId}, COMMENT_CONTENT = #{commentContent}, REG_DATE = sysdate
+      WHERE COMMENT_NO = #{commentNo}
+    </update>
+
+    <delete id="deleteComment" parameterType="long">
+    DELETE FROM COMMENT_TAB
+    WHERE COMMENT_NO = #{commentNo}
+    </delete>
+
+</mapper>
+
+
