@@ -7,38 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9eb417-3e09-4162-bdfe-7373f8bfac93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/tomcat_lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dbConnect.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mybatis/guest/model/CommentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/03_guest_mybatis_class/db설계.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/03_guest_mybatis_class/deleteComment.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentSave.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/simple/SimpleControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandModify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandReply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/model/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/model/BoardException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc_board/model/BoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/05_mvc_class/1_mvcSimple/start.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/boardMain.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/imgs/board_re.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/imgs/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/imgs/image.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/imgs/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mainList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardDeleteForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardInsertForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardModify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardModifyForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardReply.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardReplyForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_boardView.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mvc_board/mvc_deleteConfirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardReply.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardReply.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardReplyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardReplyForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/BoardView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/DB구성.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/04_board_class/DB구성.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/board/model/BoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/board/model/BoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/board/service/ReplyArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/board/service/ReplyArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/server-config.wsdd" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/server-config.wsdd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/model/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/model/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/service/ReplyArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/service/ReplyArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/JSP.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/board/model/BoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/board/model/BoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/board/service/ReplyArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/board/service/ReplyArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/04_board_class/BoardList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/04_board_class/BoardList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/04_board_class/BoardReply.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/04_board_class/BoardReply.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/04_board_class/BoardReplyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/04_board_class/BoardReplyForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/04_board_class/BoardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/04_board_class/BoardView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/04_board_class/DB구성.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/04_board_class/DB구성.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/server-config.wsdd" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/server-config.wsdd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/03_guest_class/saveMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/03_guest_class/saveMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/temp/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temp/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/03_guest_class/saveMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/03_guest_class/saveMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,90 +80,147 @@
         <item name="KYG: schema" type="3abd1b6a:OraImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="kyg" type="feb32156:DbDataSourceImpl" />
+        <item name="KYG: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ARTICLE: table" type="942f455b:OraImplModel$Table" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandDelete.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="133">
+                    <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+                    <folding>
+                      <element signature="e#307#308#0" expanded="true" />
+                      <element signature="e#326#327#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandNull.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="133">
+                    <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+                    <folding>
+                      <element signature="e#224#225#0" expanded="true" />
+                      <element signature="e#247#248#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JSP" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/listComment.jsp">
+        <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardView.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="196">
+              <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/viewComment.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandReply.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="164">
+              <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
               <folding>
-                <element signature="e#1586#1592#0#HTML" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#149#150#0" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/deleteComment.jsp">
+        <entry file="file://$PROJECT_DIR$/web/mvc_board/boardMain.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="152">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentForm.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/controller/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="5" column="66" lean-forward="true" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+            <state relative-caret-position="304">
+              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mybatis-config.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandInsert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="36" column="50" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="36" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/mvc_board/mainList.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/service/CommentService.java">
+        <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardReply.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1067#1068#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="112">
+              <caret line="25" column="67" lean-forward="true" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/session/CommentRepository.java">
+        <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardReplyForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-885">
-              <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="235">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/mapper/CommentMapper.xml">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="115">
+              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -170,8 +232,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -195,57 +257,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/exam.html" />
-        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/wheater.jsp" />
-        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/jsp/proxy_kma.jsp" />
-        <option value="$PROJECT_DIR$/web/6_ajax_class/06_jquery_ajax_proxy/test.html" />
-        <option value="$PROJECT_DIR$/src/main/java/guest/vo/MessageVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/guest/service/WriteMessageService.java" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/saveMessage.jsp" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/DbHint.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/guest/service/DeleteMessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/guest/service/ListMessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/member/beans/Member.java" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/DB 구성.txt" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/deleteMessage.jsp" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/deleteConfirm.jsp" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/insertMessage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/board/model/BoardVO.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardInputForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/board/service/WriteArticleService.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardSave.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/member/beans/MemberDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/board/service/ViewArticleService.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardModify.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/board/service/ModifyArticleService.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardDeleteForm.jsp" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardDelete.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/guest/model/MessageDao.java" />
-        <option value="$PROJECT_DIR$/web/03_guest_class/listMessage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/board/service/ListArticleService.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardModifyForm.jsp" />
-        <option value="$PROJECT_DIR$/web/04_board_class/DB구성.txt" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardView.jsp" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardReplyForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/board/service/ReplyArticleService.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardReply.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/board/model/BoardDao.java" />
-        <option value="$PROJECT_DIR$/web/04_board_class/BoardList.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/db설계.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/mybatis/guest/model/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbConnect.properties" />
-        <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/insertCommentSave.jsp" />
-        <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentSave.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/mybatis/guest/model/CommentVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/listComment.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/mybatis/guest/service/CommentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mybatis/guest/mapper/CommentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/mybatis/guest/session/CommentRepository.java" />
-        <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentForm.jsp" />
-        <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/deleteComment.jsp" />
         <option value="$PROJECT_DIR$/web/03_guest_mybatis_class/viewComment.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/SimpleControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/temp/HelloServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/simple/SimpleControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/simple/SimpleControl.java" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/1_mvcSimple/simpleView.jsp" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/1_mvcSimple/start.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/model/MessageVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandNull.java" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/insertMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/model/MessageDao.java" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/saveMessage.jsp" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/deleteMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/web/05_mvc_class/2_mvcGuest/listMessage.jsp" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/listMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc/guest/control/GuestControl.java" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/deleteConfirm.jsp" />
+        <option value="$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/model/BoardVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/model/BoardException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/CommandNull.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/control/BoardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandNull.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommand.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/04_board_class/BoardList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandList.java" />
+        <option value="$PROJECT_DIR$/web/mvc_board/boardView.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/boardModfiyForm.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardModfiyForm.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardModifyForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandModify.java" />
+        <option value="$PROJECT_DIR$/web/mvc_board/boardMain.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardModfiy.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mainList.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardInsertForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandInsert.java" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardDeleteForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandDelete.java" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_deleteConfirm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandView.java" />
+        <option value="$PROJECT_DIR$/web/04_board_class/BoardView.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardView.jsp" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardReplyForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/controller/BoardController.java" />
+        <option value="$PROJECT_DIR$/web/mvc_board/mvc_boardReply.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/model/BoardDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandReply.java" />
       </list>
     </option>
   </component>
@@ -270,9 +332,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -315,7 +376,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guest" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc_board" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
@@ -323,8 +384,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guest" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc_board" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
@@ -332,16 +393,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guest" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc_board" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
@@ -352,7 +405,26 @@
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSP" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="03_guest_mybatis_class" type="462c0819:PsiDirectoryNode" />
+              <item name="04_board_class" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="05_mvc_class" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="05_mvc_class" type="462c0819:PsiDirectoryNode" />
+              <item name="2_mvcGuest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc_board" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
@@ -362,6 +434,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,30 +443,35 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607425629269" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607507291042" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="C:/java/apache-tomcat-9.0.40/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2413793" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\src\main\java\mvc" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\lib" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\src\main\java" />
       <recent name="D:\ProjectVowel\JSP\src\main\java" />
       <recent name="D:\ProjectVowel\JSP\web\03_guest_class" />
-      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\6_ajax_class\06_jquery_ajax_proxy\jsp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mvc_board.command" />
+      <recent name="mvc_board.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\mvc_board" />
+      <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\mvc_board\imgs" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\03_guest_mybatis_class" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\src\main\java" />
       <recent name="C:\Users\sssw0\Desktop\ProjectVowel\JSP\web\6_ajax_class\03_jquery_ajax_html\js" />
-      <recent name="C:\Users\sssw0\IdeaProjects\JSP\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -408,23 +486,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.modifyCommentForm.jsp">
+  <component name="RunManager" selected="JavaScript Debug.boardMain.jsp">
+    <configuration name="BoardDeleteForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/04_board_class/BoardDeleteForm.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardInputForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/04_board_class/BoardInputForm.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="BoardList.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/04_board_class/BoardList.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="BoardReplyForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/04_board_class/BoardReplyForm.jsp">
+    <configuration name="BoardModifyForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/04_board_class/BoardModifyForm.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="insertCommentForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/03_guest_mybatis_class/insertCommentForm.jsp">
+    <configuration name="boardMain.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/mvc_board/boardMain.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="listComment.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/03_guest_mybatis_class/listComment.jsp">
-      <method v="2" />
-    </configuration>
-    <configuration name="modifyCommentForm.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/03_guest_mybatis_class/modifyCommentForm.jsp">
+    <configuration name="start.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/web/services/05_mvc_class/1_mvcSimple/start.jsp">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="COMMON_VM_ARGUMENTS" value="-Duser.language=en -Duser.region=us" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -501,20 +583,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.BoardList.jsp" />
-      <item itemvalue="JavaScript Debug.BoardReplyForm.jsp" />
-      <item itemvalue="JavaScript Debug.listComment.jsp" />
-      <item itemvalue="JavaScript Debug.insertCommentForm.jsp" />
       <item itemvalue="Tomcat Server.Tomcat" />
-      <item itemvalue="JavaScript Debug.modifyCommentForm.jsp" />
+      <item itemvalue="JavaScript Debug.BoardList.jsp" />
+      <item itemvalue="JavaScript Debug.boardMain.jsp" />
+      <item itemvalue="JavaScript Debug.BoardModifyForm.jsp" />
+      <item itemvalue="JavaScript Debug.BoardInputForm.jsp" />
+      <item itemvalue="JavaScript Debug.BoardDeleteForm.jsp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.modifyCommentForm.jsp" />
-        <item itemvalue="JavaScript Debug.listComment.jsp" />
+        <item itemvalue="JavaScript Debug.boardMain.jsp" />
         <item itemvalue="JavaScript Debug.BoardList.jsp" />
-        <item itemvalue="JavaScript Debug.insertCommentForm.jsp" />
-        <item itemvalue="JavaScript Debug.BoardReplyForm.jsp" />
+        <item itemvalue="JavaScript Debug.BoardDeleteForm.jsp" />
+        <item itemvalue="JavaScript Debug.BoardInputForm.jsp" />
+        <item itemvalue="JavaScript Debug.BoardModifyForm.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -540,12 +622,14 @@
       <workItem from="1607301506971" duration="30136000" />
       <workItem from="1607386580334" duration="28665000" />
       <workItem from="1607417340944" duration="5347000" />
-      <workItem from="1607422883791" duration="2718000" />
+      <workItem from="1607422883791" duration="3326000" />
+      <workItem from="1607472993381" duration="3818000" />
+      <workItem from="1607477274541" duration="25779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214293000" />
+    <option name="totallyTimeSpent" value="244498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,15 +644,15 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4872449" weight="0.22214764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48712447" weight="0.38791946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.51287556" side_tool="true" weight="0.28393352" />
       <window_info id="Web" order="7" sideWeight="0.5127551" side_tool="true" weight="0.12818792" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49584487" visible="true" weight="0.32765958" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.49584487" visible="true" weight="0.31205675" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32907802" />
@@ -579,7 +663,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32858709" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5041551" side_tool="true" weight="0.47659576" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.22269504" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.21985815" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32858709" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32907802" />
@@ -591,7 +675,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.38187918" />
+      <window_info anchor="right" id="Database" order="6" weight="0.2409396" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -636,230 +720,315 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/guest/service/DeleteMessageService.java">
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/imgs/image.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/insertMessage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="28" />
+        <state relative-caret-position="170">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/saveMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="67" lean-forward="true" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/model/BoardException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7048">
-          <caret line="556" column="22" selection-start-line="556" selection-start-column="22" selection-end-line="556" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/jdk_1_8/src.zip!/java/text/SimpleDateFormat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/member/beans/MemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/WriteArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardSave.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_class/deleteMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_class/saveMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardModify.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ModifyArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/guest/model/MessageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2318">
-          <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_class/listMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/guest/service/ListMessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/DeleteArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ListArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ViewArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardDeleteForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardDelete.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/DB구성.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_class/insertMessage.jsp">
+    <entry file="file://$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/listMessage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e0e6fa74-d3b2-4b13-8047-560c19c5d6a7/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardInputForm.jsp">
+    <entry file="file://$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/deleteConfirm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardReplyForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardReply.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ReplyArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/model/BoardVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbConnect.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/apache-tomcat-9.0.40/lib/mybatis-3.2.2.jar!/org/apache/ibatis/session/SqlSessionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/apache-tomcat-9.0.40/lib/mybatis-3.2.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+        <state relative-caret-position="76">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardModifyForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="190">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/db설계.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="133">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/model/BoardVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/guest/control/GuestControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardModify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ModifyArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandModify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/05_mvc_class/2_mvcGuest/deleteMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ListArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardInputForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/WriteArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="19" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardSave.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardInsertForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardDelete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardDeleteForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/member/beans/MemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardModify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_deleteConfirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardDeleteForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardModifyForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/guest/command/CommandDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ViewArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/board/model/BoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/board/service/ReplyArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardReply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardReplyForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/imgs/board_re.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardReply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="25" column="67" lean-forward="true" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -870,135 +1039,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/insertCommentSave.jsp">
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardReplyForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="235">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/board/model/BoardDao.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4541">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="115">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/model/BoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/java/apache-tomcat-9.0.40/lib/mybatis-3.2.2.jar!/org/apache/ibatis/session/SqlSession.class">
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mvc_boardView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="196">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/insertCommentForm.jsp">
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/boardMain.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentSave.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e0e6fa74-d3b2-4b13-8047-560c19c5d6a7/schema/KYG/table/COMMENT_TAB">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/model/CommentVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/04_board_class/BoardView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mybatis-config.xml">
+    <entry file="file://$PROJECT_DIR$/web/mvc_board/mainList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/service/CommentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandInsert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        <state relative-caret-position="207">
+          <caret line="36" column="50" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="36" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/mapper/CommentMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/controller/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/modifyCommentForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="66" lean-forward="true" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/guest/session/CommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-885">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="304">
+          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/deleteComment.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc_board/command/BoardCommandReply.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/listComment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/03_guest_mybatis_class/viewComment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="164">
+          <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
           <folding>
-            <element signature="e#1586#1592#0#HTML" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1058,12 +1173,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JSP</last-edited>
+          <last-edited>Web|JSP</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2413793" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -6,7 +6,7 @@
 
 <!-- 0. 넘겨받는 데이타의 한글처리 -->
 <%request.setCharacterEncoding("utf-8"); // post방식 한글깨짐 처리%>
-<%--1. 화면의 입력값을 Message 클래스로 전달--%>
+<%--1. 화면의 입력값을 MessageVO 클래스로 전달--%>
 <jsp:useBean id="messageVo" class="guest.vo.MessageVO">
     <jsp:setProperty name="messageVo" property="*"/>
 </jsp:useBean>
