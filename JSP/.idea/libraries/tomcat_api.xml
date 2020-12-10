@@ -6,6 +6,8 @@
       <root url="jar://D:/apache-tomcat-9.0.39/lib/tomcat-api.jar!/" />
       <root url="jar://D:/apache-tomcat-9.0.39/lib/taglibs-standard-impl-1.2.5.jar!/" />
       <root url="jar://D:/apache-tomcat-9.0.39/lib/servlet-api.jar!/" />
+      <root url="jar://C:/java/apache-tomcat-9.0.40/lib/jstl.jar!/" />
+      <root url="jar://C:/java/apache-tomcat-9.0.40/lib/standard.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
