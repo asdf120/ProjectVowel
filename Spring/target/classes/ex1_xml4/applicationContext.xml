@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="listBean" class="ex1_xml4_list.ListBean">
+        <!-- setter 이용 -->
+        <property name="integerList">
+            <list>
+                <value>20</value>
+                <value>30</value>
+                <value>42</value>
+            </list>
+        </property>
+        <property name="memberBeanList">
+            <list>
+                <ref bean="memberBean"/>
+                <ref bean="memberBean2"/>
+
+                <!--익명 빈-->
+                <bean class="ex1_xml4_list.MemberBean">
+                    <constructor-arg value="익명빈"></constructor-arg>
+                    <constructor-arg value="1211" type="int"></constructor-arg>
+                    <constructor-arg value="익명의 빈으로 메시지"></constructor-arg>
+                </bean>
+            </list>
+        </property>
+    </bean>
+    <bean id="memberBean" class="ex1_xml4_list.MemberBean">
+        <property name="name" value="김용관"/>
+        <property name="age" value="29"/>
+        <property name="message" value="점심이후, 속이 안좋음"/>
+    </bean>
+
+    <bean id="memberBean2" class="ex1_xml4_list.MemberBean">
+        <constructor-arg value="생서자 이용한 이름"></constructor-arg>
+        <constructor-arg value="1211" type="int"></constructor-arg>
+        <constructor-arg value="메세지남김"></constructor-arg>
+
+    </bean>
+
+</beans>

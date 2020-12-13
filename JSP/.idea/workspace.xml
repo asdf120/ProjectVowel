@@ -7,15 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9eb417-3e09-4162-bdfe-7373f8bfac93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/06_el_class/4_jstl/basic.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/06_el_class/4_jstl/var.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/tomcat_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/tomcat_api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/JSP.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/out/artifacts/Spring_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/out/artifacts/Spring_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/META-INF/Spring.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/model/BoardDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/model/BoardException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/model/BoardVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/service/DeleteArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/service/ListArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/service/ModifyArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/service/ReplyArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/service/ViewArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/service/WriteArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cart/Goods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/example/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/form/EmpDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/form/EmpVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/model/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/model/MessageException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/service/DeleteMessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/service/ListMessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/service/MessageException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/service/WriteMessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/guest/vo/MessageVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/info/beans/InfoBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/loginform/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/member/beans/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/member/beans/MemberDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/member/beans/MemberException.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/06_el_class/4_jstl/3_QuizNumberEL.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="432">
+              <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -79,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/06_el_class/4_jstl/basic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="126">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
@@ -88,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/06_el_class/3_objects/First.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="198">
               <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
@@ -97,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/06_el_class/3_objects/Second.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="558">
               <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
             </state>
           </provider>
@@ -105,8 +122,8 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/06_el_class/4_jstl/resource/message.properties">
-          <provider editor-type-id="ResourceBundle" />
           <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="ResourceBundle" />
         </entry>
       </file>
     </leaf>
@@ -227,58 +244,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="06_el_class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="06_el_class" type="462c0819:PsiDirectoryNode" />
-              <item name="3_objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="06_el_class" type="462c0819:PsiDirectoryNode" />
-              <item name="4_jstl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="06_el_class" type="462c0819:PsiDirectoryNode" />
-              <item name="4_jstl" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle" />
@@ -288,7 +254,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607571725854" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -467,11 +433,12 @@
       <workItem from="1607477274541" duration="26668000" />
       <workItem from="1607560153023" duration="9231000" />
       <workItem from="1607578546620" duration="1434000" />
+      <workItem from="1607645666190" duration="708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256052000" />
+    <option name="totallyTimeSpent" value="256760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,8 +450,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="783" height="824" extended-state="0" />
-    <editor active="true" />
+    <frame x="-10" y="0" width="979" height="1030" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48712447" weight="0.4072022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -911,35 +877,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/06_el_class/4_jstl/3_QuizNumberEL.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="432">
+          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/06_el_class/4_jstl/basic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="126">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/06_el_class/3_objects/First.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="198">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/06_el_class/3_objects/Second.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="558">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/06_el_class/4_jstl/resource/message.properties">
-      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="ResourceBundle" />
     </entry>
   </component>
   <component name="masterDetails">
