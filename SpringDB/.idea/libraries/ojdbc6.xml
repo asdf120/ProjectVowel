@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ojdbc6">
-    <CLASSES>
-      <root url="jar://C:/Oracle/product/11.2.0/dbhome_3/jdbc/lib/ojdbc6.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
