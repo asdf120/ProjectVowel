@@ -1,9 +1,11 @@
 import board.BoardVO;
+import board.impl.EmpServiceImpl;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 import board.BoardService;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class MainApp {
@@ -12,7 +14,7 @@ public class MainApp {
 		AbstractApplicationContext container = new GenericXmlApplicationContext("applicationContext.xml");
 
 		// 2. Spring 컨테이너로부터 BoardServiceImpl 객체를 Lookup한다.
-		BoardService boardService = (BoardService) container.getBean("boardService");
+//		BoardService boardService = (BoardService) container.getBean("boardService");
 
 		// 3. 글 등록 기능 테스트
 //		BoardVO vo = new BoardVO();
@@ -22,11 +24,17 @@ public class MainApp {
 //		boardService.insertBoard(vo);
 
 		// 4. 글 목록 검색 기능 테스트		
-		BoardVO svo = new BoardVO();
-		svo.setTitle("spring");
-		List<BoardVO> boardList = boardService.getBoardList(svo);
-		for (BoardVO board : boardList) {
-			System.out.println("---> " + board.toString());
+//		BoardVO svo = new BoardVO();
+//		svo.setTitle("spring");
+//		List<BoardVO> boardList = boardService.getBoardList(svo);
+//		for (BoardVO board : boardList) {
+//			System.out.println("---> " + board.toString());
+//		}
+		EmpServiceImpl empService = container.getBean("empService", EmpServiceImpl.class);
+		List<HashMap> list = empService.selectEmp();
+
+		for(HashMap map : list){
+			System.out.println(map.get("NAME") + " / " + map.get("DNAME"));
 		}
 
 		// 5. Spring 컨테이너 종료
