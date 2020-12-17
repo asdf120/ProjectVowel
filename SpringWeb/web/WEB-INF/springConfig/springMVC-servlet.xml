@@ -21,7 +21,6 @@
         <property name="port" value="587"/>
         <property name="protocol" value="smtp"/>
         <property name="username" value="sssw0101@gmail.com"/>
-        <!--TODO 비번 작성할것-->
         <property name="password" value="비밀번호"/>
         <property name="javaMailProperties">
             <props>

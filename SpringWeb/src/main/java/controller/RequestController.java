@@ -7,6 +7,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletResponse;
@@ -18,6 +19,7 @@ import java.util.Random;
 @RequestMapping("/board")
 public class RequestController {
 
+    //TODO javax.mail.internet 패키지를 못찾음
     @Autowired
     JavaMailSender mailSender;
     MemberService memberService;
@@ -59,10 +61,6 @@ public class RequestController {
         return "board/request";
     }
 
-//    @RequestMapping("/request.do")
-//    public void request(MemberVO memberVO){
-//        System.out.println("/request.do 요청");
-//    }
     /**
      * 함수의 리턴형이 void 인 경우
      * --> 뷰페이지가 자동으로 지정
@@ -70,4 +68,14 @@ public class RequestController {
      *
      * ex) mapTest.do 요청 -> mapTest
      */
+    @RequestMapping(value = "/request.do", method = RequestMethod.POST)
+    public void request(MemberVO memberVO){
+        System.out.println("/request.do 요청");
+        System.out.println("이름 : " + memberVO.getName());
+    }
+
+    @RequestMapping(value = "/c.do", params = {"id=kim"})
+    public void reqeustC(){
+        System.out.println("c.do 요청");
+    }
 }
