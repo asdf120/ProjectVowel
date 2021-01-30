@@ -1,0 +1,46 @@
+
+[1] 프로젝트 생성
+
+	Maven Project
+		` 체크 : create a simple project
+		
+		- Group Id : com.kosmo
+		- Atrifact id : lab1
+
+	(1) pom.xml ( 제공 )
+		
+	(2) java 파일
+
+	* pom.xml이나 자바파일을 복사하여 추가한 경우 매번 
+	   프로젝트 선택 > 오른마우스 > Maven > Update project
+
+
+	[참고] pom.xml에서 메인 클래스 지정 - 2가지 경우 모두 수업한다.
+		
+		pom.xml 안에서 jar 구동시 메인 클래스를 지정하면 나중에 jar 구동시 클래스명을 지정하지 않는다.
+		$ yarn jar /home/hadoop/source/lab1.jar /input /output/wordcount
+		
+		그러나 우리는 여러 파일을 실행할 것이기에 pom.xml에서 메인 클래스 지정 부분을 주석달고 
+		실행할 때 아래처럼 클래스명을 기술할 것이다. 
+		$ yarn jar /home/hadoop/source/lab1.jar sample.WordCount /input /output/wordcount
+		
+		
+		
+[2] jar 만들기
+
+	` 프로젝트명 > 오른마우스 > Run As > 8 Maven install
+
+	` Maven install 은 프로젝트에서 사용하는 라이브러리들을 모두 포함하면서 
+	   프로젝트를 빌드하여 jar 파일을 생성한다. 
+		
+	` target에 jar 파일 생김
+	  ( 이름이 길면 여기서 줄이고 서버로 업로드해도 되고 winscp로 업로드시 이름을 줄여서 쓴다  )
+
+
+[3] 서버에 업로드 ( SCP 이용 )
+
+	` nn01 노드 ( 192.168.56.101 ) 연결 - hadoop/hadoop 계정
+	
+	` /home/hadoop에  source 디렉토리 생성하고 여기에 복사
+	
+

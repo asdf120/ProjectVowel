@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<title>jquery.cookie</title>
-<script type="text/javascript"   src="http://code.jquery.com/jquery-1.9.0.js"></script>
-<script type="text/javascript"   src="js/jquery.cookie.js"></script>
-<script type="text/javascript">
 
-</script>
+<head>
+  <meta charset="UTF-8" />
+  <title>jquery.cookie</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
+
+  <!-- TODO jquery 쿠키플러그인 반드시사용 -->
+  <!-- 쿠키 : 브라우저에 정보를 저장하는것 -->
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      //화면에 뜨자마자 정보 저장하기
+      $('#txtMail').val($.cookie('myEmail'))
+
+      $('#btnSave').click(() => {
+        //myEmail은 임의로 씀, expires 유효기간 일단위
+        $.cookie('myEmail', $('#txtMail').val(), { expires: 1 })
+        $('#txtMail').val('')
+      })
+    })
+  </script>
 </head>
+
 <body>
-<form method="POST" action="">
-  메일 어드레스：
-  <input id="txtMail" type="email" size="50" />
-  <input id="btnSave" type="button" value="송신" />
-</form>
+  <form method="POST" action="">
+    메일 어드레스：
+    <input id="txtMail" type="email" size="50" />
+    <input id="btnSave" type="button" value="송신" />
+  </form>
 </body>
+
 </html>
