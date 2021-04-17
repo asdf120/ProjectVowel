@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>전체 주문 내역</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.tabs').tabs();
+        }) // function(){} END
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="">
+            <ul class="tabs">
+                <li class="tab col s4 offset-s2">
+                    <a href="#test1" font-size="14px">주문내역 확인</a></li>
+
+                <li class="tab col s4">
+                    <a href="#test2" font-size="14px">주문취소 확인</a></li>
+            </ul>
+        </div>
+        <div id="test1">
+            <div class="row">
+                <h5>ooo님의 주문 내역입니다</h5><br />
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th>주문번호</th>
+                            <th>상품명</th>
+                            <th>주문인</th>
+                            <th>받는사람</th>
+                            <th>결제금액</th>
+                            <th>구매일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">40</a></td>
+                            <td>JSP 외 2</td>
+                            <td>김용관</td>
+                            <td>김용관</td>
+                            <td>30000</td>
+                            <td>주문 일자</td>
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />
+            </div>
+        </div><br />
+
+        <div id="test2">
+            <div class="row">
+                <h5>ooo님의 취소 내역입니다</h5><br />
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th>주문번호</th>
+                            <th>상품명</th>
+                            <th>주문인</th>
+                            <th>받는사람</th>
+                            <th>결제금액</th>
+                            <th>구매일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">40</a></td>
+                            <td>JSP 외 2</td>
+                            <td>김용관</td>
+                            <td>김용관</td>
+                            <td>30000</td>
+                            <td>취소 일자</td>
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

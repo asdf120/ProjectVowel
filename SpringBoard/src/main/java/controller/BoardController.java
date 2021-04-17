@@ -33,6 +33,7 @@ public class BoardController {
     @RequestMapping("/getBoard.do")
     public String getBoard(BoardVO boardVO,Model model){
         System.out.println("board");
+
         model.addAttribute("board",boardService.getBoard(boardVO));
 
         return "getBoard";

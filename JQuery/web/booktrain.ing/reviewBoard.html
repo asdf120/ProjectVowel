@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        #star_rate a {
+            font-size: 14px;
+            text-decoration: none;
+            color: gray;
+        }
+
+        #star_rate a.on {
+            font-size: 14px;
+            color: red;
+        }
+    </style>
+
+    <title>리뷰게시판</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#star_rate a').click(function () {
+                $(this).parent().children("a").removeClass("on");  /* 별점의 on 클래스 전부 제거 */
+                $(this).addClass("on").prevAll("a").addClass("on"); /* 클릭한 별과, 그 앞 까지 별점에 on 클래스 추가 */
+                alert($(this).attr('value'))
+                return false;
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <p id="star_rate">
+            <a href="#" value="1">★</a>
+            <a href="#" value="2">★</a>
+            <a href="#" value="3">★</a>
+            <a href="#" value="4">★</a>
+            <a href="#" value="5">★</a>
+        </p>
+    </div>
+
+
+</body>
+
+</html>

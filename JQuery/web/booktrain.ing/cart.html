@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title> test </title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/JavaScript">
+    </script>
+</head>
+
+<body>
+    <div id="cart" class="row">
+        <form>
+            <table class="highlight centered col s4 offset-s4">
+                <thead>
+                    <tr>
+                        <th>상품명</th>
+                        <th>정가</th>
+                        <th>수량</th>
+                        <th>합계</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tr class="goods">
+                    <td>스프링</td>
+                    <td>31000</td>
+                    <td>
+                        <button class="goods_countPlus waves-effect waves-light btn-small white black-text"><i
+                                class="material-icons left">arrow_drop_up</i></button><br />
+                        1<br />
+                        <button class="goods_countMinus waves-effect waves-light btn-small white black-text"><i
+                                class="material-icons left">arrow_drop_down</i></button>
+                    </td>
+                    <td>31000</td>
+                    <td>
+                        <button type="submit" class=" waves-effect waves-light btn-small white black-text"
+                            value="주문하기"><i class="material-icons left">credit_card</i>주문</button><br /><br />
+                        <button type="submit" class="waves-effect waves-light btn-small white black-text">
+                            <i class="material-icons left">close</i>삭제</button>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

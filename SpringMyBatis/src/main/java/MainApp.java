@@ -34,9 +34,9 @@ public class MainApp {
 		List<HashMap> list = empService.selectEmp();
 
 		for(HashMap map : list){
-			System.out.println(map.get("NAME") + " / " + map.get("DNAME"));
+			System.out.println(map.get("NAME") + " / " + map.get("DNAME") + " / " + map.get("deptno"));
 		}
-
+		System.out.println(list.size());
 		// 5. Spring 컨테이너 종료
 		container.close();
 	}
